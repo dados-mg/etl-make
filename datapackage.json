@@ -4,8 +4,8 @@
     {
       "name": "dm_desdobramento_1_rec",
       "title": "Desdobramento1 da receita",
-      "path": "data/dm-desdobramento-1-rec.csv.gz",
-      "schema": "schemas/dm-desdobramento-1-rec.yaml",
+      "path": "data/dm_desdobramento_1_rec.csv.gz",
+      "schema": "schemas/dm_desdobramento_1_rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -21,8 +21,8 @@
     {
       "name": "dm_desdobramento_2_rec",
       "title": "Desdobramento2 da receita",
-      "path": "data/dm-desdobramento-2-rec.csv.gz",
-      "schema": "schemas/dm-desdobramento-2-rec.yaml",
+      "path": "data/dm_desdobramento_2_rec.csv.gz",
+      "schema": "schemas/dm_desdobramento_2_rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -38,8 +38,8 @@
     {
       "name": "dm_desdobramento_3_rec",
       "title": "Desdobramento3 da receita",
-      "path": "data/dm-desdobramento-3-rec.csv.gz",
-      "schema": "schemas/dm-desdobramento-3-rec.yaml",
+      "path": "data/dm_desdobramento_3_rec.csv.gz",
+      "schema": "schemas/dm_desdobramento_3_rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -55,8 +55,8 @@
     {
       "name": "dm_tipo_rec",
       "title": "Tipo da receita",
-      "path": "data/dm-tipo-rec.csv.gz",
-      "schema": "schemas/dm-tipo-rec.yaml",
+      "path": "data/dm_tipo_rec.csv.gz",
+      "schema": "schemas/dm_tipo_rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -72,8 +72,8 @@
     {
       "name": "ft_receita_v2018",
       "title": "Receita v2",
-      "path": "data/ft-receita-v2018.csv.gz",
-      "schema": "schemas/ft-receita-v2018.yaml",
+      "path": "data/ft_receita_v2018.csv.gz",
+      "schema": "schemas/ft_receita_v2018.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -89,8 +89,8 @@
     {
       "name": "dm_especie_rec",
       "title": "Espécie da receita",
-      "path": "data/dm-especie-rec.csv.gz",
-      "schema": "schemas/dm-especie-rec.yaml",
+      "path": "data/dm_especie_rec.csv.gz",
+      "schema": "schemas/dm_especie_rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -106,8 +106,8 @@
     {
       "name": "dm_fonte_rec",
       "title": "Fonte de Recurso",
-      "path": "data/dm-fonte-rec.csv.gz",
-      "schema": "schemas/dm-fonte-rec.yaml",
+      "path": "data/dm_fonte_rec.csv.gz",
+      "schema": "schemas/dm_fonte_rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -123,8 +123,8 @@
     {
       "name": "dm_item_rec",
       "title": "Item de Receita",
-      "path": "data/dm-item-rec.csv.gz",
-      "schema": "schemas/dm-item-rec.yaml",
+      "path": "data/dm_item_rec.csv.gz",
+      "schema": "schemas/dm_item_rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -140,8 +140,8 @@
     {
       "name": "dm_origem_rec",
       "title": "Origem da receita",
-      "path": "data/dm-origem-rec.csv.gz",
-      "schema": "schemas/dm-origem-rec.yaml",
+      "path": "data/dm_origem_rec.csv.gz",
+      "schema": "schemas/dm_origem_rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -157,8 +157,8 @@
     {
       "name": "dm_unidade_orc",
       "title": "Unidade Orçamentária",
-      "path": "data/dm-unidade-orc.csv.gz",
-      "schema": "schemas/dm-unidade-orc.yaml",
+      "path": "data/dm_unidade_orc.csv.gz",
+      "schema": "schemas/dm_unidade_orc.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -174,8 +174,8 @@
     {
       "name": "dm_subitem_rec",
       "title": "Subitem da receita",
-      "path": "data/dm-subitem-rec.csv.gz",
-      "schema": "schemas/dm-subitem-rec.yaml",
+      "path": "data/dm_subitem_rec.csv.gz",
+      "schema": "schemas/dm_subitem_rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -191,8 +191,8 @@
     {
       "name": "dm_tempo_mensal",
       "title": "Calendário - Mês",
-      "path": "data/dm-tempo-mensal.csv.gz",
-      "schema": "schemas/dm-tempo-mensal.yaml",
+      "path": "data/dm_tempo_mensal.csv.gz",
+      "schema": "schemas/dm_tempo_mensal.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -204,7 +204,7 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource"
-    },
+    }
   ],
   "name": "age7",
   "owner_org": "controladoria-geral-do-estado-cge",

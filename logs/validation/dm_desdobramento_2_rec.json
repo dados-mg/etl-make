@@ -1,0 +1,20 @@
+{
+  "version": "4.16.6",
+  "time": 0.02,
+  "errors": [
+    {
+      "code": "scheme-error",
+      "name": "Scheme Error",
+      "tags": [],
+      "note": "[Errno 2] No such file or directory: 'data/dm-desdobramento-2-rec.csv.gz'",
+      "message": "The data source could not be successfully loaded: [Errno 2] No such file or directory: 'data/dm-desdobramento-2-rec.csv.gz'",
+      "description": "Data reading error because of incorrect scheme."
+    }
+  ],
+  "tasks": [],
+  "stats": {
+    "errors": 1,
+    "tasks": 0
+  },
+  "valid": false
+}

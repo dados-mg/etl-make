@@ -17,15 +17,15 @@ help:
 
 datapackage.json: 
 
-# extract: $(DATA_RAW_FILES) ## Extract files
+extract: $(DATA_RAW_FILES) ## Extract files
 
 validate: $(VALIDATION_REPORTS)
 
 # ls: 
 # 	rsync --checksum --dry-run --out-format='%n' data-raw/* data/
 # 
-# $(DATA_RAW_FILES): data-raw/%.csv: 
-# 	python scripts/python/extract.py $*
+$(DATA_RAW_FILES): data-raw/%.csv: 
+	python scripts/python/extract.py $*
 # 	rsync --checksum data-raw/* data/ 
 # 	python scripts/python/transform.py $*
 # 	rm data-raw/*

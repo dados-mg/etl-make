@@ -1,14 +1,14 @@
 {
   "version": "4.16.6",
-  "time": 0.032,
+  "time": 0.112,
   "errors": [
     {
-      "code": "scheme-error",
-      "name": "Scheme Error",
+      "code": "task-error",
+      "name": "Task Error",
       "tags": [],
-      "note": "[Errno 2] No such file or directory: 'data/dm-unidade-orc.csv.gz'",
-      "message": "The data source could not be successfully loaded: [Errno 2] No such file or directory: 'data/dm-unidade-orc.csv.gz'",
-      "description": "Data reading error because of incorrect scheme."
+      "note": "'fieldPosition'",
+      "message": "The task has an error: 'fieldPosition'",
+      "description": "General task-level error."
     }
   ],
   "tasks": [],

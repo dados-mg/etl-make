@@ -26,6 +26,7 @@ validate: $(VALIDATION_REPORTS)
 # 
 $(DATA_RAW_FILES): data-raw/%.csv: scripts/python/extract.py scripts/sql/%.sql
 	python scripts/python/extract.py $* 2> logs/extraction/$*.txt
+	gzip -n < $@ > data/$*.csv.gz
 # 	rsync --checksum data-raw/* data/ 
 # 	python scripts/python/transform.py $*
 # 	rm data-raw/*

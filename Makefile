@@ -24,8 +24,8 @@ validate: $(VALIDATION_REPORTS)
 # ls: 
 # 	rsync --checksum --dry-run --out-format='%n' data-raw/* data/
 # 
-$(DATA_RAW_FILES): data-raw/%.csv: 
-	python scripts/python/extract.py $*
+$(DATA_RAW_FILES): data-raw/%.csv: scripts/python/extract.py scripts/sql/%.sql
+	python scripts/python/extract.py $* 2> logs/extraction/$*.txt
 # 	rsync --checksum data-raw/* data/ 
 # 	python scripts/python/transform.py $*
 # 	rm data-raw/*

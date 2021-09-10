@@ -20,14 +20,17 @@ help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
 extract: $(DATA_STAGING_FILES) ## Extract files
+	rsync --checksum data/staging/* data/raw/ # rsync --checksum --dry-run --out-format='%n' data-raw/* data/
 
 full-extract: 
 	python scripts/python/full-extract.py
+	rsync --checksum data/staging/* data/raw/ # rsync --checksum --dry-run --out-format='%n' data-raw/* data/
+
+data/%.csv.gz: data/raw/%.csv
+	gzip -n < data/raw/$*.csv > data/$*.csv.gz
 
 validate: $(VALIDATION_REPORTS)
-	rsync --checksum data/staging/* data/raw/ # rsync --checksum --dry-run --out-format='%n' data-raw/* data/
-	gzip -n < $@ > data/staging/$*.csv.gz
-
+	
 $(DATA_STAGING_FILES): data/staging/%.csv: scripts/python/extract-resource.py scripts/sql/%.sql
 	python $< $* 2> logs/extraction/$*.txt
 #	

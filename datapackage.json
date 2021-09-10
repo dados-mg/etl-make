@@ -17,7 +17,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "22ac155915c979f436f959cabace6161"
+      "stats": {
+        "hash": "22ac155915c979f436f959cabace6161"
+      }
     },
     {
       "name": "dm_desdobramento_2_rec",
@@ -35,7 +37,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "91f5b36db0e23861807122ad2fe2974e"
+      "stats": {
+        "hash": "91f5b36db0e23861807122ad2fe2974e"
+      }
     },
     {
       "name": "dm_desdobramento_3_rec",
@@ -53,7 +57,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "c047530ec0a97b320b476d7e9ac76156"
+      "stats": {
+        "hash": "c047530ec0a97b320b476d7e9ac76156"
+      }
     },
     {
       "name": "dm_tipo_rec",
@@ -71,7 +77,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "678f8a044fe6bdae80c4aaafe9e5bf55"
+      "stats": {
+        "hash": "678f8a044fe6bdae80c4aaafe9e5bf55"
+      }
     },
     {
       "name": "ft_receita_v2018",
@@ -89,7 +97,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "30efc738e9266462858887958e6c75ea"
+      "stats": {
+        "hash": "30efc738e9266462858887958e6c75ea"
+      }
     },
     {
       "name": "dm_especie_rec",
@@ -107,7 +117,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "42ea37e5d424af216d8f1899d0f6575c"
+      "stats": {
+        "hash": "42ea37e5d424af216d8f1899d0f6575c"
+      }
     },
     {
       "name": "dm_fonte_rec",
@@ -125,7 +137,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "eef060c755847b33b1c26c2d86a9030a"
+      "stats": {
+        "hash": "eef060c755847b33b1c26c2d86a9030a"
+      }
     },
     {
       "name": "dm_item_rec",
@@ -143,7 +157,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "6c43202c170f805914dc06b5a132f867"
+      "stats": {
+        "hash": "6c43202c170f805914dc06b5a132f867"
+      }
     },
     {
       "name": "dm_origem_rec",
@@ -161,7 +177,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "efd85104dbe7fb9be066b92c1f051037"
+      "stats": {
+        "hash": "efd85104dbe7fb9be066b92c1f051037"
+      }
     },
     {
       "name": "dm_unidade_orc",
@@ -181,8 +199,7 @@
       "profile": "tabular-data-resource",
       "stats": {
         "hash": "1b59f7794cae47dc6a850b295df11d97"
-      },
-      "hash": "1b59f7794cae47dc6a850b295df11d97"
+      }
     },
     {
       "name": "dm_subitem_rec",
@@ -200,7 +217,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "e9d03bc13a0485019ed1b6ce4e9b0fce"
+      "stats": {
+        "hash": "e9d03bc13a0485019ed1b6ce4e9b0fce"
+      }
     },
     {
       "name": "dm_tempo_mensal",
@@ -218,7 +237,9 @@
       "encoding": "utf-8-sig",
       "dialect": "dialect.json",
       "profile": "tabular-data-resource",
-      "hash": "7b82911a43fc32b9146c2a9a86b092c8"
+      "stats": {
+        "hash": "7b82911a43fc32b9146c2a9a86b092c8"
+      }
     }
   ],
   "name": "age7",

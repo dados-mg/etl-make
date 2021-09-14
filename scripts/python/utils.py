@@ -1,6 +1,7 @@
-import psycopg2, csv, sys
+import psycopg2, csv, os
 import hashlib
 from frictionless import Package
+from dpckan import update_resource
 
 def extract_resource(resource_name):
 
@@ -29,3 +30,15 @@ def update_resource_hash(resource_name):
     md5_hash.update(content)
     resource.stats.update({'hash': md5_hash.hexdigest()})
     dp.to_json('datapackage.json')
+
+def load_resource(resource_name): 
+
+    dp = Package('./datapackage.json')
+    resources_id = list(filter(lambda x: x['url'] == os.environ.get('CKAN_HOST'), dp['ckan_host']))[0]['resources_id']
+
+    # A chamada de funções via código Python exige passagem de todos os argumentos
+    update_resource.update_resource(ckan_host=os.environ.get('CKAN_HOST'),
+                        ckan_key=os.environ.get('CKAN_KEY'),
+                        datapackage='./datapackage.json',
+                        resource_name=resource_name,
+                        resource_id=resources_id[resource_name])

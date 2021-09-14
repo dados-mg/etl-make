@@ -224,6 +224,7 @@
     {
       "name": "dm_tempo_mensal",
       "title": "Calendário - Mês",
+      "description": "This is sparta",
       "path": "data/dm_tempo_mensal.csv.gz",
       "schema": "schemas/dm_tempo_mensal.yaml",
       "sources": [
@@ -244,5 +245,30 @@
   ],
   "name": "age7",
   "owner_org": "controladoria-geral-do-estado-cge",
+  "ckan_host": [
+    {
+      "url": "https://homologa.cge.mg.gov.br/",
+      "resources_id": {
+        "dm_desdobramento_1_rec": "f56adec5-52d7-4df0-a734-8a6c1782850c",
+        "dm_desdobramento_2_rec": "ffdcb51d-bf7a-4179-83b1-aae45a90740f",
+        "dm_desdobramento_3_rec": "640be538-d5fb-4949-9d6e-bcb608f61391",
+        "dm_tipo_rec": "0f74df31-911d-4402-b195-4664b9df32cb",
+        "ft_receita_v2018": "77066965-9382-441e-bf30-5e87b01f244d",
+        "dm_especie_rec": "629c9fdd-b600-41a7-b437-2ffd49d852c6",
+        "dm_fonte_rec": "4a3cffae-dbf5-4235-a505-e899b686d43f",
+        "dm_item_rec": "224f81f4-b8f0-486c-a5ee-7f948d649bbd",
+        "dm_origem_rec": "ade8b4a7-9db3-42f1-8ea0-a89d06a8b3b0",
+        "dm_unidade_orc": "517b4e36-4649-4b6c-b819-faa8f047a1b0",
+        "dm_subitem_rec": "1edfb7eb-9365-4e32-b7dd-6d38af6ccd0e",
+        "dm_tempo_mensal": "74bb00f2-f013-46aa-8b64-0735c6ae11d1"
+      }
+    },
+    {
+      "url": "https://dados.mg.gov.br/",
+      "resources_id": {
+        "foo": "bar"
+      }
+    }
+  ],
   "version": "0.0.0.9000"
 }

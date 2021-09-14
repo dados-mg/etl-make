@@ -11,12 +11,10 @@ apt-get install -y python3 python3-venv python3-dev libpq-dev
 echo "Installing python packages..."
 python3 -m venv ~/.virtualenvs/etl-make
 source ~/.virtualenvs/etl-make/bin/activate
+pip install --upgrade pip
 pip install wheel
+pip install git+git://github.com/dados-mg/dpckan.git#egg=dpckan
 pip install -r /vagrant/requirements.txt
-# if [ $? -gt 0 ]; then
-#     echo 2> 'Unable to install python requirements from requirements.txt'
-#     exit 1
-# fi
 
 echo "Installing R..."
 # https://cran.r-project.org/bin/linux/ubuntu/

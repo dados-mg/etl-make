@@ -1,20 +1,155 @@
 {
   "version": "4.16.6",
-  "time": 0.097,
-  "errors": [
+  "time": 0.068,
+  "errors": [],
+  "tasks": [
     {
-      "code": "task-error",
-      "name": "Task Error",
-      "tags": [],
-      "note": "'fieldPosition'",
-      "message": "The task has an error: 'fieldPosition'",
-      "description": "General task-level error."
+      "resource": {
+        "name": "dm_origem_rec",
+        "title": "Origem da receita",
+        "path": "data/dm_origem_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_origem",
+              "title": "Origem - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_origem",
+              "title": "Origem - C\u00f3digo",
+              "description": "C\u00f3digo da origem da receita (0 a 9)",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ]
+              },
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "id_categoria_economica",
+              "title": "Categoria Econ\u00f4mica da Receita- C\u00f3digo",
+              "description": "C\u00f3digo da categoria econ\u00f4mica da receita",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ]
+              },
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "categoria_economica",
+              "title": "Categoria Econ\u00f4mica da Receita - Descri\u00e7\u00e3o",
+              "description": "Primeiro n\u00edvel de classifica\u00e7\u00e3o das receitas, dividindo-as em receitas correntes e receitas de capital.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Origem - Descri\u00e7\u00e3o",
+              "description": "- > \nDetalhamento das categorias econ\u00f4micas. Identifica a proced\u00eancia das receitas no momento em que ingressam\nnos cofres p\u00fablicos. \nExemplo: impostos, taxas e contribui\u00e7\u00f5es de melhoria, contribui\u00e7\u00f5es, opera\u00e7\u00f5es de cr\u00e9dito, receita agropecu\u00e1ria, etc.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_origem"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
+            "table": "dm_origem_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ","
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "efd85104dbe7fb9be066b92c1f051037",
+          "bytes": 2209,
+          "fields": 5,
+          "rows": 151
+        }
+      },
+      "time": 0.068,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
     }
   ],
-  "tasks": [],
   "stats": {
-    "errors": 1,
-    "tasks": 0
+    "errors": 0,
+    "tasks": 1
   },
-  "valid": false
+  "valid": true
 }

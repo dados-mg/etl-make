@@ -1,20 +1,106 @@
 {
   "version": "4.16.6",
-  "time": 0.096,
-  "errors": [
+  "time": 0.198,
+  "errors": [],
+  "tasks": [
     {
-      "code": "task-error",
-      "name": "Task Error",
-      "tags": [],
-      "note": "'fieldPosition'",
-      "message": "The task has an error: 'fieldPosition'",
-      "description": "General task-level error."
+      "resource": {
+        "name": "dm_subitem_rec",
+        "title": "Subitem da receita",
+        "path": "data/dm_subitem_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_subitem",
+              "title": "Subitem - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_subitem",
+              "title": "Subitem - C\u00f3digo",
+              "description": "C\u00f3digo identificador de subitem da receita",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Subitem - Descri\u00e7\u00e3o",
+              "description": "Detalhamento da classifica\u00e7\u00e3o or\u00e7ament\u00e1ria da receita referente ao item de receita.",
+              "type": "string",
+              "format": "default",
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_subitem"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
+            "table": "dm_subitem_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ","
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "e9d03bc13a0485019ed1b6ce4e9b0fce",
+          "bytes": 48761,
+          "fields": 3,
+          "rows": 3377
+        }
+      },
+      "time": 0.198,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
     }
   ],
-  "tasks": [],
   "stats": {
-    "errors": 1,
-    "tasks": 0
+    "errors": 0,
+    "tasks": 1
   },
-  "valid": false
+  "valid": true
 }

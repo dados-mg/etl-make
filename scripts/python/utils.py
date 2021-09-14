@@ -1,4 +1,6 @@
 import psycopg2, csv, sys
+import hashlib
+from frictionless import Package
 
 def extract_resource(resource_name):
 
@@ -16,3 +18,14 @@ def extract_resource(resource_name):
         myFile = csv.writer(fp)
         myFile.writerow(colnames)
         myFile.writerows(rows)
+
+def update_resource_hash(resource_name):
+    
+    dp = Package('datapackage.json')
+    resource = dp.get_resource(resource_name)
+    md5_hash = hashlib.md5()
+    file = open(resource.path, "rb")
+    content = file.read()
+    md5_hash.update(content)
+    resource.stats.update({'hash': md5_hash.hexdigest()})
+    dp.to_json('datapackage.json')

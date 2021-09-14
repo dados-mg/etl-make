@@ -39,6 +39,7 @@ $(DATA_STAGING_FILES): data/staging/%.csv: scripts/python/extract-resource.py sc
 
 $(VALIDATION_REPORTS): logs/validation/%.json: scripts/python/validate.py data/%.csv.gz schemas/%.yaml
 	python $< $* > $@
+	python scripts/python/transform-resource.py $*
 
 parse: $(SQL_FILES)
 

@@ -15,7 +15,7 @@ def extract_resource(resource_name):
 
     colnames = [desc[0] for desc in cur.description]
 
-    with open(f'data/staging/{resource_name}.csv', "w") as fp:
+    with open(f'data/raw/{resource_name}.csv', "w") as fp:
         myFile = csv.writer(fp)
         myFile.writerow(colnames)
         myFile.writerows(rows)

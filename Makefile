@@ -23,12 +23,12 @@ help:
 
 extract: $(DATA_STAGING_FILES) ## Extract files
 	rsync --checksum data/staging/* data/raw/ # rsync --checksum --dry-run --out-format='%n' data-raw/* data/
-	scripts/python/update-resources-checksum.py
+	python scripts/python/update-resources-checksum.py
 
 full-extract: 
 	python scripts/python/full-extract.py
 	rsync --checksum data/staging/* data/raw/ # rsync --checksum --dry-run --out-format='%n' data-raw/* data/
-	scripts/python/update-resources-checksum.py
+	python scripts/python/update-resources-checksum.py
 
 data/%.csv.gz: data/raw/%.csv
 	gzip -n < data/raw/$*.csv > data/$*.csv.gz

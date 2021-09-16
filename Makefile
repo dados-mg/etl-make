@@ -8,9 +8,9 @@ DATA_RAW_FILES = $(subst csv.gz,csv, $(subst data,data/raw, $(DATA_FILES)))
 
 SQL_FILES = $(subst csv.gz,sql, $(subst data,scripts/sql, $(DATA_FILES)))
 
-LOAD_FILES = $(subst csv.gz,txt, $(subst data,logs/loading, $(DATA_FILES)))
+LOAD_FILES = $(subst csv.gz,txt, $(subst data,logs/load, $(DATA_FILES)))
 
-VALIDATION_FILES = $(subst csv.gz,json, $(subst data,logs/validation, $(DATA_FILES)))
+VALIDATION_FILES = $(subst csv.gz,json, $(subst data,logs/validate, $(DATA_FILES)))
 
 #====================================================================
 
@@ -18,6 +18,9 @@ VALIDATION_FILES = $(subst csv.gz,json, $(subst data,logs/validation, $(DATA_FIL
 
 help: 
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
+
+datapackage.json: datapackage.yaml schemas/*
+	python scripts/python/build-datapackage.py
 
 parse: $(SQL_FILES)
 

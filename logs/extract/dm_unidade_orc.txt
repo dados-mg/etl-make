@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "scripts/python/extract-resource.py", line 13, in <module>
-    extract_resource(resource.name)
-  File "/vagrant/scripts/python/utils.py", line 12, in extract_resource
-    cur.execute(sql_query)
-psycopg2.errors.UndefinedColumn: column "sigla" does not exist
-LINE 10: sigla
-         ^
-

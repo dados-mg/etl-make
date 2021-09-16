@@ -19,7 +19,7 @@ VALIDATION_FILES = $(subst csv.gz,json, $(subst data,logs/validate, $(DATA_FILES
 help: 
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
-datapackage.json: scripts/python/build-datapackage.py datapackage.yaml schemas/* data/* logs/validate/* dialect.json README.md CHANGELOG.md CONTRIBUTING.md
+datapackage.json: scripts/python/build-datapackage.py datapackage.yaml parse extract ingest validate schemas/* data/* logs/validate/* dialect.json README.md CHANGELOG.md CONTRIBUTING.md
 	python $<
 
 parse: $(SQL_FILES)

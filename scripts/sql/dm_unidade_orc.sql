@@ -6,7 +6,6 @@ id_grupo_administracao,
 grupo_administracao,
 id_administracao,
 administracao,
-nome,
-sigla
+nome
 from dm_unidade_orc
 

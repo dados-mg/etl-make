@@ -70,10 +70,6 @@ fields:
      Nome completo da Unidade Orçamentária.
     constraints:
       required: true
-  - name: sigla
-    title: Unidade Orçamentária - Sigla
-    type: string
-    format: default
 missingValues:
   - ''
 primaryKey:

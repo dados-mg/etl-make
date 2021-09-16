@@ -11,6 +11,7 @@ id_subitem,
 id_fonte,
 cd_fonte,
 cd_classificacao_rec,
+ano_particao,
 vr_efetivado
 from ft_receita_v2018
 

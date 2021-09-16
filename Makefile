@@ -19,7 +19,10 @@ VALIDATION_FILES = $(subst csv.gz,json, $(subst data,logs/validation, $(DATA_FIL
 help: 
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
-all: extract ingest validate load
+parse: $(SQL_FILES)
+
+$(SQL_FILES): scripts/sql/%.sql: scripts/r/parse-sql.R schemas/%.yaml
+	Rscript --verbose $< $* 2> logs/sql/$*.Rout
 
 full-extract: 
 	python scripts/python/full-extract.py
@@ -46,10 +49,8 @@ load: $(LOAD_FILES)
 $(LOAD_FILES): logs/loading/%.txt: scripts/python/load-resource.py logs/validation/%.json
 	python $< $* > $@
 
-parse: $(SQL_FILES)
-
-$(SQL_FILES): scripts/sql/%.sql: scripts/r/parse-sql.R schemas/%.yaml
-	Rscript --verbose $< $* 2> logs/sql/$*.Rout
+notify: 
+	
 
 vars: 
 	@echo 'VALIDATION_FILES:' $(VALIDATION_FILES)

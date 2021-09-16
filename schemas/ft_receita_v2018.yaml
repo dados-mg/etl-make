@@ -176,6 +176,12 @@ fields:
       - 11º a 13º dígito - Subitem da receita.
     constraints:
       required: true
+  - name: ano_particao
+    title: Ano de Partição
+    type: year
+    format: default
+    constraints:
+      required: true
   - name: vr_efetivado
     title: Valor Efetivado
     type: number

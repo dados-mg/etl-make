@@ -1,4 +1,5 @@
 import os
+import json
 from frictionless import Package
 from utils import update_resource_hash
 
@@ -19,6 +20,11 @@ if os.path.isfile(changelog):
 
 for resource in dp.resources:
     resource.infer(stats = True)
-    resource.expand()
+    resource.schema.expand()
+
+    with open(f"logs/validate/{resource.name}.json") as json_file:
+        validation_log = json.load(json_file)
+
+    resource.update({'validation': validation_log})
 
 dp.to_json('datapackage.json')

@@ -17,6 +17,7 @@ fields:
       unique: false
   - name: id_origem
     title: Origem - Chave
+    description: Classificação orçamentária
     type: integer
     format: default
     bareNumber: true

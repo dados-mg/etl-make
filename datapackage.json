@@ -94,25 +94,130 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
       "hashing": "md5",
       "compression": "gz",
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.08,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_desdobramento_1_rec",
+              "title": "Desdobramento1 da receita",
+              "path": "data/dm_desdobramento_1_rec.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_desdobramento_1",
+                    "title": "Descobramento 1 - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_desdobramento_1",
+                    "title": "Desdobramento 1 - Código",
+                    "description": "Código do desdobramento da receita (1 a 9)",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "enum": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9"
+                      ]
+                    },
+                    "missingValues": [
+                      "0"
+                    ]
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Desdobramento 1 - Descrição",
+                    "description": "Desdobramento para identificação das peculiaridades de cada receita.\n",
+                    "type": "string",
+                    "format": "default"
+                  }
+                ],
+                "missingValues": [
+                  "SEM DESCRICAO"
+                ],
+                "primaryKey": [
+                  "id_desdobramento_1"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_desdobramento_1_rec"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "22ac155915c979f436f959cabace6161",
+                "bytes": 2770,
+                "fields": 3,
+                "rows": 204
+              }
+            },
+            "time": 0.08,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       },
       "stats": {
         "hash": "22ac155915c979f436f959cabace6161",
@@ -197,25 +302,141 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
       "hashing": "md5",
       "compression": "gz",
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.076,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_desdobramento_2_rec",
+              "title": "Desdobramento2 da receita",
+              "path": "data/dm_desdobramento_2_rec.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_desdobramento_2",
+                    "title": "Descobramento 2 - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_desdobramento_2",
+                    "title": "Desdobramento 2 - Código",
+                    "description": "Código do desdobramento da receita (1 a 99)",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "enum": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "80",
+                        "99"
+                      ]
+                    },
+                    "missingValues": [
+                      "0"
+                    ]
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Desdobramento 2 - Descrição",
+                    "description": "Desdobramento para identificação das peculiaridades de cada receita.\n",
+                    "type": "string",
+                    "format": "default"
+                  }
+                ],
+                "missingValues": [
+                  "SEM DESCRICAO"
+                ],
+                "primaryKey": [
+                  "id_desdobramento_2"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_desdobramento_2_rec"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "91f5b36db0e23861807122ad2fe2974e",
+                "bytes": 6648,
+                "fields": 3,
+                "rows": 438
+              }
+            },
+            "time": 0.076,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       },
       "stats": {
         "hash": "91f5b36db0e23861807122ad2fe2974e",
@@ -289,25 +510,130 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
       "hashing": "md5",
       "compression": "gz",
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.109,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_desdobramento_3_rec",
+              "title": "Desdobramento3 da receita",
+              "path": "data/dm_desdobramento_3_rec.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_desdobramento_3",
+                    "title": "Descobramento 3 - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_desdobramento_3",
+                    "title": "Desdobramento 3 - Código",
+                    "description": "Código do desdobramento da receita (1 a 9)",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "enum": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9"
+                      ]
+                    },
+                    "missingValues": [
+                      "0"
+                    ]
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Desdobramento 3 - Descrição",
+                    "description": "Desdobramento para identificação das peculiaridades de cada receita.\n",
+                    "type": "string",
+                    "format": "default"
+                  }
+                ],
+                "missingValues": [
+                  "SEM DESCRICAO"
+                ],
+                "primaryKey": [
+                  "id_desdobramento_3"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_desdobramento_3_rec"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "c047530ec0a97b320b476d7e9ac76156",
+                "bytes": 11314,
+                "fields": 3,
+                "rows": 841
+              }
+            },
+            "time": 0.109,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       },
       "stats": {
         "hash": "c047530ec0a97b320b476d7e9ac76156",
@@ -380,25 +706,129 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
       "hashing": "md5",
       "compression": "gz",
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.116,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_tipo_rec",
+              "title": "Tipo da receita",
+              "path": "data/dm_tipo_rec.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_tipo",
+                    "title": "Tipo de Receita- Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "cd_tipo",
+                    "title": "Tipo de Receita- Código",
+                    "type": "string",
+                    "format": "default",
+                    "description": "De acordo com a [Lei Estadual 23685, de 07/08/2020](https://www.lexml.gov.br/urn/urn:lex:br;minas.gerais:estadual:lei:2020-08-07;23685) o tipo de receita possui a seguinte estrutura lógica:\n\n- “0”, quando se tratar de natureza de receita não valorizável ou agregadora;\n- “1”, quando se tratar da arrecadação principal da receita;\n- “2”, quando se tratar de multas e juros de mora da respectiva receita;\n- “3”, quando se tratar de dívida ativa da respectiva receita;\n- “4”, quando se tratar de multas e juros de mora da dívida ativa da respectiva receita;\n- “5” a “9”, quando se tratar de outros desdobramentos a serem criados, caso a caso, pela Secretaria de Orçamento Federal, mediante portaria específica.\n",
+                    "notes": [
+                      "Apesar da previsão na [Portaria Interministerial STN/SOF nº 163 de 04/05/2001](https://www.gov.br/economia/pt-br/assuntos/planejamento-e-orcamento/orcamento/legislacao-sobre-orcamento/portariainterm1632001.pdf), o Estado de Minas Gerais ainda não possui execução orçamentária nos tipos de receita 5 a 9.\n"
+                    ],
+                    "constraints": {
+                      "required": true,
+                      "enum": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                      ]
+                    }
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Tipo de Receita - Código",
+                    "type": "string",
+                    "format": "default",
+                    "description": "Identifica o tipo de arrecadação a que se refere a receita. \nExemplo, receita de multas e juros, arrecadação principal e etc.\n",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "primaryKey": [
+                  "id_tipo"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_tipo_rec"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "678f8a044fe6bdae80c4aaafe9e5bf55",
+                "bytes": 19221,
+                "fields": 3,
+                "rows": 1552
+              }
+            },
+            "time": 0.116,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       },
       "stats": {
         "hash": "678f8a044fe6bdae80c4aaafe9e5bf55",
@@ -438,6 +868,7 @@
           {
             "name": "id_origem",
             "title": "Origem - Chave",
+            "description": "Classificação orçamentária",
             "type": "integer",
             "format": "default",
             "bareNumber": true,
@@ -790,11 +1221,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
@@ -806,15 +1233,25 @@
         "fields": 15,
         "rows": 12495
       },
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 2.076,
+        "errors": [
+          {
+            "code": "task-error",
+            "name": "Task Error",
+            "tags": [],
+            "note": "'fieldPosition'",
+            "message": "The task has an error: 'fieldPosition'",
+            "description": "General task-level error."
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "tasks": [],
+        "stats": {
+          "errors": 1,
+          "tasks": 0
+        },
+        "valid": false
       }
     },
     {
@@ -883,11 +1320,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
@@ -899,15 +1332,125 @@
         "fields": 3,
         "rows": 235
       },
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.064,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_especie_rec",
+              "title": "Espécie da receita",
+              "path": "data/dm_especie_rec.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_especie",
+                    "title": "Espécie - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_especie",
+                    "title": "Espécie - Código",
+                    "description": "Código da espécie da receita (0 a 9)",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "enum": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9"
+                      ]
+                    }
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Espécie - Descrição",
+                    "type": "string",
+                    "description": "Classificação da Receita vinculada à origem que permite qualificar com maior detalhe o fato gerador das receitas, por exemplo: dentro da Origem Contribuições, identifica-se as espécies “Contribuições Sociais”, “Contribuições Econômicas”, “Contribuições para Entidades Privadas de Serviço Social e de Formação Profissional” e “Contribuição para Custeio de Iluminação Pública”.\n",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "primaryKey": [
+                  "id_especie"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_especie_rec"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "42ea37e5d424af216d8f1899d0f6575c",
+                "bytes": 3065,
+                "fields": 3,
+                "rows": 235
+              }
+            },
+            "time": 0.064,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       }
     },
     {
@@ -1041,11 +1584,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
@@ -1057,15 +1596,190 @@
         "fields": 3,
         "rows": 106
       },
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.078,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_fonte_rec",
+              "title": "Fonte de Recurso",
+              "path": "data/dm_fonte_rec.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_fonte",
+                    "title": "Fonte de Recurso - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_fonte",
+                    "title": "Fonte de Recurso- Código",
+                    "type": "string",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "enum": [
+                        "10",
+                        "12",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24",
+                        "25",
+                        "26",
+                        "27",
+                        "28",
+                        "29",
+                        "30",
+                        "31",
+                        "32",
+                        "33",
+                        "34",
+                        "35",
+                        "36",
+                        "37",
+                        "38",
+                        "39",
+                        "40",
+                        "41",
+                        "42",
+                        "43",
+                        "44",
+                        "45",
+                        "46",
+                        "47",
+                        "48",
+                        "49",
+                        "50",
+                        "51",
+                        "52",
+                        "53",
+                        "54",
+                        "55",
+                        "56",
+                        "57",
+                        "58",
+                        "59",
+                        "60",
+                        "61",
+                        "70",
+                        "71",
+                        "72",
+                        "73",
+                        "74",
+                        "75",
+                        "76",
+                        "77",
+                        "78",
+                        "79",
+                        "80",
+                        "81",
+                        "82",
+                        "83",
+                        "84",
+                        "85",
+                        "86",
+                        "87",
+                        "88",
+                        "89",
+                        "90",
+                        "91",
+                        "92",
+                        "93",
+                        "94",
+                        "95",
+                        "99"
+                      ]
+                    },
+                    "missingValues": [
+                      "0"
+                    ]
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Fonte de Recurso - Descrição",
+                    "description": "- > \n  Permite a identificação da origem e destinação dos recursos legalmente vinculados a órgão, fundo ou despesa.\n",
+                    "type": "string",
+                    "format": "default",
+                    "missingValues": [
+                      "SEM INFORMAÇÃO",
+                      "FONTE DE EXERCICIO ANTERIOR"
+                    ]
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "primaryKey": [
+                  "id_fonte"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_fonte_rec"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "eef060c755847b33b1c26c2d86a9030a",
+                "bytes": 1959,
+                "fields": 3,
+                "rows": 106
+              }
+            },
+            "time": 0.078,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       }
     },
     {
@@ -1167,11 +1881,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
@@ -1183,15 +1893,158 @@
         "fields": 3,
         "rows": 5143
       },
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.308,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_item_rec",
+              "title": "Item de Receita",
+              "path": "data/dm_item_rec.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_item",
+                    "title": "Item da Receita- Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_item",
+                    "title": "Item da Receita - código",
+                    "description": "Código do item da receita (1 a 99)",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "enum": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "19",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24",
+                        "25",
+                        "26",
+                        "27",
+                        "28",
+                        "29",
+                        "30",
+                        "31",
+                        "32",
+                        "33",
+                        "34",
+                        "35",
+                        "51",
+                        "52",
+                        "94",
+                        "95",
+                        "96",
+                        "97",
+                        "98",
+                        "99"
+                      ]
+                    },
+                    "missingValues": [
+                      "0"
+                    ]
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Item da Receita- Descrição",
+                    "description": "Detalhamento da classificação orçamentária da receita referente ao tipo de receita.\n",
+                    "type": "string",
+                    "format": "default"
+                  }
+                ],
+                "missingValues": [
+                  "SEM DESCRICAO"
+                ],
+                "primaryKey": [
+                  "id_item"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_item_rec"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "6c43202c170f805914dc06b5a132f867",
+                "bytes": 72062,
+                "fields": 3,
+                "rows": 5143
+              }
+            },
+            "time": 0.308,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       }
     },
     {
@@ -1295,11 +2148,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
@@ -1311,15 +2160,160 @@
         "fields": 5,
         "rows": 151
       },
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.068,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_origem_rec",
+              "title": "Origem da receita",
+              "path": "data/dm_origem_rec.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_origem",
+                    "title": "Origem - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_origem",
+                    "title": "Origem - Código",
+                    "description": "Código da origem da receita (0 a 9)",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "enum": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9"
+                      ]
+                    },
+                    "missingValues": [
+                      "0"
+                    ]
+                  },
+                  {
+                    "name": "id_categoria_economica",
+                    "title": "Categoria Econômica da Receita- Código",
+                    "description": "Código da categoria econômica da receita",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "enum": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9"
+                      ]
+                    },
+                    "missingValues": [
+                      "0"
+                    ]
+                  },
+                  {
+                    "name": "categoria_economica",
+                    "title": "Categoria Econômica da Receita - Descrição",
+                    "description": "Primeiro nível de classificação das receitas, dividindo-as em receitas correntes e receitas de capital.\n",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Origem - Descrição",
+                    "description": "- > \nDetalhamento das categorias econômicas. Identifica a procedência das receitas no momento em que ingressam\nnos cofres públicos. \nExemplo: impostos, taxas e contribuições de melhoria, contribuições, operações de crédito, receita agropecuária, etc.\n",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "primaryKey": [
+                  "id_origem"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_origem_rec"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "efd85104dbe7fb9be066b92c1f051037",
+                "bytes": 2209,
+                "fields": 5,
+                "rows": 151
+              }
+            },
+            "time": 0.068,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       }
     },
     {
@@ -1447,11 +2441,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
@@ -1463,15 +2453,25 @@
         "fields": 10,
         "rows": 2203
       },
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.082,
+        "errors": [
+          {
+            "code": "task-error",
+            "name": "Task Error",
+            "tags": [],
+            "note": "'fieldPosition'",
+            "message": "The task has an error: 'fieldPosition'",
+            "description": "General task-level error."
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "tasks": [],
+        "stats": {
+          "errors": 1,
+          "tasks": 0
+        },
+        "valid": false
       }
     },
     {
@@ -1529,11 +2529,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
@@ -1545,15 +2541,111 @@
         "fields": 3,
         "rows": 3377
       },
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.198,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_subitem_rec",
+              "title": "Subitem da receita",
+              "path": "data/dm_subitem_rec.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_subitem",
+                    "title": "Subitem - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_subitem",
+                    "title": "Subitem - Código",
+                    "description": "Código identificador de subitem da receita",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Subitem - Descrição",
+                    "description": "Detalhamento da classificação orçamentária da receita referente ao item de receita.",
+                    "type": "string",
+                    "format": "default",
+                    "missingValues": [
+                      "SEM DESCRICAO"
+                    ]
+                  }
+                ],
+                "primaryKey": [
+                  "id_subitem"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_subitem_rec"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "e9d03bc13a0485019ed1b6ce4e9b0fce",
+                "bytes": 48761,
+                "fields": 3,
+                "rows": 3377
+              }
+            },
+            "time": 0.198,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       }
     },
     {
@@ -1649,11 +2741,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "dialect": {
-        "delimiter": ",",
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "doubleQuote": true,
-        "skipInitialSpace": false
+        "delimiter": ","
       },
       "profile": "tabular-data-resource",
       "scheme": "file",
@@ -1665,15 +2753,152 @@
         "fields": 5,
         "rows": 2265
       },
-      "innerpath": "",
-      "control": {},
-      "layout": {
-        "header": true,
-        "headerRows": [
-          1
+      "validation": {
+        "version": "4.16.6",
+        "time": 0.202,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_tempo_mensal",
+              "title": "Calendário - Mês",
+              "description": "This is sparta",
+              "path": "data/dm_tempo_mensal.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_tempo",
+                    "title": "Tempo Mensal - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "anomes_iso",
+                    "title": "Ano e Mês",
+                    "type": "string",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "mes",
+                    "title": "Mês",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "enum": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12"
+                      ]
+                    },
+                    "missingValues": [
+                      "0",
+                      "13",
+                      "14"
+                    ]
+                  },
+                  {
+                    "name": "ano",
+                    "title": "Ano",
+                    "type": "year",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "anomes_formatado",
+                    "title": "Ano e Mês Formatado",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "primaryKey": [
+                  "id_tempo"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_tempo_mensal"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ","
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "7b82911a43fc32b9146c2a9a86b092c8",
+                "bytes": 16051,
+                "fields": 5,
+                "rows": 2265
+              }
+            },
+            "time": 0.202,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
         ],
-        "headerJoin": " ",
-        "headerCase": true
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
       }
     }
   ],

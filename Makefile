@@ -1,30 +1,6 @@
-.PHONY: help extract
+.PHONY: help vars parse extract full-extract ingest validate load all
 
-RESOURCES := $(shell cat datapackage.json | jq -r ' .resources | .[] | .name ')
-
-DATA_FILES := $(shell cat datapackage.json | jq -r ' .resources | .[] | .path ')
-
-DATA_RAW_FILES := $(subst csv.gz,csv, $(subst data,data/raw, $(DATA_FILES)))
-
-DATA_INGEST_FILES = $(subst data/raw,data/staging, $(shell rsync --checksum --dry-run --out-format='%f' data/raw/* data/staging/))
-# --out-format=FORMAT
-#   This allows you to specify exactly what the rsync client outputs
-#   to the user on a per-update basis.  The format is a text  string
-#   containing  embedded  single-character escape sequences prefixed
-#   with a percent (%) character.  For a list of the possible escape
-#   characters, see the "log format" setting in the rsyncd.conf man-
-#   page (ie. man rsyncd.conf).
-
-SQL_FILES := $(subst csv.gz,sql, $(subst data,scripts/sql, $(DATA_FILES)))
-
-LOAD_FILES := $(subst csv.gz,txt, $(subst data,logs/load, $(DATA_FILES)))
-
-VALIDATION_FILES := $(subst csv.gz,json, $(subst data,logs/validate, $(DATA_FILES)))
-
-
-#====================================================================
-
-# PHONY TARGETS
+include config.mk
 
 help: 
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
@@ -60,12 +36,11 @@ validate: $(VALIDATION_FILES)
 $(VALIDATION_FILES): logs/validate/%.json: scripts/python/validate.py data/%.csv.gz schemas/%.yaml
 	python $< $* > $@
 
-load: $(LOAD_FILES)
+load: 
+	dpckan dataset update
 
 $(LOAD_FILES): logs/load/%.txt: scripts/python/load-resource.py logs/validate/%.json
 	python $< $* > $@
 
-notify: 
-
 vars: 
-	@echo 'DATA_INGEST_FILES:' $(DATA_INGEST_FILES)
+	@echo 'DATA_FILES:' $(DATA_FILES)

@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.082,
+  "time": 0.104,
   "errors": [],
   "tasks": [
     {
@@ -75,125 +75,6 @@
         "scheme": "file",
         "hashing": "md5",
         "compression": "gz",
-        "validation": {
-          "version": "4.16.6",
-          "time": 0.08,
-          "errors": [],
-          "tasks": [
-            {
-              "resource": {
-                "name": "dm_desdobramento_1_rec",
-                "title": "Desdobramento1 da receita",
-                "path": "data/dm_desdobramento_1_rec.csv.gz",
-                "schema": {
-                  "fields": [
-                    {
-                      "name": "id_desdobramento_1",
-                      "title": "Descobramento 1 - Chave",
-                      "type": "integer",
-                      "format": "default",
-                      "bareNumber": true,
-                      "constraints": {
-                        "required": true,
-                        "unique": false
-                      }
-                    },
-                    {
-                      "name": "cd_desdobramento_1",
-                      "title": "Desdobramento 1 - C\u00f3digo",
-                      "description": "C\u00f3digo do desdobramento da receita (1 a 9)",
-                      "type": "string",
-                      "format": "default",
-                      "constraints": {
-                        "enum": [
-                          "1",
-                          "2",
-                          "3",
-                          "4",
-                          "5",
-                          "6",
-                          "7",
-                          "8",
-                          "9"
-                        ]
-                      },
-                      "missingValues": [
-                        "0"
-                      ]
-                    },
-                    {
-                      "name": "nome",
-                      "title": "Desdobramento 1 - Descri\u00e7\u00e3o",
-                      "description": "Desdobramento para identifica\u00e7\u00e3o das peculiaridades de cada receita.\n",
-                      "type": "string",
-                      "format": "default"
-                    }
-                  ],
-                  "missingValues": [
-                    "SEM DESCRICAO"
-                  ],
-                  "primaryKey": [
-                    "id_desdobramento_1"
-                  ]
-                },
-                "sources": [
-                  {
-                    "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
-                    "table": "dm_desdobramento_1_rec"
-                  }
-                ],
-                "format": "csv",
-                "mediatype": "text/csv",
-                "encoding": "utf-8-sig",
-                "dialect": {
-                  "delimiter": ","
-                },
-                "profile": "tabular-data-resource",
-                "scheme": "file",
-                "hashing": "md5",
-                "compression": "gz",
-                "stats": {
-                  "hash": "22ac155915c979f436f959cabace6161",
-                  "bytes": 2770,
-                  "fields": 3,
-                  "rows": 204
-                }
-              },
-              "time": 0.08,
-              "scope": [
-                "hash-count-error",
-                "byte-count-error",
-                "field-count-error",
-                "row-count-error",
-                "blank-header",
-                "extra-label",
-                "missing-label",
-                "blank-label",
-                "duplicate-label",
-                "incorrect-label",
-                "blank-row",
-                "primary-key-error",
-                "foreign-key-error",
-                "extra-cell",
-                "missing-cell",
-                "type-error",
-                "constraint-error",
-                "unique-error"
-              ],
-              "partial": false,
-              "errors": [],
-              "stats": {
-                "errors": 0
-              },
-              "valid": true
-            }
-          ],
-          "stats": {
-            "errors": 0,
-            "tasks": 1
-          },
-          "valid": true
-        },
         "stats": {
           "hash": "22ac155915c979f436f959cabace6161",
           "bytes": 2770,
@@ -201,7 +82,7 @@
           "rows": 204
         }
       },
-      "time": 0.082,
+      "time": 0.104,
       "scope": [
         "hash-count-error",
         "byte-count-error",

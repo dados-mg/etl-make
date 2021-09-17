@@ -5,7 +5,7 @@ from frictionless import Package
 from frictionless import validate_resource
 
 def validate(resource_name):
-  package = Package('datapackage.json')
+  package = Package('datapackage.yaml')
   resource = package.get_resource(resource_name)
   report = validate_resource(resource)
   json.dump(report, sys.stdout, indent=2)

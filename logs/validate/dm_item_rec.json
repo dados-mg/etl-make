@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.304,
+  "time": 0.301,
   "errors": [],
   "tasks": [
     {
@@ -109,167 +109,14 @@
         "scheme": "file",
         "hashing": "md5",
         "compression": "gz",
-        "validation": {
-          "version": "4.16.6",
-          "time": 0.308,
-          "errors": [],
-          "tasks": [
-            {
-              "resource": {
-                "name": "dm_item_rec",
-                "title": "Item de Receita",
-                "path": "data/dm_item_rec.csv.gz",
-                "schema": {
-                  "fields": [
-                    {
-                      "name": "id_item",
-                      "title": "Item da Receita- Chave",
-                      "type": "integer",
-                      "format": "default",
-                      "bareNumber": true,
-                      "constraints": {
-                        "required": true,
-                        "unique": false
-                      }
-                    },
-                    {
-                      "name": "cd_item",
-                      "title": "Item da Receita - c\u00f3digo",
-                      "description": "C\u00f3digo do item da receita (1 a 99)",
-                      "type": "string",
-                      "format": "default",
-                      "constraints": {
-                        "enum": [
-                          "1",
-                          "2",
-                          "3",
-                          "4",
-                          "5",
-                          "6",
-                          "7",
-                          "8",
-                          "9",
-                          "10",
-                          "11",
-                          "12",
-                          "13",
-                          "14",
-                          "15",
-                          "16",
-                          "17",
-                          "18",
-                          "19",
-                          "20",
-                          "21",
-                          "22",
-                          "23",
-                          "24",
-                          "25",
-                          "26",
-                          "27",
-                          "28",
-                          "29",
-                          "30",
-                          "31",
-                          "32",
-                          "33",
-                          "34",
-                          "35",
-                          "51",
-                          "52",
-                          "94",
-                          "95",
-                          "96",
-                          "97",
-                          "98",
-                          "99"
-                        ]
-                      },
-                      "missingValues": [
-                        "0"
-                      ]
-                    },
-                    {
-                      "name": "nome",
-                      "title": "Item da Receita- Descri\u00e7\u00e3o",
-                      "description": "Detalhamento da classifica\u00e7\u00e3o or\u00e7ament\u00e1ria da receita referente ao tipo de receita.\n",
-                      "type": "string",
-                      "format": "default"
-                    }
-                  ],
-                  "missingValues": [
-                    "SEM DESCRICAO"
-                  ],
-                  "primaryKey": [
-                    "id_item"
-                  ]
-                },
-                "sources": [
-                  {
-                    "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
-                    "table": "dm_item_rec"
-                  }
-                ],
-                "format": "csv",
-                "mediatype": "text/csv",
-                "encoding": "utf-8-sig",
-                "dialect": {
-                  "delimiter": ","
-                },
-                "profile": "tabular-data-resource",
-                "scheme": "file",
-                "hashing": "md5",
-                "compression": "gz",
-                "stats": {
-                  "hash": "6c43202c170f805914dc06b5a132f867",
-                  "bytes": 72062,
-                  "fields": 3,
-                  "rows": 5143
-                }
-              },
-              "time": 0.308,
-              "scope": [
-                "hash-count-error",
-                "byte-count-error",
-                "field-count-error",
-                "row-count-error",
-                "blank-header",
-                "extra-label",
-                "missing-label",
-                "blank-label",
-                "duplicate-label",
-                "incorrect-label",
-                "blank-row",
-                "primary-key-error",
-                "foreign-key-error",
-                "extra-cell",
-                "missing-cell",
-                "type-error",
-                "constraint-error",
-                "unique-error"
-              ],
-              "partial": false,
-              "errors": [],
-              "stats": {
-                "errors": 0
-              },
-              "valid": true
-            }
-          ],
-          "stats": {
-            "errors": 0,
-            "tasks": 1
-          },
-          "valid": true
-        },
         "stats": {
-          "hash": "6c43202c170f805914dc06b5a132f867",
-          "bytes": 72062,
+          "hash": "869011263424a27c2ccec4b48e24a84f",
+          "bytes": 72071,
           "fields": 3,
-          "rows": 5143
+          "rows": 5144
         }
       },
-      "time": 0.304,
+      "time": 0.301,
       "scope": [
         "hash-count-error",
         "byte-count-error",

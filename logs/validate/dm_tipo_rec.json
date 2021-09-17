@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.116,
+  "time": 0.194,
   "errors": [],
   "tasks": [
     {
@@ -74,6 +74,124 @@
         "scheme": "file",
         "hashing": "md5",
         "compression": "gz",
+        "validation": {
+          "version": "4.16.6",
+          "time": 0.116,
+          "errors": [],
+          "tasks": [
+            {
+              "resource": {
+                "name": "dm_tipo_rec",
+                "title": "Tipo da receita",
+                "path": "data/dm_tipo_rec.csv.gz",
+                "schema": {
+                  "fields": [
+                    {
+                      "name": "id_tipo",
+                      "title": "Tipo de Receita- Chave",
+                      "type": "integer",
+                      "format": "default",
+                      "bareNumber": true,
+                      "constraints": {
+                        "required": true
+                      }
+                    },
+                    {
+                      "name": "cd_tipo",
+                      "title": "Tipo de Receita- C\u00f3digo",
+                      "type": "string",
+                      "format": "default",
+                      "description": "De acordo com a [Lei Estadual 23685, de 07/08/2020](https://www.lexml.gov.br/urn/urn:lex:br;minas.gerais:estadual:lei:2020-08-07;23685) o tipo de receita possui a seguinte estrutura l\u00f3gica:\n\n- \u201c0\u201d, quando se tratar de natureza de receita n\u00e3o valoriz\u00e1vel ou agregadora;\n- \u201c1\u201d, quando se tratar da arrecada\u00e7\u00e3o principal da receita;\n- \u201c2\u201d, quando se tratar de multas e juros de mora da respectiva receita;\n- \u201c3\u201d, quando se tratar de d\u00edvida ativa da respectiva receita;\n- \u201c4\u201d, quando se tratar de multas e juros de mora da d\u00edvida ativa da respectiva receita;\n- \u201c5\u201d a \u201c9\u201d, quando se tratar de outros desdobramentos a serem criados, caso a caso, pela Secretaria de Or\u00e7amento Federal, mediante portaria espec\u00edfica.\n",
+                      "notes": [
+                        "Apesar da previs\u00e3o na [Portaria Interministerial STN/SOF n\u00ba 163 de 04/05/2001](https://www.gov.br/economia/pt-br/assuntos/planejamento-e-orcamento/orcamento/legislacao-sobre-orcamento/portariainterm1632001.pdf), o Estado de Minas Gerais ainda n\u00e3o possui execu\u00e7\u00e3o or\u00e7ament\u00e1ria nos tipos de receita 5 a 9.\n"
+                      ],
+                      "constraints": {
+                        "required": true,
+                        "enum": [
+                          "0",
+                          "1",
+                          "2",
+                          "3",
+                          "4"
+                        ]
+                      }
+                    },
+                    {
+                      "name": "nome",
+                      "title": "Tipo de Receita - C\u00f3digo",
+                      "type": "string",
+                      "format": "default",
+                      "description": "Identifica o tipo de arrecada\u00e7\u00e3o a que se refere a receita. \nExemplo, receita de multas e juros, arrecada\u00e7\u00e3o principal e etc.\n",
+                      "constraints": {
+                        "required": true
+                      }
+                    }
+                  ],
+                  "missingValues": [
+                    ""
+                  ],
+                  "primaryKey": [
+                    "id_tipo"
+                  ]
+                },
+                "sources": [
+                  {
+                    "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
+                    "table": "dm_tipo_rec"
+                  }
+                ],
+                "format": "csv",
+                "mediatype": "text/csv",
+                "encoding": "utf-8-sig",
+                "dialect": {
+                  "delimiter": ","
+                },
+                "profile": "tabular-data-resource",
+                "scheme": "file",
+                "hashing": "md5",
+                "compression": "gz",
+                "stats": {
+                  "hash": "678f8a044fe6bdae80c4aaafe9e5bf55",
+                  "bytes": 19221,
+                  "fields": 3,
+                  "rows": 1552
+                }
+              },
+              "time": 0.116,
+              "scope": [
+                "hash-count-error",
+                "byte-count-error",
+                "field-count-error",
+                "row-count-error",
+                "blank-header",
+                "extra-label",
+                "missing-label",
+                "blank-label",
+                "duplicate-label",
+                "incorrect-label",
+                "blank-row",
+                "primary-key-error",
+                "foreign-key-error",
+                "extra-cell",
+                "missing-cell",
+                "type-error",
+                "constraint-error",
+                "unique-error"
+              ],
+              "partial": false,
+              "errors": [],
+              "stats": {
+                "errors": 0
+              },
+              "valid": true
+            }
+          ],
+          "stats": {
+            "errors": 0,
+            "tasks": 1
+          },
+          "valid": true
+        },
         "stats": {
           "hash": "678f8a044fe6bdae80c4aaafe9e5bf55",
           "bytes": 19221,
@@ -81,7 +199,7 @@
           "rows": 1552
         }
       },
-      "time": 0.116,
+      "time": 0.194,
       "scope": [
         "hash-count-error",
         "byte-count-error",

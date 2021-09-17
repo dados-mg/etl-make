@@ -7,13 +7,6 @@ fields:
     constraints:
       required: true
       unique: false
-  - name: anomes_iso
-    title: Ano e Mês
-    type: string
-    format: default
-    bareNumber: true
-    constraints:
-      required: true
   - name: mes
     title: Mês
     type: integer

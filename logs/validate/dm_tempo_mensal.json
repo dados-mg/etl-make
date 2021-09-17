@@ -1,147 +1,20 @@
 {
   "version": "4.16.6",
-  "time": 0.202,
-  "errors": [],
-  "tasks": [
+  "time": 0.06,
+  "errors": [
     {
-      "resource": {
-        "name": "dm_tempo_mensal",
-        "title": "Calend\u00e1rio - M\u00eas",
-        "description": "This is sparta",
-        "path": "data/dm_tempo_mensal.csv.gz",
-        "schema": {
-          "fields": [
-            {
-              "name": "id_tempo",
-              "title": "Tempo Mensal - Chave",
-              "type": "integer",
-              "format": "default",
-              "bareNumber": true,
-              "constraints": {
-                "required": true,
-                "unique": false
-              }
-            },
-            {
-              "name": "anomes_iso",
-              "title": "Ano e M\u00eas",
-              "type": "string",
-              "format": "default",
-              "bareNumber": true,
-              "constraints": {
-                "required": true
-              }
-            },
-            {
-              "name": "mes",
-              "title": "M\u00eas",
-              "type": "integer",
-              "format": "default",
-              "bareNumber": true,
-              "constraints": {
-                "enum": [
-                  "1",
-                  "2",
-                  "3",
-                  "4",
-                  "5",
-                  "6",
-                  "7",
-                  "8",
-                  "9",
-                  "10",
-                  "11",
-                  "12"
-                ]
-              },
-              "missingValues": [
-                "0",
-                "13",
-                "14"
-              ]
-            },
-            {
-              "name": "ano",
-              "title": "Ano",
-              "type": "year",
-              "format": "default",
-              "bareNumber": true,
-              "constraints": {
-                "required": true
-              }
-            },
-            {
-              "name": "anomes_formatado",
-              "title": "Ano e M\u00eas Formatado",
-              "type": "string",
-              "format": "default",
-              "constraints": {
-                "required": true
-              }
-            }
-          ],
-          "missingValues": [
-            ""
-          ],
-          "primaryKey": [
-            "id_tempo"
-          ]
-        },
-        "sources": [
-          {
-            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
-            "table": "dm_tempo_mensal"
-          }
-        ],
-        "format": "csv",
-        "mediatype": "text/csv",
-        "encoding": "utf-8-sig",
-        "dialect": {
-          "delimiter": ","
-        },
-        "profile": "tabular-data-resource",
-        "scheme": "file",
-        "hashing": "md5",
-        "compression": "gz",
-        "stats": {
-          "hash": "7b82911a43fc32b9146c2a9a86b092c8",
-          "bytes": 16051,
-          "fields": 5,
-          "rows": 2265
-        }
-      },
-      "time": 0.202,
-      "scope": [
-        "hash-count-error",
-        "byte-count-error",
-        "field-count-error",
-        "row-count-error",
-        "blank-header",
-        "extra-label",
-        "missing-label",
-        "blank-label",
-        "duplicate-label",
-        "incorrect-label",
-        "blank-row",
-        "primary-key-error",
-        "foreign-key-error",
-        "extra-cell",
-        "missing-cell",
-        "type-error",
-        "constraint-error",
-        "unique-error"
-      ],
-      "partial": false,
-      "errors": [],
-      "stats": {
-        "errors": 0
-      },
-      "valid": true
+      "code": "task-error",
+      "name": "Task Error",
+      "tags": [],
+      "note": "'fieldPosition'",
+      "message": "The task has an error: 'fieldPosition'",
+      "description": "General task-level error."
     }
   ],
+  "tasks": [],
   "stats": {
-    "errors": 0,
-    "tasks": 1
+    "errors": 1,
+    "tasks": 0
   },
-  "valid": true
+  "valid": false
 }

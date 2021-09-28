@@ -22,6 +22,7 @@ apt-get install -y --no-install-recommends software-properties-common dirmngr
 wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
 add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/"
 apt-get install -y --no-install-recommends r-base
+apt-get install -y r-base-dev # build requirements for R packages such as llapack lblas lgfortran
 apt-get install -y libpng-dev # system requirement of png R package
 
 cd /vagrant && Rscript -e "install.packages('renv')" && Rscript -e 'renv::restore()'

@@ -24,7 +24,7 @@ add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran
 apt-get install -y --no-install-recommends r-base
 apt-get install -y libpng-dev # system requirement of png R package
 
-cd /vagrant && Rscript -e "install.packages(renv)" && Rscript -e 'renv::restore()'
+cd /vagrant && Rscript -e "install.packages('renv')" && Rscript -e 'renv::restore()'
 
 echo "The environment has been installed."
 echo

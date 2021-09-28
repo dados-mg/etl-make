@@ -3,7 +3,7 @@
 echo "Initial setup.  This may take a few minutes ..."
 apt-get update
 
-apt-get install build-essential jq # install gcc g++ and make
+apt-get install -y build-essential jq # install gcc g++ and make
 
 echo "Installing python..."
 apt-get install -y python3 python3-venv python3-dev libpq-dev
@@ -18,11 +18,11 @@ pip install -r /vagrant/requirements.txt
 
 echo "Installing R..."
 # https://cran.r-project.org/bin/linux/ubuntu/
-apt-get install --no-install-recommends software-properties-common dirmngr
+apt-get install -y --no-install-recommends software-properties-common dirmngr
 wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
 add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/"
-apt-get install --no-install-recommends r-base
-apt-get install libpng-dev # system requirement of png R package
+apt-get install -y --no-install-recommends r-base
+apt-get install -y libpng-dev # system requirement of png R package
 
 cd /vagrant && Rscript -e "install.packages(renv)" && Rscript -e 'renv::restore()'
 

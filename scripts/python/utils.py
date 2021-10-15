@@ -1,11 +1,15 @@
-import psycopg2, csv, os
+import csv, os
 import hashlib
 from frictionless import Package
 from dpckan import update_resource
+import pymysql
 
 def extract_resource(resource_name):
-
-    conn = psycopg2.connect('postgresql://fjunior:170389@10.0.2.2:5432/fjunior')
+    conn = pymysql.connect(host='192.168.33.11',
+                           user='root',
+                           password='root',
+                           database='age7',
+                           cursorclass=pymysql.cursors.DictCursor)
     cur = conn.cursor()
     sql_file = open(f'scripts/sql/{resource_name}.sql')
     sql_query = sql_file.read()
@@ -16,8 +20,8 @@ def extract_resource(resource_name):
     colnames = [desc[0] for desc in cur.description]
 
     with open(f'data/raw/{resource_name}.csv', "w") as fp:
-        myFile = csv.writer(fp)
-        myFile.writerow(colnames)
+        myFile = csv.DictWriter(fp, colnames)
+        myFile.writeheader()
         myFile.writerows(rows)
 
 def update_resource_hash(resource_name):

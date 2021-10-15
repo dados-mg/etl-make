@@ -1,5 +1,5 @@
 echo "Criando banco AGE7 e Tabelas"
-mysql -uroot -proot < /vagrant/setup/AGE7.sql
+mysql -uroot -proot < /vagrant/setup/age7.sql
 
 echo "Inserindo dados nas tabelas"
 mysql -uroot -proot < /vagrant/setup/dm_unidade_orc.sql

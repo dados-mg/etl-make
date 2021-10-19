@@ -9,8 +9,8 @@ echo "Installing python..."
 apt-get install -y python3 python3-venv python3-dev libpq-dev
 
 echo "Installing python packages..."
-python3 -m venv /vagrant/venv
-source /vagrant/venv/bin/activate
+python3 -m venv home/vagrant/venv
+source home/vagrant/venv/bin/activate
 pip install --upgrade pip
 pip install wheel
 pip install git+git://github.com/dados-mg/dpckan.git#egg=dpckan

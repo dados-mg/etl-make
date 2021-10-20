@@ -22,7 +22,7 @@ def extract_resource(resource_name):
 
     colnames = [desc[0] for desc in cur.description]
 
-    with open(f'data/raw/{resource_name}.csv', "w") as fp:
+    with open(f'data/raw/{resource_name}.csv', "w", encoding='utf-8-sig') as fp:
         myFile = csv.DictWriter(fp, colnames, delimiter=';')
         myFile.writeheader()
         myFile.writerows(rows)

@@ -1,4 +1,4 @@
-id_tempo;id_unidade_orc;id_origem;id_especie;id_desdobramento_1;id_desdobramento_2;id_desdobramento_3;id_tipo;id_item;id_subitem;id_fonte;cd_fonte;cd_classificacao_rec;ano_particao;vr_efetivado
+﻿id_tempo;id_unidade_orc;id_origem;id_especie;id_desdobramento_1;id_desdobramento_2;id_desdobramento_3;id_tipo;id_item;id_subitem;id_fonte;cd_fonte;cd_classificacao_rec;ano_particao;vr_efetivado
 2248;3906;120;76;2;377;308;10;4961;2989;132;91;1121041104000;2019;876649.17
 2251;3872;120;76;2;377;308;10;4951;3005;132;91;1121041105000;2019;160501.78
 2255;3872;120;76;2;377;308;10;4960;3006;132;91;1121041107000;2019;1304050.47

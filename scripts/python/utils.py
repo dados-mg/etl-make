@@ -3,12 +3,15 @@ import hashlib
 from frictionless import Package
 from dpckan import update_resource
 import pymysql
+from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(dotenv_path=Path('.', '.env'))
 
 def extract_resource(resource_name):
-    conn = pymysql.connect(host='192.168.33.11',
-                           user='root',
-                           password='root',
-                           database='age7',
+    conn = pymysql.connect(host=os.environ.get('DB_HOST'),
+                           user=os.environ.get('DB_USER'),
+                           password=os.environ.get('DB_PASSWORD'),
+                           database=os.environ.get('DB_DATABASE'),
                            cursorclass=pymysql.cursors.DictCursor)
     cur = conn.cursor()
     sql_file = open(f'scripts/sql/{resource_name}.sql')

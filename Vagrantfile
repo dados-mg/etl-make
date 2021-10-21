@@ -7,12 +7,12 @@ Vagrant.configure("2") do |config|
     config.vm.box = "ubuntu/trusty64"
     config.env.enable # Enable vagrant-env(.env)
     etl.vm.provision "shell", inline: "rm -rf ~/.bash_profile", privileged: false
-    etl.vm.provision "shell", inline: "echo \'export ROOT_ENV_PATH=\"#{ENV['ROOT_ENV_PATH']}\"\' >> ~/.bash_profile", privileged: false
-    etl.vm.provision "shell", inline: "echo \'export PYTHON_ENV_PATH=\"#{ENV['PYTHON_ENV_PATH']}\"\' >> ~/.bash_profile", privileged: false
+    etl.vm.provision "shell", inline: "echo \'export ROOT_ENV_PATH=\"#{ENV['VENV_PATH']}\"\' >> ~/.bash_profile", privileged: false
+    etl.vm.provision "shell", inline: "echo \'export PYTHON_ENV_PATH=\"#{ENV['PROJECT_PATH']}\"\' >> ~/.bash_profile", privileged: false
     etl.vm.provision "shell", inline: "source ~/.bash_profile", privileged: false
     # etl.vm.provision "shell", inline: "echo $ROOT_ENV_PATH", privileged: false
     # etl.vm.provision "shell", inline: "echo $PYTHON_ENV_PATH", privileged: false
-    etl.vm.provision "shell", path: "setup/provision_etl.sh"
+    etl.vm.provision "shell", path: "setup/provision_etl.sh", env: {PROJECT_PATH:"teste", VENV_PATH:"123456"}
     etl.vm.provision "shell", inline: 'echo ". /home/vagrant/venv/bin/activate && cd /vagrant" > ~/.profile', privileged: false
     etl.vm.network "private_network", ip: "192.168.33.10"
   end

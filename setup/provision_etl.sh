@@ -1,7 +1,23 @@
 # !/bin/bash
 
+# pwd
 
-echo ${PYTHON_ENV_PATH}
+# cat /vagrant/.env
+
+# if [ -f /vagrant/.env ]
+# then
+#   export $(cat /vagrant/.env | sed 's/#.*//g' | xargs)
+# fi
+echo '----------'
+echo $VENV_PATH
+echo '----------'
+# pwd
+# ls
+
+
+echo $VENV_PATH
+
+echo $PROJECT_PATH
 
 # echo "Initial setup.  This may take a few minutes ..."
 # apt-get update
@@ -12,12 +28,12 @@ echo ${PYTHON_ENV_PATH}
 # apt-get install -y python3 python3-venv python3-dev libpq-dev
 
 # echo "Installing python packages..."
-# python3 -m venv "$PYTHON_ENV_PATH"/venv
-# source "$PYTHON_ENV_PATH"/venv/bin/activate
+# python3 -m venv
+# source $VENV_PATH/bin/activate
 # pip install --upgrade pip
 # pip install wheel
 # pip install git+git://github.com/dados-mg/dpckan.git#egg=dpckan
-# pip install -r "$ROOT_ENV_PATH"/requirements.txt
+# pip install -r $PROJECT_PATH/requirements.txt
 
 # echo "Installing R..."
 # # https://cran.r-project.org/bin/linux/ubuntu/
@@ -28,7 +44,7 @@ echo ${PYTHON_ENV_PATH}
 # apt-get install -y r-base-dev # build requirements for R packages such as llapack lblas lgfortran
 # apt-get install -y libpng-dev # system requirement of png R package
 
-# cd $ROOT_ENV_PATH && Rscript -e "install.packages('renv')" && Rscript -e 'renv::restore()'
+# cd $PROJECT_PATH && Rscript -e "install.packages('renv')" && Rscript -e 'renv::restore()'
 
 # echo "The environment has been installed."
 # echo

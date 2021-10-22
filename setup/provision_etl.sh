@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 echo "Initial setup.  This may take a few minutes ..."
 apt-get update

@@ -1,6 +1,7 @@
 import smtplib, os
 import json
 from pathlib import Path
+from frictionless import Package
 from dotenv import load_dotenv
 load_dotenv(dotenv_path=Path('.', '.env'))
 
@@ -29,11 +30,10 @@ def send_mail():
 
 def validate_erros_look_up():
   any_errors = False
+  package = Package('datapackage.yaml')
   path = 'logs/validate/'
-  folder = os.fsencode(path)
-  for file in os.listdir(folder):
-    filename = os.fsdecode(file)
-    file = open(f'{path}{filename}', "r").read()
+  for resource in package.resources:
+    file = open(f'{path}{resource.name}.json', "r").read()
     validation = json.loads(file)
     if validation["valid"] == False:
       any_errors = True

@@ -12,8 +12,9 @@ def check_log_erros():
 
 def send_mail():
   sender_email = "etl.age7.ckan@gmail.com"
-  # receiver_email = "gabriel.dornas@cge.mg.gov.br"
-  receiver_email = "gabrielbdornas@gmail.com"
+  receiver_email_1 = "gabriel.dornas@cge.mg.gov.br"
+  receiver_email_2 = "gabrielbdornas@gmail.com"
+  receiver_email_3 = "fjunior.alves.oliveira@gmail.com"
   message = "Problema com a carga. Check os logs"
   smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
   smtpserver.ehlo()
@@ -21,7 +22,9 @@ def send_mail():
   smtpserver.ehlo()
   smtpserver.login(sender_email, os.environ.get('MAIL_PASSWORD'))
   print("Login realizado com sucesso!")
-  smtpserver.sendmail(sender_email, receiver_email, message)
+  smtpserver.sendmail(sender_email, receiver_email_1, message)
+  smtpserver.sendmail(sender_email, receiver_email_2, message)
+  smtpserver.sendmail(sender_email, receiver_email_3, message)
   print("E-mail enviado com sucesso. Confira sua caixa de entrada")
 
 def validate_erros_look_up():

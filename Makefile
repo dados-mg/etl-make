@@ -1,4 +1,4 @@
-.PHONY: help vars parse extract full-extract ingest validate load all
+.PHONY: help vars parse extract full-extract ingest validate notify load all
 
 include config.mk
 
@@ -33,6 +33,9 @@ data/%.csv.gz: data/staging/%.csv ## Compress staged files (data/staging/) to da
 
 validate: $(VALIDATION_FILES)
 	
+notify:
+	python scripts/python/mail_sender.py
+
 $(VALIDATION_FILES): logs/validate/%.json: scripts/python/validate.py data/%.csv.gz schemas/%.yaml
 	python $< $* > $@
 
@@ -44,3 +47,4 @@ $(LOAD_FILES): logs/load/%.txt: scripts/python/load-resource.py logs/validate/%.
 
 vars: 
 	@echo 'DATA_FILES:' $(DATA_FILES)
+

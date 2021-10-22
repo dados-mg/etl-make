@@ -9,12 +9,12 @@ echo "Installing python..."
 apt-get install -y python3 python3-venv python3-dev libpq-dev
 
 echo "Installing python packages..."
-python3 -m venv /home/vagrant/venv
-source /home/vagrant/venv/bin/activate
+python3 -m venv $VENV_PATH
+source $VENV_PATH/bin/activate
 pip install --upgrade pip
 pip install wheel
 pip install git+git://github.com/dados-mg/dpckan.git#egg=dpckan
-pip install -r /vagrant/requirements.txt
+pip install -r $PROJECT_PATH/requirements.txt
 
 echo "Installing R..."
 # https://cran.r-project.org/bin/linux/ubuntu/
@@ -25,7 +25,7 @@ apt-get install -y --no-install-recommends r-base
 apt-get install -y r-base-dev # build requirements for R packages such as llapack lblas lgfortran
 apt-get install -y libpng-dev # system requirement of png R package
 
-cd /vagrant && Rscript -e "install.packages('renv')" && Rscript -e 'renv::restore()'
+cd $PROJECT_PATH && Rscript -e "install.packages('renv')" && Rscript -e 'renv::restore()'
 
 echo "The environment has been installed."
 echo

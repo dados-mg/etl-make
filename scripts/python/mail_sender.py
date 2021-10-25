@@ -23,9 +23,9 @@ def send_mail():
   smtpserver.ehlo()
   smtpserver.login(sender_email, os.environ.get('MAIL_PASSWORD'))
   print("Login realizado com sucesso!")
-  smtpserver.sendmail(sender_email, receiver_email_1, message)
+  # smtpserver.sendmail(sender_email, receiver_email_1, message)
   smtpserver.sendmail(sender_email, receiver_email_2, message)
-  smtpserver.sendmail(sender_email, receiver_email_3, message)
+  # smtpserver.sendmail(sender_email, receiver_email_3, message)
   print("E-mail enviado com sucesso. Confira sua caixa de entrada")
 
 def validate_erros_look_up():
@@ -33,9 +33,17 @@ def validate_erros_look_up():
   package = Package('datapackage.yaml')
   path = 'logs/validate/'
   for resource in package.resources:
-    file = open(f'{path}{resource.name}.json', "r").read()
-    validation = json.loads(file)
-    if validation["valid"] == False:
+    file = f'{path}{resource.name}.json'
+    if os.path.isfile(file) == True:
+      validation = json.loads(open(file, "r").read())
+      if "valid" not in validation:
+        print(f'Recurso {resource.name} sem a key valid')
+        any_errors = True
+      elif validation["valid"] == False:
+        print(f'Recurso {resource.name} inválido')
+        any_errors = True
+    else:
+      print(f'Validação do arquivo {file} não encontrada na pasta logs/validate')
       any_errors = True
   return any_errors
 

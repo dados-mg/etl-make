@@ -36,3 +36,15 @@ resources:
     encoding: utf-8-sig
     dialect: dialect.json
     profile: tabular-data-resource
+  - name: ft_convenio_entrada
+    title: Convênio Entrada
+    path: data/ft_convenio_entrada.csv.gz
+    schema: schemas/ft_convenio_entrada.yaml
+    sources:
+    - title: Tabela origem no schema AGE7 no banco de dados do Portal da Transparência
+      table: ft_convenio_entrada
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.json
+    profile: tabular-data-resource

@@ -39,11 +39,9 @@
 
 ### TODO
 
-- [ ] Remover propriedade "dialect" do arquivo datapackage.json. Arquivo dialect-v1.json deverá ser criado dentro da pasta "schemas", nos moldes [deste repositório](https://github.com/dados-mg/google-analytics/tree/master/schema)
-
 - [ ] Copiar arquivo [age7.yaml](https://github.com/transparencia-mg/age7/blob/main/age7.yaml) para este repositório. Ele será a base de iteração para construção de todos os conjuntos, portanto propriedade resources deverá ficar vazia neste arquivo `"resources": []`
 
-- [ ] Criar os arquivos base CONTRIBUTING.md, README.md e CHANGELOG.md que ficarão dentro da pasta templates/description
+- [ ] Criar os arquivos base CONTRIBUTING.md, README.md e CHANGELOG.md que ficarão dentro da pasta templates/description. Arquivos básicos só para testar
 
 - [ ] Criar um arquivo datapackage.yaml na dentro da pasta templates. Este arquivo deverá ter todas as propriedades que serão personalizadas para cada recurso
 
@@ -90,6 +88,10 @@
   # Escreve/Atualiza datapackage.json dentro do dataset
   base_dp.write_package('packages/receita/datapackage.json')
   ```
+
+- [ ] Criar os arquivos base CONTRIBUTING.md, README.md e CHANGELOG.md que ficarão dentro da pasta templates/description. Arquivos completos
+
+- [ ] Remover propriedade "dialect" do arquivo datapackage.json. Arquivo dialect-v1.json deverá ser criado dentro da pasta "schemas", nos moldes [deste repositório](https://github.com/dados-mg/google-analytics/tree/master/schema)
 
 - [ ] Cria função para revisão dos documentos "description" da pasta
   - função poderá ser acionada sempre que o template de algum dos documentos for alterado

@@ -56,9 +56,9 @@
 - [ ] Função para Cria/Atualiza datapackage.yaml na raiz do conjunto
   - se não existe cria:
     - durante criação utiliza informações padrões do arquivo datapackage.yaml da pasta templates
-    - itera sobre o arquivo age7.yaml para buscar os recursos do conjunto, deixando ali somente a propriedade nome
+    - itera sobre o arquivo age7.yaml para buscar os recursos do conjunto, deixando ali somente a propriedade nome. Processo de iteração conferindo chaves primárias e estrangeiras conforme sugerido por francisco
   - se existe atualiza
-    - itera sobre o arquivo age7.yaml para buscar/atualizar os recursos do conjunto, deixando ali somente a propriedade nome
+    - itera sobre o arquivo age7.yaml para buscar/atualizar os recursos do conjunto, deixando ali somente a propriedade nome. Processo de iteração conferindo chaves primárias e estrangeiras conforme sugerido por francisco
 
 - [ ] Criar função para montar o arquivo datapackage.json
   - Pseudocódigo

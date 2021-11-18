@@ -39,11 +39,11 @@
 
 ### TODO
 
-- [ ] Copiar arquivo [age7.yaml](https://github.com/transparencia-mg/age7/blob/main/age7.yaml) para este repositório. Ele será a base de iteração para construção de todos os conjuntos, portanto propriedade resources deverá ficar vazia neste arquivo `"resources": []`
+- [x] Copiar arquivo [age7.yaml](https://github.com/transparencia-mg/age7/blob/main/age7.yaml) para este repositório. Ele será a base de iteração para construção de todos os conjuntos, portanto propriedade resources deverá ficar vazia neste arquivo `"resources": []`
 
-- [ ] Criar os arquivos base CONTRIBUTING.md, README.md e CHANGELOG.md que ficarão dentro da pasta templates/description. Arquivos básicos só para testar
+- [x] Criar os arquivos base CONTRIBUTING.md, README.md e CHANGELOG.md que ficarão dentro da pasta templates/description. Arquivos básicos só para testar
 
-- [ ] Criar um arquivo datapackage.yaml na dentro da pasta templates. Este arquivo deverá ter todas as propriedades que serão personalizadas para cada recurso
+- [x] Criar um arquivo datapackage.yaml na dentro da pasta templates. Este arquivo deverá ter todas as propriedades que serão personalizadas para cada recurso
 
 - [ ] Criar função para criação da estrutura de pastas
   - pasta "datasets" existe? se sim mantém, se não cria

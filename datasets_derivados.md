@@ -45,13 +45,13 @@
 
 - [x] Criar um arquivo datapackage.yaml na dentro da pasta templates. Este arquivo deverá ter as propriedades que serão personalizadas para cada recurso. Propriedade resources deverá ficar vazia neste arquivo
 
-- [ ] Criar função para criação da estrutura de pastas
+- [x] Criar função para criação da estrutura de pastas
   - pasta "datasets" existe? se sim mantém, se não cria
   - itera sobre a propriedade "consultas" do arquivo age7.yaml
-    - nome da propriedade iterada conside com pasta dentro de "datasets"? se sim mantém, se não cria
+    - nome da propriedade iterada existe dentro de "datasets"? se sim mantém, se não cria
     - Se cria:
       - Cria pasta description com arquivos CONTRIBUTING.md, README.md e CHANGELOG.md padrão
-      - Chama função para criar/atualizar datapackage.yaml na raiz do conjunto
+      - cria template/datapackage.yaml na raiz do conjunto
 
 - [ ] Função para Cria/Atualiza datapackage.yaml na raiz do conjunto
   - se não existe cria:

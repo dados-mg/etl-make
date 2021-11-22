@@ -1,21 +1,64 @@
-profile: tabular-data-package
-name:
-title:
-description:
-owner_org: controladoria-geral-do-estado-cge
-version:
-keywords:
-private: false
-state: active
-sources:
+contributors:
+  email: transparencia@cge.mg.gov.br
+  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
+  role: publisher
+  title: Diretoria Central de Transparência Ativa
+description: null
+keywords: null
 licences:
   name: CC-BY-4.0
-  title: Creative Commons Attribution 4.0
   path: https://creativecommons.org/licenses/by/4.0/
-contributors:
-  title: Diretoria Central de Transparência Ativa
-  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
-  email: transparencia@cge.mg.gov.br
-  role: publisher
+  title: Creative Commons Attribution 4.0
+name: null
+owner_org: controladoria-geral-do-estado-cge
+private: false
+profile: tabular-data-package
 resources:
-
+- name: ft_diarias_scdp
+  path: data/ft_diarias_scdp.csv.gz
+- name: dm_cargo_scdp
+  path: data/dm_cargo_scdp.csv.gz
+- name: dm_cidade
+  path: data/dm_cidade.csv.gz
+- name: dm_documento_viagem
+  path: data/dm_documento_viagem.csv.gz
+- name: dm_estado
+  path: data/dm_estado.csv.gz
+- name: dm_favorecido_scdp
+  path: data/dm_favorecido_scdp.csv.gz
+- name: dm_funcao_scdp
+  path: data/dm_funcao_scdp.csv.gz
+- name: dm_meio_transporte
+  path: data/dm_meio_transporte.csv.gz
+- name: dm_motivo_viagem
+  path: data/dm_motivo_viagem.csv.gz
+- name: dm_orgao_scdp
+  path: data/dm_orgao_scdp.csv.gz
+- name: dm_pais
+  path: data/dm_pais.csv.gz
+- name: dm_tempo_diario
+  path: data/dm_tempo_diario.csv.gz
+- name: dm_tipo_viagem
+  path: data/dm_tipo_viagem.csv.gz
+- name: dm_tipo_viajante
+  path: data/dm_tipo_viajante.csv.gz
+- name: ft_diarias_scdp_liqpag
+  path: data/ft_diarias_scdp_liqpag.csv.gz
+- name: dm_acao
+  path: data/dm_acao.csv.gz
+- name: dm_documento_viagem
+  path: data/dm_documento_viagem.csv.gz
+- name: dm_empenho_desp
+  path: data/dm_empenho_desp.csv.gz
+- name: dm_fonte
+  path: data/dm_fonte.csv.gz
+- name: dm_funcao_desp
+  path: data/dm_funcao_desp.csv.gz
+- name: dm_item_desp
+  path: data/dm_item_desp.csv.gz
+- name: dm_programa
+  path: data/dm_programa.csv.gz
+sources: null
+state: active
+title: null
+version: null

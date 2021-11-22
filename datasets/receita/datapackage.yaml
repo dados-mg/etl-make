@@ -1,21 +1,104 @@
-profile: tabular-data-package
-name:
-title:
-description:
-owner_org: controladoria-geral-do-estado-cge
-version:
-keywords:
-private: false
-state: active
-sources:
+contributors:
+  email: transparencia@cge.mg.gov.br
+  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
+  role: publisher
+  title: Diretoria Central de Transparência Ativa
+description: null
+keywords: null
 licences:
   name: CC-BY-4.0
-  title: Creative Commons Attribution 4.0
   path: https://creativecommons.org/licenses/by/4.0/
-contributors:
-  title: Diretoria Central de Transparência Ativa
-  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
-  email: transparencia@cge.mg.gov.br
-  role: publisher
+  title: Creative Commons Attribution 4.0
+name: null
+owner_org: controladoria-geral-do-estado-cge
+private: false
+profile: tabular-data-package
 resources:
-
+- name: ft_receita
+  path: data/ft_receita.csv.gz
+- name: dm_alinea_rec
+  path: data/dm_alinea_rec.csv.gz
+- name: dm_especie_rec
+  path: data/dm_especie_rec.csv.gz
+- name: dm_fonte_rec
+  path: data/dm_fonte_rec.csv.gz
+- name: dm_item_rec
+  path: data/dm_item_rec.csv.gz
+- name: dm_origem_rec
+  path: data/dm_origem_rec.csv.gz
+- name: dm_rubrica_rec
+  path: data/dm_rubrica_rec.csv.gz
+- name: dm_subalinea_rec
+  path: data/dm_subalinea_rec.csv.gz
+- name: dm_tempo_mensal
+  path: data/dm_tempo_mensal.csv.gz
+- name: dm_unidade_orc
+  path: data/dm_unidade_orc.csv.gz
+- name: ft_receita_prevista
+  path: data/ft_receita_prevista.csv.gz
+- name: dm_alinea_rec
+  path: data/dm_alinea_rec.csv.gz
+- name: dm_especie_rec
+  path: data/dm_especie_rec.csv.gz
+- name: dm_fonte_rec
+  path: data/dm_fonte_rec.csv.gz
+- name: dm_item_rec
+  path: data/dm_item_rec.csv.gz
+- name: dm_origem_rec
+  path: data/dm_origem_rec.csv.gz
+- name: dm_rubrica_rec
+  path: data/dm_rubrica_rec.csv.gz
+- name: dm_subalinea_rec
+  path: data/dm_subalinea_rec.csv.gz
+- name: dm_unidade_orc
+  path: data/dm_unidade_orc.csv.gz
+- name: ft_receita_v2018
+  path: data/ft_receita_v2018.csv.gz
+- name: dm_desdobramento_1_rec
+  path: data/dm_desdobramento_1_rec.csv.gz
+- name: dm_desdobramento_2_rec
+  path: data/dm_desdobramento_2_rec.csv.gz
+- name: dm_desdobramento_3_rec
+  path: data/dm_desdobramento_3_rec.csv.gz
+- name: dm_especie_rec
+  path: data/dm_especie_rec.csv.gz
+- name: dm_fonte_rec
+  path: data/dm_fonte_rec.csv.gz
+- name: dm_item_rec
+  path: data/dm_item_rec.csv.gz
+- name: dm_origem_rec
+  path: data/dm_origem_rec.csv.gz
+- name: dm_subitem_rec
+  path: data/dm_subitem_rec.csv.gz
+- name: dm_tempo_mensal
+  path: data/dm_tempo_mensal.csv.gz
+- name: dm_tipo_rec
+  path: data/dm_tipo_rec.csv.gz
+- name: dm_unidade_orc
+  path: data/dm_unidade_orc.csv.gz
+- name: ft_receita_prevista_v2018
+  path: data/ft_receita_prevista_v2018.csv.gz
+- name: dm_desdobramento_1_rec
+  path: data/dm_desdobramento_1_rec.csv.gz
+- name: dm_desdobramento_2_rec
+  path: data/dm_desdobramento_2_rec.csv.gz
+- name: dm_desdobramento_3_rec
+  path: data/dm_desdobramento_3_rec.csv.gz
+- name: dm_especie_rec
+  path: data/dm_especie_rec.csv.gz
+- name: dm_fonte_rec
+  path: data/dm_fonte_rec.csv.gz
+- name: dm_item_rec
+  path: data/dm_item_rec.csv.gz
+- name: dm_origem_rec
+  path: data/dm_origem_rec.csv.gz
+- name: dm_subitem_rec
+  path: data/dm_subitem_rec.csv.gz
+- name: dm_tipo_rec
+  path: data/dm_tipo_rec.csv.gz
+- name: dm_unidade_orc
+  path: data/dm_unidade_orc.csv.gz
+sources: null
+state: active
+title: null
+version: null

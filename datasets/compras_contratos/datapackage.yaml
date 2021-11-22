@@ -1,21 +1,88 @@
-profile: tabular-data-package
-name:
-title:
-description:
-owner_org: controladoria-geral-do-estado-cge
-version:
-keywords:
-private: false
-state: active
-sources:
+contributors:
+  email: transparencia@cge.mg.gov.br
+  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
+  role: publisher
+  title: Diretoria Central de Transparência Ativa
+description: null
+keywords: null
 licences:
   name: CC-BY-4.0
-  title: Creative Commons Attribution 4.0
   path: https://creativecommons.org/licenses/by/4.0/
-contributors:
-  title: Diretoria Central de Transparência Ativa
-  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
-  email: transparencia@cge.mg.gov.br
-  role: publisher
+  title: Creative Commons Attribution 4.0
+name: null
+owner_org: controladoria-geral-do-estado-cge
+private: false
+profile: tabular-data-package
 resources:
-
+- name: ft_compras
+  path: data/ft_compras.csv.gz
+- name: dm_classe_matserv
+  path: data/dm_classe_matserv.csv.gz
+- name: dm_contratado
+  path: data/dm_contratado.csv.gz
+- name: dm_contrato
+  path: data/dm_contrato.csv.gz
+- name: dm_grupo_matserv
+  path: data/dm_grupo_matserv.csv.gz
+- name: dm_item_desp
+  path: data/dm_item_desp.csv.gz
+- name: dm_item_matserv
+  path: data/dm_item_matserv.csv.gz
+- name: dm_linha_fornec
+  path: data/dm_linha_fornec.csv.gz
+- name: dm_material_servico
+  path: data/dm_material_servico.csv.gz
+- name: dm_municipio
+  path: data/dm_municipio.csv.gz
+- name: dm_orgao_contrato
+  path: data/dm_orgao_contrato.csv.gz
+- name: dm_orgao_demanda
+  path: data/dm_orgao_demanda.csv.gz
+- name: dm_procedimento
+  path: data/dm_procedimento.csv.gz
+- name: dm_processo
+  path: data/dm_processo.csv.gz
+- name: dm_situacao_cont
+  path: data/dm_situacao_cont.csv.gz
+- name: dm_situacao_proc
+  path: data/dm_situacao_proc.csv.gz
+- name: dm_tempo_diario
+  path: data/dm_tempo_diario.csv.gz
+- name: dm_tipo_licitacao
+  path: data/dm_tipo_licitacao.csv.gz
+- name: dm_unidade_medida
+  path: data/dm_unidade_medida.csv.gz
+- name: dm_unidade_orc
+  path: data/dm_unidade_orc.csv.gz
+- name: ft_compras_contrato
+  path: data/ft_compras_contrato.csv.gz
+- name: dm_contratado
+  path: data/dm_contratado.csv.gz
+- name: dm_contrato
+  path: data/dm_contrato.csv.gz
+- name: dm_orgao_contrato
+  path: data/dm_orgao_contrato.csv.gz
+- name: dm_processo
+  path: data/dm_processo.csv.gz
+- name: dm_situacao_cont
+  path: data/dm_situacao_cont.csv.gz
+- name: dm_tempo_diario
+  path: data/dm_tempo_diario.csv.gz
+- name: fl_compras_empenho
+  path: data/fl_compras_empenho.csv.gz
+- name: dm_acao
+  path: data/dm_acao.csv.gz
+- name: dm_elemento_desp
+  path: data/dm_elemento_desp.csv.gz
+- name: dm_empenho_desp
+  path: data/dm_empenho_desp.csv.gz
+- name: dm_item_desp
+  path: data/dm_item_desp.csv.gz
+- name: dm_processo
+  path: data/dm_processo.csv.gz
+- name: dm_programa
+  path: data/dm_programa.csv.gz
+sources: null
+state: active
+title: null
+version: null

@@ -1,21 +1,228 @@
-profile: tabular-data-package
-name:
-title:
-description:
-owner_org: controladoria-geral-do-estado-cge
-version:
-keywords:
-private: false
-state: active
-sources:
+contributors:
+  email: transparencia@cge.mg.gov.br
+  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
+  role: publisher
+  title: Diretoria Central de Transparência Ativa
+description: null
+keywords: null
 licences:
   name: CC-BY-4.0
-  title: Creative Commons Attribution 4.0
   path: https://creativecommons.org/licenses/by/4.0/
-contributors:
-  title: Diretoria Central de Transparência Ativa
-  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
-  email: transparencia@cge.mg.gov.br
-  role: publisher
+  title: Creative Commons Attribution 4.0
+name: null
+owner_org: controladoria-geral-do-estado-cge
+private: false
+profile: tabular-data-package
 resources:
-
+- name: ft_plan_acao_ppag
+  path: data/ft_plan_acao_ppag.csv.gz
+- name: dm_acao_plan
+  path: data/dm_acao_plan.csv.gz
+- name: dm_funcao_plan
+  path: data/dm_funcao_plan.csv.gz
+- name: dm_horizonte_plan
+  path: data/dm_horizonte_plan.csv.gz
+- name: dm_municipio_plan
+  path: data/dm_municipio_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: dm_territorio_plan
+  path: data/dm_territorio_plan.csv.gz
+- name: dm_tipo_acao_plan
+  path: data/dm_tipo_acao_plan.csv.gz
+- name: dm_tipo_orcam_plan
+  path: data/dm_tipo_orcam_plan.csv.gz
+- name: dm_tipo_prog_plan
+  path: data/dm_tipo_prog_plan.csv.gz
+- name: dm_unidade_resp_plan
+  path: data/dm_unidade_resp_plan.csv.gz
+- name: fl_plan_indicador
+  path: data/fl_plan_indicador.csv.gz
+- name: dm_indicador_plan
+  path: data/dm_indicador_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: ft_plan_indic_referencia
+  path: data/ft_plan_indic_referencia.csv.gz
+- name: dm_indicador_plan
+  path: data/dm_indicador_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: ft_plan_indic_plan_exec
+  path: data/ft_plan_indic_plan_exec.csv.gz
+- name: dm_indicador_plan
+  path: data/dm_indicador_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: fl_plan_programa
+  path: data/fl_plan_programa.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: fl_plan_responsavel
+  path: data/fl_plan_responsavel.csv.gz
+- name: dm_acao_plan
+  path: data/dm_acao_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: dm_responsavel_plan
+  path: data/dm_responsavel_plan.csv.gz
+- name: ft_plan_exec_of_tipoorc
+  path: data/ft_plan_exec_of_tipoorc.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: dm_tipo_orcam_plan
+  path: data/dm_tipo_orcam_plan.csv.gz
+- name: ft_plan_exec_of_territorio
+  path: data/ft_plan_exec_of_territorio.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: dm_territorio_plan
+  path: data/dm_territorio_plan.csv.gz
+- name: ft_plan_exec_of_fonte
+  path: data/ft_plan_exec_of_fonte.csv.gz
+- name: dm_fonte_plan
+  path: data/dm_fonte_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: fl_plan_acao
+  path: data/fl_plan_acao.csv.gz
+- name: dm_acao_plan
+  path: data/dm_acao_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: ft_plan_fonte_fin_acao
+  path: data/ft_plan_fonte_fin_acao.csv.gz
+- name: dm_acao_plan
+  path: data/dm_acao_plan.csv.gz
+- name: dm_fonte_plan
+  path: data/dm_fonte_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: ft_plan_prog_fftd
+  path: data/ft_plan_prog_fftd.csv.gz
+- name: dm_acao_plan
+  path: data/dm_acao_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: dm_territorio_plan
+  path: data/dm_territorio_plan.csv.gz
+- name: ft_plan_prog_mensal
+  path: data/ft_plan_prog_mensal.csv.gz
+- name: dm_acao_plan
+  path: data/dm_acao_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: ft_plan_prog_territorial
+  path: data/ft_plan_prog_territorial.csv.gz
+- name: dm_acao_plan
+  path: data/dm_acao_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: dm_territorio_plan
+  path: data/dm_territorio_plan.csv.gz
+- name: ft_plan_execucao_acao
+  path: data/ft_plan_execucao_acao.csv.gz
+- name: dm_acao_plan
+  path: data/dm_acao_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: dm_territorio_plan
+  path: data/dm_territorio_plan.csv.gz
+- name: dm_acao_plan
+  path: data/dm_acao_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: ft_plan_prog_of_tipoorc
+  path: data/ft_plan_prog_of_tipoorc.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: dm_tipo_orcam_plan
+  path: data/dm_tipo_orcam_plan.csv.gz
+- name: ft_plan_prog_of_territorio
+  path: data/ft_plan_prog_of_territorio.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+- name: dm_territorio_plan
+  path: data/dm_territorio_plan.csv.gz
+- name: ft_plan_prog_of_fonte
+  path: data/ft_plan_prog_of_fonte.csv.gz
+- name: dm_fonte_plan
+  path: data/dm_fonte_plan.csv.gz
+- name: dm_orgao_plan
+  path: data/dm_orgao_plan.csv.gz
+- name: dm_ppag_plan
+  path: data/dm_ppag_plan.csv.gz
+- name: dm_programa_plan
+  path: data/dm_programa_plan.csv.gz
+sources: null
+state: active
+title: null
+version: null

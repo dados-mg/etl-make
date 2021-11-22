@@ -1,21 +1,74 @@
-profile: tabular-data-package
-name:
-title:
-description:
-owner_org: controladoria-geral-do-estado-cge
-version:
-keywords:
-private: false
-state: active
-sources:
+contributors:
+  email: transparencia@cge.mg.gov.br
+  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
+  role: publisher
+  title: Diretoria Central de Transparência Ativa
+description: null
+keywords: null
 licences:
   name: CC-BY-4.0
-  title: Creative Commons Attribution 4.0
   path: https://creativecommons.org/licenses/by/4.0/
-contributors:
-  title: Diretoria Central de Transparência Ativa
-  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
-  email: transparencia@cge.mg.gov.br
-  role: publisher
+  title: Creative Commons Attribution 4.0
+name: null
+owner_org: controladoria-geral-do-estado-cge
+private: false
+profile: tabular-data-package
 resources:
-
+- name: ft_convenio
+  path: data/ft_convenio.csv.gz
+- name: dm_convenente
+  path: data/dm_convenente.csv.gz
+- name: dm_convenio
+  path: data/dm_convenio.csv.gz
+- name: dm_municipio
+  path: data/dm_municipio.csv.gz
+- name: dm_orgao_concedente
+  path: data/dm_orgao_concedente.csv.gz
+- name: dm_tempo_diario
+  path: data/dm_tempo_diario.csv.gz
+- name: ft_convenio_investimento
+  path: data/ft_convenio_investimento.csv.gz
+- name: dm_item_desp
+  path: data/dm_item_desp.csv.gz
+- name: dm_municipio
+  path: data/dm_municipio.csv.gz
+- name: dm_tempo_diario
+  path: data/dm_tempo_diario.csv.gz
+- name: dm_unidade_orc
+  path: data/dm_unidade_orc.csv.gz
+- name: ft_convenio_tipoatendimento
+  path: data/ft_convenio_tipoatendimento.csv.gz
+- name: dm_convenente
+  path: data/dm_convenente.csv.gz
+- name: dm_convenio
+  path: data/dm_convenio.csv.gz
+- name: dm_municipio
+  path: data/dm_municipio.csv.gz
+- name: dm_orgao_concedente
+  path: data/dm_orgao_concedente.csv.gz
+- name: dm_situacao_convenio
+  path: data/dm_situacao_convenio.csv.gz
+- name: dm_tempo_diario
+  path: data/dm_tempo_diario.csv.gz
+- name: dm_tipo_atendimento
+  path: data/dm_tipo_atendimento.csv.gz
+- name: ft_convenio_metaetapa
+  path: data/ft_convenio_metaetapa.csv.gz
+- name: dm_convenio
+  path: data/dm_convenio.csv.gz
+- name: dm_tipo_atendimento
+  path: data/dm_tipo_atendimento.csv.gz
+- name: fl_convenio_interveniente
+  path: data/fl_convenio_interveniente.csv.gz
+- name: dm_convenio
+  path: data/dm_convenio.csv.gz
+- name: dm_interveniente
+  path: data/dm_interveniente.csv.gz
+- name: fl_convenio_alteracao
+  path: data/fl_convenio_alteracao.csv.gz
+- name: dm_convenio
+  path: data/dm_convenio.csv.gz
+sources: null
+state: active
+title: null
+version: null

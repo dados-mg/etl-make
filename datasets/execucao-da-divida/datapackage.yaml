@@ -1,21 +1,30 @@
-profile: tabular-data-package
-name:
-title:
-description:
-owner_org: controladoria-geral-do-estado-cge
-version:
-keywords:
-private: false
-state: active
-sources:
+contributors:
+  email: transparencia@cge.mg.gov.br
+  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
+  role: publisher
+  title: Diretoria Central de Transparência Ativa
+description: null
+keywords: null
 licences:
   name: CC-BY-4.0
-  title: Creative Commons Attribution 4.0
   path: https://creativecommons.org/licenses/by/4.0/
-contributors:
-  title: Diretoria Central de Transparência Ativa
-  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
-  email: transparencia@cge.mg.gov.br
-  role: publisher
+  title: Creative Commons Attribution 4.0
+name: null
+owner_org: controladoria-geral-do-estado-cge
+private: false
+profile: tabular-data-package
 resources:
-
+- name: ft_divida_pub
+  path: data/ft_divida_pub.csv.gz
+- name: dm_contrato_divida
+  path: data/dm_contrato_divida.csv.gz
+- name: dm_favorecido
+  path: data/dm_favorecido.csv.gz
+- name: dm_tempo_diario
+  path: data/dm_tempo_diario.csv.gz
+- name: dm_tipo_divida
+  path: data/dm_tipo_divida.csv.gz
+sources: null
+state: active
+title: null
+version: null

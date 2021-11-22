@@ -1,21 +1,44 @@
-profile: tabular-data-package
-name:
-title:
-description:
-owner_org: controladoria-geral-do-estado-cge
-version:
-keywords:
-private: false
-state: active
-sources:
+contributors:
+  email: transparencia@cge.mg.gov.br
+  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
+  role: publisher
+  title: Diretoria Central de Transparência Ativa
+description: null
+keywords: null
 licences:
   name: CC-BY-4.0
-  title: Creative Commons Attribution 4.0
   path: https://creativecommons.org/licenses/by/4.0/
-contributors:
-  title: Diretoria Central de Transparência Ativa
-  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
-  email: transparencia@cge.mg.gov.br
-  role: publisher
+  title: Creative Commons Attribution 4.0
+name: null
+owner_org: controladoria-geral-do-estado-cge
+private: false
+profile: tabular-data-package
 resources:
-
+- name: ft_restos_pagar
+  path: data/ft_restos_pagar.csv.gz
+- name: dm_elemento_desp
+  path: data/dm_elemento_desp.csv.gz
+- name: dm_modalidade_aplic
+  path: data/dm_modalidade_aplic.csv.gz
+- name: dm_grupo_desp
+  path: data/dm_grupo_desp.csv.gz
+- name: dm_favorecido
+  path: data/dm_favorecido.csv.gz
+- name: dm_unidade_orc
+  path: data/dm_unidade_orc.csv.gz
+- name: dm_tempo_anual
+  path: data/dm_tempo_anual.csv.gz
+- name: dm_empenho_resto
+  path: data/dm_empenho_resto.csv.gz
+- name: dm_categ_econ
+  path: data/dm_categ_econ.csv.gz
+- name: dm_item_desp
+  path: data/dm_item_desp.csv.gz
+- name: dm_fonte
+  path: data/dm_fonte.csv.gz
+- name: dm_tipo_documento
+  path: data/dm_tipo_documento.csv.gz
+sources: null
+state: active
+title: null
+version: null

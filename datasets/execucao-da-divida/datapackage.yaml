@@ -14,16 +14,51 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_divida_pub
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_divida_pub
   path: data/ft_divida_pub.csv.gz
-- name: dm_contrato_divida
+  profile: tabular-data-resource
+  schema: schema/ft_divida_pub.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_contrato_divida
   path: data/dm_contrato_divida.csv.gz
-- name: dm_favorecido
+  profile: tabular-data-resource
+  schema: schema/dm_contrato_divida.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_favorecido
   path: data/dm_favorecido.csv.gz
-- name: dm_tempo_diario
+  profile: tabular-data-resource
+  schema: schema/dm_favorecido.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_diario
   path: data/dm_tempo_diario.csv.gz
-- name: dm_tipo_divida
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_diario.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_divida
   path: data/dm_tipo_divida.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_divida.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

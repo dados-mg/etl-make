@@ -14,90 +14,384 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_receita
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_receita
   path: data/ft_receita.csv.gz
-- name: dm_alinea_rec
+  profile: tabular-data-resource
+  schema: schema/ft_receita.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_alinea_rec
   path: data/dm_alinea_rec.csv.gz
-- name: dm_especie_rec
+  profile: tabular-data-resource
+  schema: schema/dm_alinea_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_especie_rec
   path: data/dm_especie_rec.csv.gz
-- name: dm_fonte_rec
+  profile: tabular-data-resource
+  schema: schema/dm_especie_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_fonte_rec
   path: data/dm_fonte_rec.csv.gz
-- name: dm_item_rec
+  profile: tabular-data-resource
+  schema: schema/dm_fonte_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_rec
   path: data/dm_item_rec.csv.gz
-- name: dm_origem_rec
+  profile: tabular-data-resource
+  schema: schema/dm_item_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_origem_rec
   path: data/dm_origem_rec.csv.gz
-- name: dm_rubrica_rec
+  profile: tabular-data-resource
+  schema: schema/dm_origem_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_rubrica_rec
   path: data/dm_rubrica_rec.csv.gz
-- name: dm_subalinea_rec
+  profile: tabular-data-resource
+  schema: schema/dm_rubrica_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_subalinea_rec
   path: data/dm_subalinea_rec.csv.gz
-- name: dm_tempo_mensal
+  profile: tabular-data-resource
+  schema: schema/dm_subalinea_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_mensal
   path: data/dm_tempo_mensal.csv.gz
-- name: dm_unidade_orc
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_mensal.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_orc
   path: data/dm_unidade_orc.csv.gz
-- name: ft_receita_prevista
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_orc.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_receita_prevista
   path: data/ft_receita_prevista.csv.gz
-- name: dm_alinea_rec
+  profile: tabular-data-resource
+  schema: schema/ft_receita_prevista.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_alinea_rec
   path: data/dm_alinea_rec.csv.gz
-- name: dm_especie_rec
+  profile: tabular-data-resource
+  schema: schema/dm_alinea_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_especie_rec
   path: data/dm_especie_rec.csv.gz
-- name: dm_fonte_rec
+  profile: tabular-data-resource
+  schema: schema/dm_especie_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_fonte_rec
   path: data/dm_fonte_rec.csv.gz
-- name: dm_item_rec
+  profile: tabular-data-resource
+  schema: schema/dm_fonte_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_rec
   path: data/dm_item_rec.csv.gz
-- name: dm_origem_rec
+  profile: tabular-data-resource
+  schema: schema/dm_item_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_origem_rec
   path: data/dm_origem_rec.csv.gz
-- name: dm_rubrica_rec
+  profile: tabular-data-resource
+  schema: schema/dm_origem_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_rubrica_rec
   path: data/dm_rubrica_rec.csv.gz
-- name: dm_subalinea_rec
+  profile: tabular-data-resource
+  schema: schema/dm_rubrica_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_subalinea_rec
   path: data/dm_subalinea_rec.csv.gz
-- name: dm_unidade_orc
+  profile: tabular-data-resource
+  schema: schema/dm_subalinea_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_orc
   path: data/dm_unidade_orc.csv.gz
-- name: ft_receita_v2018
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_orc.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_receita_v2018
   path: data/ft_receita_v2018.csv.gz
-- name: dm_desdobramento_1_rec
+  profile: tabular-data-resource
+  schema: schema/ft_receita_v2018.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_desdobramento_1_rec
   path: data/dm_desdobramento_1_rec.csv.gz
-- name: dm_desdobramento_2_rec
+  profile: tabular-data-resource
+  schema: schema/dm_desdobramento_1_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_desdobramento_2_rec
   path: data/dm_desdobramento_2_rec.csv.gz
-- name: dm_desdobramento_3_rec
+  profile: tabular-data-resource
+  schema: schema/dm_desdobramento_2_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_desdobramento_3_rec
   path: data/dm_desdobramento_3_rec.csv.gz
-- name: dm_especie_rec
+  profile: tabular-data-resource
+  schema: schema/dm_desdobramento_3_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_especie_rec
   path: data/dm_especie_rec.csv.gz
-- name: dm_fonte_rec
+  profile: tabular-data-resource
+  schema: schema/dm_especie_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_fonte_rec
   path: data/dm_fonte_rec.csv.gz
-- name: dm_item_rec
+  profile: tabular-data-resource
+  schema: schema/dm_fonte_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_rec
   path: data/dm_item_rec.csv.gz
-- name: dm_origem_rec
+  profile: tabular-data-resource
+  schema: schema/dm_item_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_origem_rec
   path: data/dm_origem_rec.csv.gz
-- name: dm_subitem_rec
+  profile: tabular-data-resource
+  schema: schema/dm_origem_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_subitem_rec
   path: data/dm_subitem_rec.csv.gz
-- name: dm_tempo_mensal
+  profile: tabular-data-resource
+  schema: schema/dm_subitem_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_mensal
   path: data/dm_tempo_mensal.csv.gz
-- name: dm_tipo_rec
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_mensal.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_rec
   path: data/dm_tipo_rec.csv.gz
-- name: dm_unidade_orc
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_orc
   path: data/dm_unidade_orc.csv.gz
-- name: ft_receita_prevista_v2018
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_orc.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_receita_prevista_v2018
   path: data/ft_receita_prevista_v2018.csv.gz
-- name: dm_desdobramento_1_rec
+  profile: tabular-data-resource
+  schema: schema/ft_receita_prevista_v2018.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_desdobramento_1_rec
   path: data/dm_desdobramento_1_rec.csv.gz
-- name: dm_desdobramento_2_rec
+  profile: tabular-data-resource
+  schema: schema/dm_desdobramento_1_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_desdobramento_2_rec
   path: data/dm_desdobramento_2_rec.csv.gz
-- name: dm_desdobramento_3_rec
+  profile: tabular-data-resource
+  schema: schema/dm_desdobramento_2_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_desdobramento_3_rec
   path: data/dm_desdobramento_3_rec.csv.gz
-- name: dm_especie_rec
+  profile: tabular-data-resource
+  schema: schema/dm_desdobramento_3_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_especie_rec
   path: data/dm_especie_rec.csv.gz
-- name: dm_fonte_rec
+  profile: tabular-data-resource
+  schema: schema/dm_especie_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_fonte_rec
   path: data/dm_fonte_rec.csv.gz
-- name: dm_item_rec
+  profile: tabular-data-resource
+  schema: schema/dm_fonte_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_rec
   path: data/dm_item_rec.csv.gz
-- name: dm_origem_rec
+  profile: tabular-data-resource
+  schema: schema/dm_item_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_origem_rec
   path: data/dm_origem_rec.csv.gz
-- name: dm_subitem_rec
+  profile: tabular-data-resource
+  schema: schema/dm_origem_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_subitem_rec
   path: data/dm_subitem_rec.csv.gz
-- name: dm_tipo_rec
+  profile: tabular-data-resource
+  schema: schema/dm_subitem_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_rec
   path: data/dm_tipo_rec.csv.gz
-- name: dm_unidade_orc
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_rec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_orc
   path: data/dm_unidade_orc.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_orc.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

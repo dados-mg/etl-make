@@ -14,60 +14,249 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_convenio
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_convenio
   path: data/ft_convenio.csv.gz
-- name: dm_convenente
+  profile: tabular-data-resource
+  schema: schema/ft_convenio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_convenente
   path: data/dm_convenente.csv.gz
-- name: dm_convenio
+  profile: tabular-data-resource
+  schema: schema/dm_convenente.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_convenio
   path: data/dm_convenio.csv.gz
-- name: dm_municipio
+  profile: tabular-data-resource
+  schema: schema/dm_convenio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_municipio
   path: data/dm_municipio.csv.gz
-- name: dm_orgao_concedente
+  profile: tabular-data-resource
+  schema: schema/dm_municipio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_concedente
   path: data/dm_orgao_concedente.csv.gz
-- name: dm_tempo_diario
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_concedente.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_diario
   path: data/dm_tempo_diario.csv.gz
-- name: ft_convenio_investimento
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_diario.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_convenio_investimento
   path: data/ft_convenio_investimento.csv.gz
-- name: dm_item_desp
+  profile: tabular-data-resource
+  schema: schema/ft_convenio_investimento.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_desp
   path: data/dm_item_desp.csv.gz
-- name: dm_municipio
+  profile: tabular-data-resource
+  schema: schema/dm_item_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_municipio
   path: data/dm_municipio.csv.gz
-- name: dm_tempo_diario
+  profile: tabular-data-resource
+  schema: schema/dm_municipio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_diario
   path: data/dm_tempo_diario.csv.gz
-- name: dm_unidade_orc
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_diario.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_orc
   path: data/dm_unidade_orc.csv.gz
-- name: ft_convenio_tipoatendimento
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_orc.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_convenio_tipoatendimento
   path: data/ft_convenio_tipoatendimento.csv.gz
-- name: dm_convenente
+  profile: tabular-data-resource
+  schema: schema/ft_convenio_tipoatendimento.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_convenente
   path: data/dm_convenente.csv.gz
-- name: dm_convenio
+  profile: tabular-data-resource
+  schema: schema/dm_convenente.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_convenio
   path: data/dm_convenio.csv.gz
-- name: dm_municipio
+  profile: tabular-data-resource
+  schema: schema/dm_convenio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_municipio
   path: data/dm_municipio.csv.gz
-- name: dm_orgao_concedente
+  profile: tabular-data-resource
+  schema: schema/dm_municipio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_concedente
   path: data/dm_orgao_concedente.csv.gz
-- name: dm_situacao_convenio
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_concedente.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_situacao_convenio
   path: data/dm_situacao_convenio.csv.gz
-- name: dm_tempo_diario
+  profile: tabular-data-resource
+  schema: schema/dm_situacao_convenio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_diario
   path: data/dm_tempo_diario.csv.gz
-- name: dm_tipo_atendimento
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_diario.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_atendimento
   path: data/dm_tipo_atendimento.csv.gz
-- name: ft_convenio_metaetapa
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_atendimento.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_convenio_metaetapa
   path: data/ft_convenio_metaetapa.csv.gz
-- name: dm_convenio
+  profile: tabular-data-resource
+  schema: schema/ft_convenio_metaetapa.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_convenio
   path: data/dm_convenio.csv.gz
-- name: dm_tipo_atendimento
+  profile: tabular-data-resource
+  schema: schema/dm_convenio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_atendimento
   path: data/dm_tipo_atendimento.csv.gz
-- name: fl_convenio_interveniente
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_atendimento.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: fl_convenio_interveniente
   path: data/fl_convenio_interveniente.csv.gz
-- name: dm_convenio
+  profile: tabular-data-resource
+  schema: schema/fl_convenio_interveniente.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_convenio
   path: data/dm_convenio.csv.gz
-- name: dm_interveniente
+  profile: tabular-data-resource
+  schema: schema/dm_convenio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_interveniente
   path: data/dm_interveniente.csv.gz
-- name: fl_convenio_alteracao
+  profile: tabular-data-resource
+  schema: schema/dm_interveniente.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: fl_convenio_alteracao
   path: data/fl_convenio_alteracao.csv.gz
-- name: dm_convenio
+  profile: tabular-data-resource
+  schema: schema/fl_convenio_alteracao.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_convenio
   path: data/dm_convenio.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_convenio.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

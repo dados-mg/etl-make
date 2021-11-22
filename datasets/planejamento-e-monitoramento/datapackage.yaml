@@ -14,214 +14,942 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_plan_acao_ppag
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_acao_ppag
   path: data/ft_plan_acao_ppag.csv.gz
-- name: dm_acao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_acao_ppag.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao_plan
   path: data/dm_acao_plan.csv.gz
-- name: dm_funcao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_funcao_plan
   path: data/dm_funcao_plan.csv.gz
-- name: dm_horizonte_plan
+  profile: tabular-data-resource
+  schema: schema/dm_funcao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_horizonte_plan
   path: data/dm_horizonte_plan.csv.gz
-- name: dm_municipio_plan
+  profile: tabular-data-resource
+  schema: schema/dm_horizonte_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_municipio_plan
   path: data/dm_municipio_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_municipio_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: dm_territorio_plan
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_territorio_plan
   path: data/dm_territorio_plan.csv.gz
-- name: dm_tipo_acao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_territorio_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_acao_plan
   path: data/dm_tipo_acao_plan.csv.gz
-- name: dm_tipo_orcam_plan
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_orcam_plan
   path: data/dm_tipo_orcam_plan.csv.gz
-- name: dm_tipo_prog_plan
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_orcam_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_prog_plan
   path: data/dm_tipo_prog_plan.csv.gz
-- name: dm_unidade_resp_plan
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_prog_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_resp_plan
   path: data/dm_unidade_resp_plan.csv.gz
-- name: fl_plan_indicador
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_resp_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: fl_plan_indicador
   path: data/fl_plan_indicador.csv.gz
-- name: dm_indicador_plan
+  profile: tabular-data-resource
+  schema: schema/fl_plan_indicador.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_indicador_plan
   path: data/dm_indicador_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_indicador_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: ft_plan_indic_referencia
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_indic_referencia
   path: data/ft_plan_indic_referencia.csv.gz
-- name: dm_indicador_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_indic_referencia.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_indicador_plan
   path: data/dm_indicador_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_indicador_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: ft_plan_indic_plan_exec
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_indic_plan_exec
   path: data/ft_plan_indic_plan_exec.csv.gz
-- name: dm_indicador_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_indic_plan_exec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_indicador_plan
   path: data/dm_indicador_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_indicador_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: fl_plan_programa
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: fl_plan_programa
   path: data/fl_plan_programa.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/fl_plan_programa.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: fl_plan_responsavel
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: fl_plan_responsavel
   path: data/fl_plan_responsavel.csv.gz
-- name: dm_acao_plan
+  profile: tabular-data-resource
+  schema: schema/fl_plan_responsavel.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao_plan
   path: data/dm_acao_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: dm_responsavel_plan
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_responsavel_plan
   path: data/dm_responsavel_plan.csv.gz
-- name: ft_plan_exec_of_tipoorc
+  profile: tabular-data-resource
+  schema: schema/dm_responsavel_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_exec_of_tipoorc
   path: data/ft_plan_exec_of_tipoorc.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_exec_of_tipoorc.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: dm_tipo_orcam_plan
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_orcam_plan
   path: data/dm_tipo_orcam_plan.csv.gz
-- name: ft_plan_exec_of_territorio
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_orcam_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_exec_of_territorio
   path: data/ft_plan_exec_of_territorio.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_exec_of_territorio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: dm_territorio_plan
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_territorio_plan
   path: data/dm_territorio_plan.csv.gz
-- name: ft_plan_exec_of_fonte
+  profile: tabular-data-resource
+  schema: schema/dm_territorio_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_exec_of_fonte
   path: data/ft_plan_exec_of_fonte.csv.gz
-- name: dm_fonte_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_exec_of_fonte.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_fonte_plan
   path: data/dm_fonte_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_fonte_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: fl_plan_acao
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: fl_plan_acao
   path: data/fl_plan_acao.csv.gz
-- name: dm_acao_plan
+  profile: tabular-data-resource
+  schema: schema/fl_plan_acao.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao_plan
   path: data/dm_acao_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: ft_plan_fonte_fin_acao
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_fonte_fin_acao
   path: data/ft_plan_fonte_fin_acao.csv.gz
-- name: dm_acao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_fonte_fin_acao.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao_plan
   path: data/dm_acao_plan.csv.gz
-- name: dm_fonte_plan
+  profile: tabular-data-resource
+  schema: schema/dm_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_fonte_plan
   path: data/dm_fonte_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_fonte_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: ft_plan_prog_fftd
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_prog_fftd
   path: data/ft_plan_prog_fftd.csv.gz
-- name: dm_acao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_prog_fftd.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao_plan
   path: data/dm_acao_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: dm_territorio_plan
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_territorio_plan
   path: data/dm_territorio_plan.csv.gz
-- name: ft_plan_prog_mensal
+  profile: tabular-data-resource
+  schema: schema/dm_territorio_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_prog_mensal
   path: data/ft_plan_prog_mensal.csv.gz
-- name: dm_acao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_prog_mensal.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao_plan
   path: data/dm_acao_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: ft_plan_prog_territorial
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_prog_territorial
   path: data/ft_plan_prog_territorial.csv.gz
-- name: dm_acao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_prog_territorial.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao_plan
   path: data/dm_acao_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: dm_territorio_plan
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_territorio_plan
   path: data/dm_territorio_plan.csv.gz
-- name: ft_plan_execucao_acao
+  profile: tabular-data-resource
+  schema: schema/dm_territorio_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_execucao_acao
   path: data/ft_plan_execucao_acao.csv.gz
-- name: dm_acao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_execucao_acao.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao_plan
   path: data/dm_acao_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: dm_territorio_plan
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_territorio_plan
   path: data/dm_territorio_plan.csv.gz
-- name: dm_acao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_territorio_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao_plan
   path: data/dm_acao_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_acao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: ft_plan_prog_of_tipoorc
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_prog_of_tipoorc
   path: data/ft_plan_prog_of_tipoorc.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_prog_of_tipoorc.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: dm_tipo_orcam_plan
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_orcam_plan
   path: data/dm_tipo_orcam_plan.csv.gz
-- name: ft_plan_prog_of_territorio
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_orcam_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_prog_of_territorio
   path: data/ft_plan_prog_of_territorio.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_prog_of_territorio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
-- name: dm_territorio_plan
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_territorio_plan
   path: data/dm_territorio_plan.csv.gz
-- name: ft_plan_prog_of_fonte
+  profile: tabular-data-resource
+  schema: schema/dm_territorio_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_plan_prog_of_fonte
   path: data/ft_plan_prog_of_fonte.csv.gz
-- name: dm_fonte_plan
+  profile: tabular-data-resource
+  schema: schema/ft_plan_prog_of_fonte.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_fonte_plan
   path: data/dm_fonte_plan.csv.gz
-- name: dm_orgao_plan
+  profile: tabular-data-resource
+  schema: schema/dm_fonte_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_plan
   path: data/dm_orgao_plan.csv.gz
-- name: dm_ppag_plan
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_ppag_plan
   path: data/dm_ppag_plan.csv.gz
-- name: dm_programa_plan
+  profile: tabular-data-resource
+  schema: schema/dm_ppag_plan.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa_plan
   path: data/dm_programa_plan.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_programa_plan.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

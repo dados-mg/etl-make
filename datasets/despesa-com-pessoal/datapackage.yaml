@@ -14,14 +14,42 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_pessoal_desp
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_pessoal_desp
   path: data/ft_pessoal_desp.csv.gz
-- name: dm_poder
+  profile: tabular-data-resource
+  schema: schema/ft_pessoal_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_poder
   path: data/dm_poder.csv.gz
-- name: dm_tempo_mensal
+  profile: tabular-data-resource
+  schema: schema/dm_poder.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_mensal
   path: data/dm_tempo_mensal.csv.gz
-- name: dm_unidade_orc
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_mensal.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_orc
   path: data/dm_unidade_orc.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_orc.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

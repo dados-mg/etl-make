@@ -14,26 +14,96 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_diarias
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_diarias
   path: data/ft_diarias.csv.gz
-- name: dm_acao
+  profile: tabular-data-resource
+  schema: schema/ft_diarias.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao
   path: data/dm_acao.csv.gz
-- name: dm_elemento_desp
+  profile: tabular-data-resource
+  schema: schema/dm_acao.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_elemento_desp
   path: data/dm_elemento_desp.csv.gz
-- name: dm_empenho_desp
+  profile: tabular-data-resource
+  schema: schema/dm_elemento_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_empenho_desp
   path: data/dm_empenho_desp.csv.gz
-- name: dm_favorecido
+  profile: tabular-data-resource
+  schema: schema/dm_empenho_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_favorecido
   path: data/dm_favorecido.csv.gz
-- name: dm_item_desp
+  profile: tabular-data-resource
+  schema: schema/dm_favorecido.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_desp
   path: data/dm_item_desp.csv.gz
-- name: dm_programa
+  profile: tabular-data-resource
+  schema: schema/dm_item_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa
   path: data/dm_programa.csv.gz
-- name: dm_tempo_diario
+  profile: tabular-data-resource
+  schema: schema/dm_programa.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_diario
   path: data/dm_tempo_diario.csv.gz
-- name: dm_tipo_documento
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_diario.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_documento
   path: data/dm_tipo_documento.csv.gz
-- name: dm_unidade_orc
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_documento.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_orc
   path: data/dm_unidade_orc.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_orc.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

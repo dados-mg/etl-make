@@ -14,74 +14,312 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_compras
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_compras
   path: data/ft_compras.csv.gz
-- name: dm_classe_matserv
+  profile: tabular-data-resource
+  schema: schema/ft_compras.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_classe_matserv
   path: data/dm_classe_matserv.csv.gz
-- name: dm_contratado
+  profile: tabular-data-resource
+  schema: schema/dm_classe_matserv.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_contratado
   path: data/dm_contratado.csv.gz
-- name: dm_contrato
+  profile: tabular-data-resource
+  schema: schema/dm_contratado.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_contrato
   path: data/dm_contrato.csv.gz
-- name: dm_grupo_matserv
+  profile: tabular-data-resource
+  schema: schema/dm_contrato.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_grupo_matserv
   path: data/dm_grupo_matserv.csv.gz
-- name: dm_item_desp
+  profile: tabular-data-resource
+  schema: schema/dm_grupo_matserv.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_desp
   path: data/dm_item_desp.csv.gz
-- name: dm_item_matserv
+  profile: tabular-data-resource
+  schema: schema/dm_item_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_matserv
   path: data/dm_item_matserv.csv.gz
-- name: dm_linha_fornec
+  profile: tabular-data-resource
+  schema: schema/dm_item_matserv.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_linha_fornec
   path: data/dm_linha_fornec.csv.gz
-- name: dm_material_servico
+  profile: tabular-data-resource
+  schema: schema/dm_linha_fornec.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_material_servico
   path: data/dm_material_servico.csv.gz
-- name: dm_municipio
+  profile: tabular-data-resource
+  schema: schema/dm_material_servico.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_municipio
   path: data/dm_municipio.csv.gz
-- name: dm_orgao_contrato
+  profile: tabular-data-resource
+  schema: schema/dm_municipio.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_contrato
   path: data/dm_orgao_contrato.csv.gz
-- name: dm_orgao_demanda
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_contrato.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_demanda
   path: data/dm_orgao_demanda.csv.gz
-- name: dm_procedimento
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_demanda.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_procedimento
   path: data/dm_procedimento.csv.gz
-- name: dm_processo
+  profile: tabular-data-resource
+  schema: schema/dm_procedimento.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_processo
   path: data/dm_processo.csv.gz
-- name: dm_situacao_cont
+  profile: tabular-data-resource
+  schema: schema/dm_processo.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_situacao_cont
   path: data/dm_situacao_cont.csv.gz
-- name: dm_situacao_proc
+  profile: tabular-data-resource
+  schema: schema/dm_situacao_cont.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_situacao_proc
   path: data/dm_situacao_proc.csv.gz
-- name: dm_tempo_diario
+  profile: tabular-data-resource
+  schema: schema/dm_situacao_proc.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_diario
   path: data/dm_tempo_diario.csv.gz
-- name: dm_tipo_licitacao
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_diario.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_licitacao
   path: data/dm_tipo_licitacao.csv.gz
-- name: dm_unidade_medida
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_licitacao.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_medida
   path: data/dm_unidade_medida.csv.gz
-- name: dm_unidade_orc
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_medida.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_orc
   path: data/dm_unidade_orc.csv.gz
-- name: ft_compras_contrato
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_orc.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_compras_contrato
   path: data/ft_compras_contrato.csv.gz
-- name: dm_contratado
+  profile: tabular-data-resource
+  schema: schema/ft_compras_contrato.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_contratado
   path: data/dm_contratado.csv.gz
-- name: dm_contrato
+  profile: tabular-data-resource
+  schema: schema/dm_contratado.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_contrato
   path: data/dm_contrato.csv.gz
-- name: dm_orgao_contrato
+  profile: tabular-data-resource
+  schema: schema/dm_contrato.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_contrato
   path: data/dm_orgao_contrato.csv.gz
-- name: dm_processo
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_contrato.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_processo
   path: data/dm_processo.csv.gz
-- name: dm_situacao_cont
+  profile: tabular-data-resource
+  schema: schema/dm_processo.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_situacao_cont
   path: data/dm_situacao_cont.csv.gz
-- name: dm_tempo_diario
+  profile: tabular-data-resource
+  schema: schema/dm_situacao_cont.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_diario
   path: data/dm_tempo_diario.csv.gz
-- name: fl_compras_empenho
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_diario.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: fl_compras_empenho
   path: data/fl_compras_empenho.csv.gz
-- name: dm_acao
+  profile: tabular-data-resource
+  schema: schema/fl_compras_empenho.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao
   path: data/dm_acao.csv.gz
-- name: dm_elemento_desp
+  profile: tabular-data-resource
+  schema: schema/dm_acao.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_elemento_desp
   path: data/dm_elemento_desp.csv.gz
-- name: dm_empenho_desp
+  profile: tabular-data-resource
+  schema: schema/dm_elemento_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_empenho_desp
   path: data/dm_empenho_desp.csv.gz
-- name: dm_item_desp
+  profile: tabular-data-resource
+  schema: schema/dm_empenho_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_desp
   path: data/dm_item_desp.csv.gz
-- name: dm_processo
+  profile: tabular-data-resource
+  schema: schema/dm_item_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_processo
   path: data/dm_processo.csv.gz
-- name: dm_programa
+  profile: tabular-data-resource
+  schema: schema/dm_processo.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa
   path: data/dm_programa.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_programa.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

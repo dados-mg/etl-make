@@ -14,12 +14,33 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_repasse_mun
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_repasse_mun
   path: data/ft_repasse_mun.csv.gz
-- name: dm_tempo_mensal
+  profile: tabular-data-resource
+  schema: schema/ft_repasse_mun.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_mensal
   path: data/dm_tempo_mensal.csv.gz
-- name: dm_municipio
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_mensal.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_municipio
   path: data/dm_municipio.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_municipio.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

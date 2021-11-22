@@ -14,8 +14,15 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ''
   path: data/.csv.gz
+  profile: tabular-data-resource
+  schema: schema/.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

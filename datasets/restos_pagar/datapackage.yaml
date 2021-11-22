@@ -14,30 +14,114 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_restos_pagar
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_restos_pagar
   path: data/ft_restos_pagar.csv.gz
-- name: dm_elemento_desp
+  profile: tabular-data-resource
+  schema: schema/ft_restos_pagar.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_elemento_desp
   path: data/dm_elemento_desp.csv.gz
-- name: dm_modalidade_aplic
+  profile: tabular-data-resource
+  schema: schema/dm_elemento_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_modalidade_aplic
   path: data/dm_modalidade_aplic.csv.gz
-- name: dm_grupo_desp
+  profile: tabular-data-resource
+  schema: schema/dm_modalidade_aplic.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_grupo_desp
   path: data/dm_grupo_desp.csv.gz
-- name: dm_favorecido
+  profile: tabular-data-resource
+  schema: schema/dm_grupo_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_favorecido
   path: data/dm_favorecido.csv.gz
-- name: dm_unidade_orc
+  profile: tabular-data-resource
+  schema: schema/dm_favorecido.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_unidade_orc
   path: data/dm_unidade_orc.csv.gz
-- name: dm_tempo_anual
+  profile: tabular-data-resource
+  schema: schema/dm_unidade_orc.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_anual
   path: data/dm_tempo_anual.csv.gz
-- name: dm_empenho_resto
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_anual.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_empenho_resto
   path: data/dm_empenho_resto.csv.gz
-- name: dm_categ_econ
+  profile: tabular-data-resource
+  schema: schema/dm_empenho_resto.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_categ_econ
   path: data/dm_categ_econ.csv.gz
-- name: dm_item_desp
+  profile: tabular-data-resource
+  schema: schema/dm_categ_econ.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_desp
   path: data/dm_item_desp.csv.gz
-- name: dm_fonte
+  profile: tabular-data-resource
+  schema: schema/dm_item_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_fonte
   path: data/dm_fonte.csv.gz
-- name: dm_tipo_documento
+  profile: tabular-data-resource
+  schema: schema/dm_fonte.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_documento
   path: data/dm_tipo_documento.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_documento.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

@@ -14,50 +14,204 @@ owner_org: controladoria-geral-do-estado-cge
 private: false
 profile: tabular-data-package
 resources:
-- name: ft_diarias_scdp
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_diarias_scdp
   path: data/ft_diarias_scdp.csv.gz
-- name: dm_cargo_scdp
+  profile: tabular-data-resource
+  schema: schema/ft_diarias_scdp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_cargo_scdp
   path: data/dm_cargo_scdp.csv.gz
-- name: dm_cidade
+  profile: tabular-data-resource
+  schema: schema/dm_cargo_scdp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_cidade
   path: data/dm_cidade.csv.gz
-- name: dm_documento_viagem
+  profile: tabular-data-resource
+  schema: schema/dm_cidade.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_documento_viagem
   path: data/dm_documento_viagem.csv.gz
-- name: dm_estado
+  profile: tabular-data-resource
+  schema: schema/dm_documento_viagem.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_estado
   path: data/dm_estado.csv.gz
-- name: dm_favorecido_scdp
+  profile: tabular-data-resource
+  schema: schema/dm_estado.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_favorecido_scdp
   path: data/dm_favorecido_scdp.csv.gz
-- name: dm_funcao_scdp
+  profile: tabular-data-resource
+  schema: schema/dm_favorecido_scdp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_funcao_scdp
   path: data/dm_funcao_scdp.csv.gz
-- name: dm_meio_transporte
+  profile: tabular-data-resource
+  schema: schema/dm_funcao_scdp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_meio_transporte
   path: data/dm_meio_transporte.csv.gz
-- name: dm_motivo_viagem
+  profile: tabular-data-resource
+  schema: schema/dm_meio_transporte.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_motivo_viagem
   path: data/dm_motivo_viagem.csv.gz
-- name: dm_orgao_scdp
+  profile: tabular-data-resource
+  schema: schema/dm_motivo_viagem.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_orgao_scdp
   path: data/dm_orgao_scdp.csv.gz
-- name: dm_pais
+  profile: tabular-data-resource
+  schema: schema/dm_orgao_scdp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_pais
   path: data/dm_pais.csv.gz
-- name: dm_tempo_diario
+  profile: tabular-data-resource
+  schema: schema/dm_pais.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tempo_diario
   path: data/dm_tempo_diario.csv.gz
-- name: dm_tipo_viagem
+  profile: tabular-data-resource
+  schema: schema/dm_tempo_diario.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_viagem
   path: data/dm_tipo_viagem.csv.gz
-- name: dm_tipo_viajante
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_viagem.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_tipo_viajante
   path: data/dm_tipo_viajante.csv.gz
-- name: ft_diarias_scdp_liqpag
+  profile: tabular-data-resource
+  schema: schema/dm_tipo_viajante.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: ft_diarias_scdp_liqpag
   path: data/ft_diarias_scdp_liqpag.csv.gz
-- name: dm_acao
+  profile: tabular-data-resource
+  schema: schema/ft_diarias_scdp_liqpag.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_acao
   path: data/dm_acao.csv.gz
-- name: dm_documento_viagem
+  profile: tabular-data-resource
+  schema: schema/dm_acao.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_documento_viagem
   path: data/dm_documento_viagem.csv.gz
-- name: dm_empenho_desp
+  profile: tabular-data-resource
+  schema: schema/dm_documento_viagem.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_empenho_desp
   path: data/dm_empenho_desp.csv.gz
-- name: dm_fonte
+  profile: tabular-data-resource
+  schema: schema/dm_empenho_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_fonte
   path: data/dm_fonte.csv.gz
-- name: dm_funcao_desp
+  profile: tabular-data-resource
+  schema: schema/dm_fonte.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_funcao_desp
   path: data/dm_funcao_desp.csv.gz
-- name: dm_item_desp
+  profile: tabular-data-resource
+  schema: schema/dm_funcao_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_item_desp
   path: data/dm_item_desp.csv.gz
-- name: dm_programa
+  profile: tabular-data-resource
+  schema: schema/dm_item_desp.csv.gz
+  title: ''
+- description: ''
+  dialect: schema/dialect-v1.json
+  encoding: UTF-8
+  format: csv
+  name: dm_programa
   path: data/dm_programa.csv.gz
+  profile: tabular-data-resource
+  schema: schema/dm_programa.csv.gz
+  title: ''
 sources: null
 state: active
 title: null

@@ -4,7 +4,7 @@
     {
       "name": "dm_unidade_orc",
       "title": "Unidade Orçamentária",
-      "path": "data/dm-unidade-orc.csv.gz",
+      "path": "build_datasets/receita/data/dm-unidade-orc.csv.gz",
       "schema": "schemas/dm-unidade-orc.yaml",
       "sources": [
         {
@@ -21,7 +21,7 @@
     {
       "name": "dm_tempo_mensal",
       "title": "Calendário - Mês",
-      "path": "data/dm-tempo-mensal.csv.gz",
+      "path": "build_datasets/receita/data/dm-tempo-mensal.csv.gz",
       "schema": "schemas/dm-tempo-mensal.yaml",
       "sources": [
         {
@@ -38,7 +38,7 @@
     {
       "name": "dm_alinea_rec",
       "title": "Alínea da receita",
-      "path": "data/dm-alinea-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-alinea-rec.csv.gz",
       "schema": "schemas/dm-alinea-rec.yaml",
       "sources": [
         {
@@ -55,7 +55,7 @@
     {
       "name": "dm_especie_rec",
       "title": "Espécie da receita",
-      "path": "data/dm-especie-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-especie-rec.csv.gz",
       "schema": "schemas/dm-especie-rec.yaml",
       "sources": [
         {
@@ -72,7 +72,7 @@
     {
       "name": "dm_fonte_rec",
       "title": "Fonte de Recurso",
-      "path": "data/dm-fonte-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-fonte-rec.csv.gz",
       "schema": "schemas/dm-fonte-rec.yaml",
       "sources": [
         {
@@ -89,7 +89,7 @@
     {
       "name": "dm_item_rec",
       "title": "Item de Receita",
-      "path": "data/dm-item-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-item-rec.csv.gz",
       "schema": "schemas/dm-item-rec.yaml",
       "sources": [
         {
@@ -106,7 +106,7 @@
     {
       "name": "dm_rubrica_rec",
       "title": "Rubrica da receita",
-      "path": "data/dm-rubrica-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-rubrica-rec.csv.gz",
       "schema": "schemas/dm-rubrica-rec.yaml",
       "sources": [
         {
@@ -123,7 +123,7 @@
     {
       "name": "dm_origem_rec",
       "title": "Origem da receita",
-      "path": "data/dm-origem-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-origem-rec.csv.gz",
       "schema": "schemas/dm-origem-rec.yaml",
       "sources": [
         {
@@ -140,7 +140,7 @@
     {
       "name": "dm_subalinea_rec",
       "title": "Subalínea da receita",
-      "path": "data/dm-subalinea-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-subalinea-rec.csv.gz",
       "schema": "schemas/dm-subalinea-rec.yaml",
       "sources": [
         {
@@ -157,7 +157,7 @@
     {
       "name": "ft_receita_prevista",
       "title": "Receita Orçamentária Prevista",
-      "path": "data/ft-receita-prevista.csv.gz",
+      "path": "build_datasets/receita/data/ft-receita-prevista.csv.gz",
       "schema": "schemas/ft-receita-prevista.yaml",
       "sources": [
         {
@@ -174,7 +174,7 @@
     {
       "name": "ft_receita",
       "title": "Receita Orçamentária",
-      "path": "data/ft-receita.csv.gz",
+      "path": "build_datasets/receita/data/ft-receita.csv.gz",
       "schema": "schemas/ft-receita.yaml",
       "sources": [
         {
@@ -191,7 +191,7 @@
     {
       "name": "dm_desdobramento_1_rec",
       "title": "Desdobramento1 da receita",
-      "path": "data/dm-desdobramento-1-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-desdobramento-1-rec.csv.gz",
       "schema": "schemas/dm-desdobramento-1-rec.yaml",
       "sources": [
         {
@@ -208,7 +208,7 @@
     {
       "name": "dm_desdobramento_2_rec",
       "title": "Desdobramento2 da receita",
-      "path": "data/dm-desdobramento-2-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-desdobramento-2-rec.csv.gz",
       "schema": "schemas/dm-desdobramento-2-rec.yaml",
       "sources": [
         {
@@ -225,7 +225,7 @@
     {
       "name": "dm_desdobramento_3_rec",
       "title": "Desdobramento3 da receita",
-      "path": "data/dm-desdobramento-3-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-desdobramento-3-rec.csv.gz",
       "schema": "schemas/dm-desdobramento-3-rec.yaml",
       "sources": [
         {
@@ -242,7 +242,7 @@
     {
       "name": "dm_tipo_rec",
       "title": "Tipo da receita",
-      "path": "data/dm-tipo-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-tipo-rec.csv.gz",
       "schema": "schemas/dm-tipo-rec.yaml",
       "sources": [
         {
@@ -259,7 +259,7 @@
     {
       "name": "ft_receita_prevista_v2018",
       "title": "Receita Orçamentária Prevista v2",
-      "path": "data/ft-receita-prevista-v2018.csv.gz",
+      "path": "build_datasets/receita/data/ft-receita-prevista-v2018.csv.gz",
       "schema": "schemas/ft-receita-prevista-v2018.yaml",
       "sources": [
         {
@@ -276,7 +276,7 @@
     {
       "name": "ft_receita_v2018",
       "title": "Receita v2",
-      "path": "data/ft-receita-v2018.csv.gz",
+      "path": "build_datasets/receita/data/ft-receita-v2018.csv.gz",
       "schema": "schemas/ft-receita-v2018.yaml",
       "sources": [
         {
@@ -293,7 +293,7 @@
     {
       "name": "dm_subitem_rec",
       "title": "Subitem da receita",
-      "path": "data/dm-subitem-rec.csv.gz",
+      "path": "build_datasets/receita/data/dm-subitem-rec.csv.gz",
       "schema": "schemas/dm-subitem-rec.yaml",
       "sources": [
         {

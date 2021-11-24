@@ -4,6 +4,11 @@ import yaml
 import json
 from frictionless import Package
 
+def build():
+  create_datasets_build_folder()
+  create_data_folders()
+  create_schema_folders()
+
 def create_datasets_folder():
   if not os.path.exists("datasets"):
     os.system('mkdir datasets')
@@ -21,6 +26,7 @@ def create_datasets_build_folder():
     from_to_file = load_from_to_file()
     for dataset in from_to_file['consultas'].keys():
       os.system(f'mkdir build_datasets/{dataset}')
+      os.system(f'mkdir build_datasets/{dataset}/data')
       os.system(f'cp datasets/{dataset}/*.md build_datasets/{dataset}')
       # Lê o arquivo datapackage.json para, entre outros, extrair os recursos daquele conjunto
       base_dp = Package('datapackage.json')
@@ -35,8 +41,9 @@ def create_datasets_build_folder():
       fact_tables = from_to_file['consultas'][dataset]['fact_tables']
       target_resources = find_target_resources(from_to_file, fact_tables)
       resources_diff = find_resource_diff(base_dp.resource_names, target_resources)
-      final_dp = remove_resources(base_dp, resources_diff)
-      final_dp.to_json(f'build_datasets/{dataset}/datapackage.json')
+      base_dp = remove_resources(base_dp, resources_diff)
+      base_dp = update_resource_properties(base_dp)
+      base_dp.to_json(f'build_datasets/{dataset}/datapackage.json')
 
 def find_resource_diff(original_resources, target_resources):
   resources_diff = [i for i in original_resources if not i in target_resources]
@@ -45,6 +52,15 @@ def find_resource_diff(original_resources, target_resources):
 def remove_resources(base_dp, resources_diff):
   for resource in resources_diff:
     base_dp.remove_resource(resource)
+  return base_dp
+
+def update_resource_properties(base_dp):
+  for resource in base_dp.resource_names:
+    path = base_dp.get_resource(resource).path
+    new_path = f'build_datasets/{base_dp.name}/{path}'
+    base_dp.get_resource(resource).path = new_path
+    os.system(f'cp {path} {new_path}')
+  # if type(base_dp.get_resource(resource).schema) ==
   return base_dp
 
 def load_from_to_file():
@@ -64,24 +80,6 @@ def find_target_resources(from_to_file, fact_tables):
     else:
       print(f"{fact_table} não existente em data['fact_tables']")
   return target_resources
-
-# def create_datasets_build_folder():
-#   if not os.path.exists("datasets"):
-#     os.system('mkdir datasets')
-#     resources_file = 'age7.yaml'
-#     resources_file = open(resources_file, encoding='utf-8').read()
-#     resources_file = yaml.load(resources_file, Loader=yaml.FullLoader)
-#     for dataset in resources_file['consultas'].keys():
-#       if not os.path.exists(f'datasets/{dataset}'):
-#         os.system(f'mkdir datasets/{dataset}')
-#         os.system(f'cp -r templates/description datasets/{dataset}')
-#         fact_tables = resources_file['consultas'][dataset]['fact_tables']
-#         resources = datapackage_yaml_resources(resources_file, fact_tables)
-#         base_file = open('templates/datapackage.yaml', encoding='utf-8').read()
-#         base_file = yaml.load(base_file, Loader=yaml.FullLoader)
-#         base_file['resources'] = resources
-#         with open(f'datasets/{dataset}/datapackage.yaml', 'w', encoding='utf-8') as f:
-#           yaml.dump(base_file, f, allow_unicode=True)
 
 if __name__ == '__main__':
   os.system(f'rm -rf build_datasets/') # Facilitar os testes

@@ -1,20 +1,3 @@
-profile: tabular-data-package
-name:
-title:
 description:
-owner_org: controladoria-geral-do-estado-cge
-version:
 keywords:
-private: false
-state: active
-sources:
-licences:
-  name: CC-BY-4.0
-  title: Creative Commons Attribution 4.0
-  path: https://creativecommons.org/licenses/by/4.0/
-contributors:
-  title: Diretoria Central de Transparência Ativa
-  path: https://cge.mg.gov.br/a-cge/quem-e-quem/subcontroladoria-de-transparencia-e-integridade
-  email: transparencia@cge.mg.gov.br
-  role: publisher
 

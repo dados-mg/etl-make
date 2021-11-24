@@ -27,6 +27,7 @@ def create_datasets_build_folder():
     for dataset in from_to_file['consultas'].keys():
       os.system(f'mkdir build_datasets/{dataset}')
       os.system(f'mkdir build_datasets/{dataset}/data')
+      os.system(f'mkdir build_datasets/{dataset}/schemas')
       os.system(f'cp datasets/{dataset}/*.md build_datasets/{dataset}')
       # Lê o arquivo datapackage.json para, entre outros, extrair os recursos daquele conjunto
       base_dp = Package('datapackage.json')
@@ -57,10 +58,21 @@ def remove_resources(base_dp, resources_diff):
 def update_resource_properties(base_dp):
   for resource in base_dp.resource_names:
     path = base_dp.get_resource(resource).path
+    schema = base_dp.get_resource(resource)['schema']
+    dialect = base_dp.get_resource(resource)['dialect']
     new_path = f'build_datasets/{base_dp.name}/{path}'
     base_dp.get_resource(resource).path = new_path
     os.system(f'cp {path} {new_path}')
-  # if type(base_dp.get_resource(resource).schema) ==
+    if isinstance(schema, str):
+      new_schema = f'build_datasets/{base_dp.name}/{schema}'
+      base_dp.get_resource(resource)['schema'] = new_schema
+      if not os.path.exists(new_schema):
+        os.system(f'cp {schema} {new_schema}')
+    if isinstance(dialect, str):
+      new_dialetic = f'build_datasets/{base_dp.name}/{dialect}'
+      base_dp.get_resource(resource)['dialect'] = new_dialetic
+      if not os.path.exists(new_dialetic):
+        os.system(f'cp {dialect} {new_dialetic}')
   return base_dp
 
 def load_from_to_file():

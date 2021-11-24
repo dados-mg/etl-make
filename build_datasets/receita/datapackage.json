@@ -5,7 +5,7 @@
       "name": "dm_unidade_orc",
       "title": "Unidade Orçamentária",
       "path": "build_datasets/receita/data/dm-unidade-orc.csv.gz",
-      "schema": "schemas/dm-unidade-orc.yaml",
+      "schema": "build_datasets/receita/schemas/dm-unidade-orc.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -15,14 +15,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_tempo_mensal",
       "title": "Calendário - Mês",
       "path": "build_datasets/receita/data/dm-tempo-mensal.csv.gz",
-      "schema": "schemas/dm-tempo-mensal.yaml",
+      "schema": "build_datasets/receita/schemas/dm-tempo-mensal.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -32,14 +32,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_alinea_rec",
       "title": "Alínea da receita",
       "path": "build_datasets/receita/data/dm-alinea-rec.csv.gz",
-      "schema": "schemas/dm-alinea-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-alinea-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -49,14 +49,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_especie_rec",
       "title": "Espécie da receita",
       "path": "build_datasets/receita/data/dm-especie-rec.csv.gz",
-      "schema": "schemas/dm-especie-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-especie-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -66,14 +66,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_fonte_rec",
       "title": "Fonte de Recurso",
       "path": "build_datasets/receita/data/dm-fonte-rec.csv.gz",
-      "schema": "schemas/dm-fonte-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-fonte-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -83,14 +83,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_item_rec",
       "title": "Item de Receita",
       "path": "build_datasets/receita/data/dm-item-rec.csv.gz",
-      "schema": "schemas/dm-item-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-item-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -100,14 +100,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_rubrica_rec",
       "title": "Rubrica da receita",
       "path": "build_datasets/receita/data/dm-rubrica-rec.csv.gz",
-      "schema": "schemas/dm-rubrica-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-rubrica-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -117,14 +117,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_origem_rec",
       "title": "Origem da receita",
       "path": "build_datasets/receita/data/dm-origem-rec.csv.gz",
-      "schema": "schemas/dm-origem-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-origem-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -134,14 +134,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_subalinea_rec",
       "title": "Subalínea da receita",
       "path": "build_datasets/receita/data/dm-subalinea-rec.csv.gz",
-      "schema": "schemas/dm-subalinea-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-subalinea-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -151,14 +151,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "ft_receita_prevista",
       "title": "Receita Orçamentária Prevista",
       "path": "build_datasets/receita/data/ft-receita-prevista.csv.gz",
-      "schema": "schemas/ft-receita-prevista.yaml",
+      "schema": "build_datasets/receita/schemas/ft-receita-prevista.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -168,14 +168,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "ft_receita",
       "title": "Receita Orçamentária",
       "path": "build_datasets/receita/data/ft-receita.csv.gz",
-      "schema": "schemas/ft-receita.yaml",
+      "schema": "build_datasets/receita/schemas/ft-receita.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -185,14 +185,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_desdobramento_1_rec",
       "title": "Desdobramento1 da receita",
       "path": "build_datasets/receita/data/dm-desdobramento-1-rec.csv.gz",
-      "schema": "schemas/dm-desdobramento-1-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-desdobramento-1-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -202,14 +202,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_desdobramento_2_rec",
       "title": "Desdobramento2 da receita",
       "path": "build_datasets/receita/data/dm-desdobramento-2-rec.csv.gz",
-      "schema": "schemas/dm-desdobramento-2-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-desdobramento-2-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -219,14 +219,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_desdobramento_3_rec",
       "title": "Desdobramento3 da receita",
       "path": "build_datasets/receita/data/dm-desdobramento-3-rec.csv.gz",
-      "schema": "schemas/dm-desdobramento-3-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-desdobramento-3-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -236,14 +236,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_tipo_rec",
       "title": "Tipo da receita",
       "path": "build_datasets/receita/data/dm-tipo-rec.csv.gz",
-      "schema": "schemas/dm-tipo-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-tipo-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -253,14 +253,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "ft_receita_prevista_v2018",
       "title": "Receita Orçamentária Prevista v2",
       "path": "build_datasets/receita/data/ft-receita-prevista-v2018.csv.gz",
-      "schema": "schemas/ft-receita-prevista-v2018.yaml",
+      "schema": "build_datasets/receita/schemas/ft-receita-prevista-v2018.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -270,14 +270,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "ft_receita_v2018",
       "title": "Receita v2",
       "path": "build_datasets/receita/data/ft-receita-v2018.csv.gz",
-      "schema": "schemas/ft-receita-v2018.yaml",
+      "schema": "build_datasets/receita/schemas/ft-receita-v2018.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -287,14 +287,14 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     },
     {
       "name": "dm_subitem_rec",
       "title": "Subitem da receita",
       "path": "build_datasets/receita/data/dm-subitem-rec.csv.gz",
-      "schema": "schemas/dm-subitem-rec.yaml",
+      "schema": "build_datasets/receita/schemas/dm-subitem-rec.yaml",
       "sources": [
         {
           "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -304,7 +304,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "dialect": "schemas/dialect.json",
+      "dialect": "build_datasets/receita/schemas/dialect.json",
       "profile": "tabular-data-resource"
     }
   ],

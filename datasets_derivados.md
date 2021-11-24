@@ -3,18 +3,17 @@
 ### Estrutura de pastas do repositório
 
 - templates/
-  - description/
-    - CONTRIBUTING.md
-    - README.md
-    - CHANGELOG.md
+  - CONTRIBUTING.md
+  - README.md
+  - CHANGELOG.md
   - datapackage.yaml
 
 - datasets/
   - dataset/
-    - description/
-      - CONTRIBUTING.md
-      - README.md
-      - CHANGELOG.md
+    - data/
+    - CONTRIBUTING.md
+    - README.md
+    - CHANGELOG.md
     - datapackage.yaml
     - datapackage.json
 
@@ -22,17 +21,17 @@
 
 - datasets/
   - restos_pagar/
-    - description/
-      - CONTRIBUTING.md
-      - README.md
-      - CHANGELOG.md
+    - data/
+    - CONTRIBUTING.md
+    - README.md
+    - CHANGELOG.md
     - datapackage.yaml
     - datapackage.json
   - compras_contratos/
-    - description/
-      - CONTRIBUTING.md
-      - README.md
-      - CHANGELOG.md
+    - data/
+    - CONTRIBUTING.md
+    - README.md
+    - CHANGELOG.md
     - datapackage.yaml
     - datapackage.json
   - etc...

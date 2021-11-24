@@ -6,8 +6,6 @@ from frictionless import Package
 
 def build():
   create_datasets_build_folder()
-  create_data_folders()
-  create_schema_folders()
 
 def create_datasets_folder():
   if not os.path.exists("datasets"):
@@ -95,7 +93,7 @@ def find_target_resources(from_to_file, fact_tables):
 
 if __name__ == '__main__':
   os.system(f'rm -rf build_datasets/') # Facilitar os testes
-  create_datasets_build_folder()
+  build()
   # create_datasets_folder()
   # ipdb.set_trace(context=10)
 

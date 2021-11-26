@@ -13,7 +13,6 @@ python3 -m venv $VENV_PATH
 source $VENV_PATH/bin/activate
 pip install --upgrade pip
 pip install wheel
-pip install git+git://github.com/dados-mg/dpckan.git#egg=dpckan
 pip install -r $PROJECT_PATH/requirements.txt
 
 echo "Installing R..."

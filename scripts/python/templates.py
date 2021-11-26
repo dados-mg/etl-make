@@ -117,13 +117,14 @@ def run_dpckan_dataset(action):
   for sub_folder in os.listdir(folder):
     folder_name = str(sub_folder).split('\'')[1]
     datapackage_path = f'build_datasets/{folder_name}/datapackage.json'
+    new_datapackage_ckan_hosts = ''
     # os.system(f'dpckan dataset create -dp {datapackage_path}')
     # ipdb.set_trace(context=10)
     if action == 'create':
       os.system(f'dpckan dataset create -dp {datapackage_path}')
+      new_datapackage_ckan_hosts = Package(datapackage_path)["ckan_hosts"]
     if action == 'update':
       os.system(f'dpckan dataset update -H $CKAN_HOST_PRODUCAO -k $CKAN_KEY_PRODUCAO -dp {datapackage_path}')
-    new_datapackage_ckan_hosts = Package(datapackage_path)["ckan_hosts"]
     datapackage_yaml_path = f'datasets/{folder_name}/datapackage.yaml'
     datapackage_yaml = load_yaml_file(datapackage_yaml_path)
     with open(datapackage_yaml_path, 'w') as f:
@@ -131,6 +132,7 @@ def run_dpckan_dataset(action):
       yaml.dump(datapackage_yaml, f)
 
 if __name__ == '__main__':
+  # create_datasets_folder()
   datasets_create()
   # datasets_update()
   # ipdb.set_trace(context=10)

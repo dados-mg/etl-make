@@ -1,3 +1,4 @@
+dpckan>=0.1.2
 frictionless>=4.16.6
 jsonpatch==1.32
 psycopg2==2.9.1
@@ -14,7 +15,7 @@ cryptography==35.0.0
 decorator==5.1.0
 h11==0.12.0
 html5lib==1.1
-idna==3.3
+idna==2.5
 ipdb==0.13.9
 ipython==7.29.0
 jedi==0.18.0

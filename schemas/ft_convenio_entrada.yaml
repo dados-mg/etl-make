@@ -79,36 +79,6 @@ missingValues:
   - ''
 foreignKeys:
   - fields:
-      - id_orgao
-    reference:
-      fields:
-        - id_orgao
-      resource: dm_orgao_proponente
-  - fields:
-      - id_situacao
-    reference:
-      fields:
-        - id_situacao
-      resource: dm_situacao_conv_ent
-  - fields:
-      - id_concedente
-    reference:
-      fields:
-        - id_concedente
-      resource: dm_concedente
-  - fields:
-      - id_tempo
-    reference:
-      fields:
-        - id_tempo
-      resource: dm_tempo_diario
-  - fields:
-      - id_convenio
-    reference:
-      fields:
-        - id_convenio
-      resource: dm_convenio_entrada
-  - fields:
     - id_unidade_orc
     reference:
       fields:

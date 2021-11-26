@@ -65,32 +65,16 @@ def remove_resources(base_dp, resources_diff):
 def update_resource_properties(base_dp):
   for resource in base_dp.resource_names:
     path = base_dp.get_resource(resource).path
-    schema = base_dp.get_resource(resource)['schema']
-    dialect = base_dp.get_resource(resource)['dialect']
+    base_dp.get_resource(resource).schema.expand()
+    base_dp.get_resource(resource).dialect.expand()
     if not os.path.exists(path):
       # Excluir recurso se arquivo de dados não existir
       print(f'Arquivo de dados do recurso "{resource}" do dataset "{base_dp.name}" ausente.')
-      base_dp.remove_resource(resource)
-    elif not os.path.exists(schema):
-      print(f'Table Schema do recurso "{resource}" do dataset "{base_dp.name}" ausente.')
-      base_dp.remove_resource(resource)
-    elif not os.path.exists(dialect):
-      print(f'Dialect do recurso "{resource}" do dataset "{base_dp.name}" ausente.')
       base_dp.remove_resource(resource)
     else:
       new_path = f'build_datasets/{base_dp.name}/{path}'
       # base_dp.get_resource(resource).path = new_path
       os.system(f'cp {path} {new_path}')
-      if isinstance(schema, str):
-        new_schema = f'build_datasets/{base_dp.name}/{schema}'
-        # base_dp.get_resource(resource)['schema'] = new_schema
-        if not os.path.exists(new_schema):
-          os.system(f'cp {schema} {new_schema}')
-      if isinstance(dialect, str):
-        new_dialetic = f'build_datasets/{base_dp.name}/{dialect}'
-        # base_dp.get_resource(resource)['dialect'] = new_dialetic
-        if not os.path.exists(new_dialetic):
-          os.system(f'cp {dialect} {new_dialetic}')
   return base_dp
 
 def load_yaml_file(file_path):

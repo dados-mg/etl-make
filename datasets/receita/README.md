@@ -1,2 +1,1 @@
-Este é um arquivo README
-===========================
+Este conjunto de dados apresenta as receitas.

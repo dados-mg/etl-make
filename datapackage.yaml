@@ -1,15 +1,6 @@
 profile: tabular-data-package
 name: age7
 owner_org: controladoria-geral-do-estado-cge
-ckan_host:
-  - url: https://homologa.cge.mg.gov.br/
-    resources_id:
-      ft_receita_v2018: 77066965-9382-441e-bf30-5e87b01f244d
-      dm_unidade_orc: 517b4e36-4649-4b6c-b819-faa8f047a1b0
-  - url: https://dados.mg.gov.br/
-    resources_id:
-      ft_receita_v2018: 77066965-9382-441e-bf30-5e87b01f244c
-      dm_unidade_orc: 517b4e36-4649-4b6c-b819-faa8f047a1b1
 version: 0.0.0.9000
 resources:
   - name: ft_receita_v2018

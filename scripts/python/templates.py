@@ -4,13 +4,21 @@ import yaml
 import json
 from frictionless import Package
 
-def build():
+def datasets_create():
+  os.system(f'rm -rf build_datasets/') # Facilitar os testes
   create_datasets_build_folder()
+  run_dpckan_dataset('create')
+
+def datasets_update():
+  os.system(f'rm -rf build_datasets/') # Facilitar os testes
+  create_datasets_build_folder()
+  run_dpckan_dataset('update')
 
 def create_datasets_folder():
   if not os.path.exists("datasets"):
     os.system('mkdir datasets')
-  from_to_file = load_from_to_file()
+  from_to_file_path = 'age7.yaml'
+  from_to_file = load_yaml_file(from_to_file_path)
   for dataset in from_to_file['consultas'].keys():
     if not os.path.exists(f'datasets/{dataset}'):
       os.system(f'mkdir datasets/{dataset}')
@@ -21,7 +29,8 @@ def create_datasets_build_folder():
     print('Pasta datasets_build existente, confira se algum erro ocorreu durante último building.')
   else:
     os.system('mkdir build_datasets')
-    from_to_file = load_from_to_file()
+    from_to_file_path = 'age7.yaml'
+    from_to_file = load_yaml_file(from_to_file_path)
     for dataset in from_to_file['consultas'].keys():
       os.system(f'mkdir build_datasets/{dataset}')
       os.system(f'mkdir build_datasets/{dataset}/data')
@@ -58,26 +67,37 @@ def update_resource_properties(base_dp):
     path = base_dp.get_resource(resource).path
     schema = base_dp.get_resource(resource)['schema']
     dialect = base_dp.get_resource(resource)['dialect']
-    new_path = f'build_datasets/{base_dp.name}/{path}'
-    base_dp.get_resource(resource).path = new_path
-    os.system(f'cp {path} {new_path}')
-    if isinstance(schema, str):
-      new_schema = f'build_datasets/{base_dp.name}/{schema}'
-      base_dp.get_resource(resource)['schema'] = new_schema
-      if not os.path.exists(new_schema):
-        os.system(f'cp {schema} {new_schema}')
-    if isinstance(dialect, str):
-      new_dialetic = f'build_datasets/{base_dp.name}/{dialect}'
-      base_dp.get_resource(resource)['dialect'] = new_dialetic
-      if not os.path.exists(new_dialetic):
-        os.system(f'cp {dialect} {new_dialetic}')
+    if not os.path.exists(path):
+      # Excluir recurso se arquivo de dados não existir
+      print(f'Arquivo de dados do recurso "{resource}" do dataset "{base_dp.name}" ausente.')
+      base_dp.remove_resource(resource)
+    elif not os.path.exists(schema):
+      print(f'Table Schema do recurso "{resource}" do dataset "{base_dp.name}" ausente.')
+      base_dp.remove_resource(resource)
+    elif not os.path.exists(dialect):
+      print(f'Dialect do recurso "{resource}" do dataset "{base_dp.name}" ausente.')
+      base_dp.remove_resource(resource)
+    else:
+      new_path = f'build_datasets/{base_dp.name}/{path}'
+      # base_dp.get_resource(resource).path = new_path
+      os.system(f'cp {path} {new_path}')
+      if isinstance(schema, str):
+        new_schema = f'build_datasets/{base_dp.name}/{schema}'
+        # base_dp.get_resource(resource)['schema'] = new_schema
+        if not os.path.exists(new_schema):
+          os.system(f'cp {schema} {new_schema}')
+      if isinstance(dialect, str):
+        new_dialetic = f'build_datasets/{base_dp.name}/{dialect}'
+        # base_dp.get_resource(resource)['dialect'] = new_dialetic
+        if not os.path.exists(new_dialetic):
+          os.system(f'cp {dialect} {new_dialetic}')
   return base_dp
 
-def load_from_to_file():
-  from_to_file = 'age7.yaml'
-  from_to_file = open(from_to_file, encoding='utf-8').read()
-  from_to_file = yaml.load(from_to_file, Loader=yaml.FullLoader)
-  return from_to_file
+def load_yaml_file(file_path):
+  yaml_dict_content = file_path
+  yaml_dict_content = open(yaml_dict_content, encoding='utf-8').read()
+  yaml_dict_content = yaml.load(yaml_dict_content, Loader=yaml.FullLoader)
+  return yaml_dict_content
 
 def find_target_resources(from_to_file, fact_tables):
   target_resources = []
@@ -91,9 +111,28 @@ def find_target_resources(from_to_file, fact_tables):
       print(f"{fact_table} não existente em data['fact_tables']")
   return target_resources
 
+def run_dpckan_dataset(action):
+  path = 'build_datasets'
+  folder = os.fsencode(path)
+  for sub_folder in os.listdir(folder):
+    folder_name = str(sub_folder).split('\'')[1]
+    datapackage_path = f'build_datasets/{folder_name}/datapackage.json'
+    # os.system(f'dpckan dataset create -dp {datapackage_path}')
+    # ipdb.set_trace(context=10)
+    if action == 'create':
+      os.system(f'dpckan dataset create -dp {datapackage_path}')
+    if action == 'update':
+      os.system(f'dpckan dataset update -H $CKAN_HOST_PRODUCAO -k $CKAN_KEY_PRODUCAO -dp {datapackage_path}')
+    new_datapackage_ckan_hosts = Package(datapackage_path)["ckan_hosts"]
+    datapackage_yaml_path = f'datasets/{folder_name}/datapackage.yaml'
+    datapackage_yaml = load_yaml_file(datapackage_yaml_path)
+    with open(datapackage_yaml_path, 'w') as f:
+      datapackage_yaml['ckan_hosts'] = new_datapackage_ckan_hosts
+      yaml.dump(datapackage_yaml, f)
+
 if __name__ == '__main__':
-  os.system(f'rm -rf build_datasets/') # Facilitar os testes
-  build()
-  # create_datasets_folder()
+  datasets_create()
+  # datasets_update()
   # ipdb.set_trace(context=10)
+  # create_datasets_build_folder()
 

@@ -1,4 +1,4 @@
-reticulate::use_virtualenv("~/.virtualenvs/etl-make", required = TRUE)
+reticulate::use_virtualenv("/home/vagrant/venv", required = TRUE)
 
 resource_name <- commandArgs(trailingOnly = TRUE)
 

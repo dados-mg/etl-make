@@ -36,6 +36,9 @@ validate: $(VALIDATION_FILES)
 notify:
 	python scripts/python/mail_sender.py
 
+build:
+	python scripts/python/templates.py
+
 $(VALIDATION_FILES): logs/validate/%.json: scripts/python/validate.py data/%.csv.gz schemas/%.yaml
 	python $< $* > $@
 
@@ -48,3 +51,8 @@ $(LOAD_FILES): logs/load/%.txt: scripts/python/load-resource.py logs/validate/%.
 vars: 
 	@echo 'DATA_FILES:' $(DATA_FILES)
 
+clean:
+	rm -rf scripts/sql/*
+	rm -rf data/raw/*
+	rm -rf data/staging/*
+	rm -rf logs/validate/*

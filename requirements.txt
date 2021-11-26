@@ -3,3 +3,4 @@ jsonpatch==1.32
 psycopg2==2.9.1
 PyMySQL==1.0.2
 python-dotenv==0.19.1
+pip install ruamel_yaml==0.11.14

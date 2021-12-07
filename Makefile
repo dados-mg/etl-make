@@ -10,6 +10,9 @@ all: parse extract ingest validate notify
 datapackage.json: scripts/python/build-datapackage.py datapackage.yaml schemas/* data/* logs/validate/* dialect.json README.md CHANGELOG.md CONTRIBUTING.md
 	python $<
 
+init: ## Create boilerplate files for the derivated datapackages
+	python scripts/python/build_dataset_documentation_folder.py
+
 parse: $(SQL_FILES)
 
 $(SQL_FILES): scripts/sql/%.sql: scripts/r/parse-sql.R schemas/%.yaml
@@ -52,12 +55,13 @@ vars:
 	@echo 'DATA_FILES:' $(DATA_FILES)
 
 clean:
-	rm -rf scripts/sql/*
+	rm -rf logs/parse/*
+	rm -rf scripts/sql/*	
+	rm -rf logs/extract/*
 	rm -rf data/raw/*
-	rm -rf data/staging/*
+	rm -rf data/staging/*	
 	rm -rf logs/validate/*
-
-buil-dataset-documentation-folder:
-	python scripts/python/build_dataset_documentation_folder
+	rm -rf logs/*.txt
+	rm -f datapackage.json
 
 

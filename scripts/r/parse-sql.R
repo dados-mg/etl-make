@@ -1,4 +1,6 @@
-reticulate::use_virtualenv("/home/vagrant/venv", required = TRUE)
+library(dotenv)
+
+reticulate::use_virtualenv(Sys.getenv("VENV_PATH"), required = TRUE)
 
 resource_name <- commandArgs(trailingOnly = TRUE)
 

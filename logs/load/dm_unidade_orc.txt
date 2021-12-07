@@ -1,3 +1,0 @@
-Atualizando datapackage.json
-Atualizando conjunto de dados: age7
-Atualizando recurso: dm_unidade_orc

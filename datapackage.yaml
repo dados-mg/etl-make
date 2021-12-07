@@ -3,13 +3,37 @@ name: age7
 owner_org: controladoria-geral-do-estado-cge
 version: 0.0.0.9000
 resources:
-  - name: dm_acao
-    title: Ação
-    path: data/dm_acao.csv.gz
-    schema: schemas/dm_acao.yaml
+  - name: ft_receita_v2018
+    title: Receita v2
+    path: data/ft_receita_v2018.csv.gz
+    schema: schemas/ft_receita_v2018.yaml
     sources:
     - title: Tabela origem no schema AGE7 no banco de dados do Portal da Transparência
-      table: dm_acao
+      table: ft_receita_v2018
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.json
+    profile: tabular-data-resource
+  - name: dm_unidade_orc
+    title: Unidade Orçamentária
+    path: data/dm_unidade_orc.csv.gz
+    schema: schemas/dm_unidade_orc.yaml
+    sources:
+    - title: Tabela origem no schema AGE7 no banco de dados do Portal da Transparência
+      table: dm_unidade_orc
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.json
+    profile: tabular-data-resource
+  - name: ft_convenio_entrada
+    title: Convênio Entrada
+    path: data/ft_convenio_entrada.csv.gz
+    schema: schemas/ft_convenio_entrada.yaml
+    sources:
+    - title: Tabela origem no schema AGE7 no banco de dados do Portal da Transparência
+      table: ft_convenio_entrada
     format: csv
     mediatype: text/csv
     encoding: utf-8-sig

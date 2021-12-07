@@ -1,0 +1,189 @@
+{
+  "version": "4.22.1",
+  "time": 0.492,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_convenio_entrada",
+        "title": "Conv\u00eanio Entrada",
+        "path": "data/ft_convenio_entrada.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "title": "Tempo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_orgao",
+              "title": "\u00d3rg\u00e3o - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_convenio",
+              "title": "Conv\u00eanio de Entrada - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_concedente",
+              "title": "Concedente - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_unidade_orc",
+              "title": "Unidade Or\u00e7ament\u00e1ria - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_situacao",
+              "title": "Situa\u00e7\u00e3o do Conv\u00eanio - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_particao",
+              "title": "Ano Parti\u00e7\u00e3o",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "vr_concedente_atual",
+              "title": "Valor Concedente Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ",",
+              "description": "Valor financeiro previsto no conv\u00eanio para o concedente repassar ao proponente, incluindo termos aditivos.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_proponente_atual",
+              "title": "Valor Proponente Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ",",
+              "description": "Valor previsto no conv\u00eanio para o proponente dar como contrapartida financeira, incluindo termos aditivos.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_unidade_orc"
+              ],
+              "reference": {
+                "fields": [
+                  "id_unidade_orc"
+                ],
+                "resource": "dm_unidade_orc"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
+            "table": "ft_convenio_entrada"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "9546f0261eb3109deec19eb8785a822e",
+          "bytes": 24783,
+          "fields": 9,
+          "rows": 1640
+        }
+      },
+      "time": 0.492,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

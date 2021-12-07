@@ -1,0 +1,331 @@
+{
+  "version": "4.22.1",
+  "time": 0.347,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_unidade_orc",
+        "title": "Unidade Or\u00e7ament\u00e1ria",
+        "path": "data/dm_unidade_orc.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_unidade_orc",
+              "title": "Unidade Or\u00e7ament\u00e1ria - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exerc\u00edcio",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_unidade_orc",
+              "title": "Unidade Or\u00e7ament\u00e1ria- C\u00f3digo",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "pattern": "\\d{4}"
+              }
+            },
+            {
+              "name": "id_grupo_administracao",
+              "title": "Grupo Administra\u00e7\u00e3o- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "grupo_administracao",
+              "title": "Grupo Administra\u00e7\u00e3o- Descri\u00e7\u00e3o",
+              "type": "string",
+              "format": "default",
+              "description": "Descri\u00e7\u00e3o da natureza jur\u00eddica no qual a unidade or\u00e7ament\u00e1ria est\u00e1 inclu\u00edda.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "id_administracao",
+              "title": "Administra\u00e7\u00e3o - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "administracao",
+              "title": "Administra\u00e7\u00e3o - Descri\u00e7\u00e3o",
+              "type": "string",
+              "format": "default",
+              "description": "Descri\u00e7\u00e3o da natureza jur\u00eddica no qual a unidade or\u00e7ament\u00e1ria est\u00e1 inclu\u00edda.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Unidade Or\u00e7ament\u00e1ria - Descri\u00e7\u00e3o",
+              "type": "string",
+              "format": "default",
+              "description": "Nome completo da Unidade Or\u00e7ament\u00e1ria.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_unidade_orc"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
+            "table": "dm_unidade_orc"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "2c369427e8336b0fef981eb83e83cef8",
+          "bytes": 21320,
+          "fields": 8,
+          "rows": 2434
+        }
+      },
+      "time": 0.347,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [
+        {
+          "cell": "",
+          "fieldName": "cd_unidade_orc",
+          "fieldNumber": 3,
+          "fieldPosition": 3,
+          "cells": [
+            "10000",
+            "2010",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rowNumber": 2434,
+          "rowPosition": 2435,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"required\" is \"True\"",
+          "message": "The cell \"\" in row at position \"2435\" and field \"cd_unidade_orc\" at position \"3\" does not conform to a constraint: constraint \"required\" is \"True\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "",
+          "fieldName": "id_grupo_administracao",
+          "fieldNumber": 4,
+          "fieldPosition": 4,
+          "cells": [
+            "10000",
+            "2010",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rowNumber": 2434,
+          "rowPosition": 2435,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"required\" is \"True\"",
+          "message": "The cell \"\" in row at position \"2435\" and field \"id_grupo_administracao\" at position \"4\" does not conform to a constraint: constraint \"required\" is \"True\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "",
+          "fieldName": "grupo_administracao",
+          "fieldNumber": 5,
+          "fieldPosition": 5,
+          "cells": [
+            "10000",
+            "2010",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rowNumber": 2434,
+          "rowPosition": 2435,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"required\" is \"True\"",
+          "message": "The cell \"\" in row at position \"2435\" and field \"grupo_administracao\" at position \"5\" does not conform to a constraint: constraint \"required\" is \"True\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "",
+          "fieldName": "id_administracao",
+          "fieldNumber": 6,
+          "fieldPosition": 6,
+          "cells": [
+            "10000",
+            "2010",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rowNumber": 2434,
+          "rowPosition": 2435,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"required\" is \"True\"",
+          "message": "The cell \"\" in row at position \"2435\" and field \"id_administracao\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "",
+          "fieldName": "administracao",
+          "fieldNumber": 7,
+          "fieldPosition": 7,
+          "cells": [
+            "10000",
+            "2010",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rowNumber": 2434,
+          "rowPosition": 2435,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"required\" is \"True\"",
+          "message": "The cell \"\" in row at position \"2435\" and field \"administracao\" at position \"7\" does not conform to a constraint: constraint \"required\" is \"True\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "",
+          "fieldName": "nome",
+          "fieldNumber": 8,
+          "fieldPosition": 8,
+          "cells": [
+            "10000",
+            "2010",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rowNumber": 2434,
+          "rowPosition": 2435,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"required\" is \"True\"",
+          "message": "The cell \"\" in row at position \"2435\" and field \"nome\" at position \"8\" does not conform to a constraint: constraint \"required\" is \"True\"",
+          "description": "A field value does not conform to a constraint."
+        }
+      ],
+      "stats": {
+        "errors": 6
+      },
+      "valid": false
+    }
+  ],
+  "stats": {
+    "errors": 6,
+    "tasks": 1
+  },
+  "valid": false
+}

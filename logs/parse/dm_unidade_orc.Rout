@@ -1,0 +1,5 @@
+running
+  '/usr/lib/R/bin/R --no-echo --no-restore --file=scripts/r/parse-sql.R --args dm_unidade_orc'
+
+Warning message:
+In readLines(file) : incomplete final line found on '.env'

@@ -67,7 +67,6 @@ def create_datasets_build_folder():
     for dataset in from_to_file['consultas'].keys():
       os.system(f'mkdir build_datasets/{dataset}')
       os.system(f'mkdir build_datasets/{dataset}/data')
-      os.system(f'mkdir build_datasets/{dataset}/schemas')
       os.system(f'cp datasets/{dataset}/*.md build_datasets/{dataset}')
       # Lê o arquivo datapackage.json para, entre outros, extrair os recursos daquele conjunto
       base_dp = Package('datapackage.json')

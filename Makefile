@@ -37,15 +37,15 @@ notify:
 	python scripts/python/mail_sender.py
 
 build:
-	python scripts/python/templates.py
+	python scripts/python/build_datapackages.py 2> logs/build.txt
+
+create:
+	python scripts/python/datasets_create.py 2> logs/create.txt
+
+update:
+	python scripts/python/datasets_update.py 2> logs/update.txt 
 
 $(VALIDATION_FILES): logs/validate/%.json: scripts/python/validate.py data/%.csv.gz schemas/%.yaml
-	python $< $* > $@
-
-load: 
-	dpckan dataset update
-
-$(LOAD_FILES): logs/load/%.txt: scripts/python/load-resource.py logs/validate/%.json
 	python $< $* > $@
 
 vars: 
@@ -56,3 +56,8 @@ clean:
 	rm -rf data/raw/*
 	rm -rf data/staging/*
 	rm -rf logs/validate/*
+
+buil-dataset-documentation-folder:
+	python scripts/python/build_dataset_documentation_folder
+
+

@@ -1,1 +1,1 @@
-make parse && make full-extract && make ingest
+make parse && make full-extract && make ingest && make validate && make datapackage.json && make build

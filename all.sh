@@ -1,1 +1,1 @@
-git pull && make parse && make full-extract && make ingest && make validate && make datapackage.json && make build
+git pull && make parse && make full-extract && make ingest && make validate && make datapackage.json && make build && make update

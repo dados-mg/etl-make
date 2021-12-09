@@ -54,12 +54,12 @@ vars:
 
 clean:
 	rm -rf logs/parse/*
-	rm -rf scripts/sql/*	
+	rm -rf scripts/sql/*
 	rm -rf logs/extract/*
 	rm -rf data/raw/*
-	rm -rf data/staging/*	
+	rm -rf data/staging/*
+	rm -f data/*.csv.gz
 	rm -rf logs/validate/*
-	rm -rf logs/*.txt
+	rm -f logs/*.txt
 	rm -f datapackage.json
-
-
+	rm -rf build_datasets

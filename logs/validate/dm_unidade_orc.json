@@ -1,0 +1,162 @@
+{
+  "version": "4.22.3",
+  "time": 0.098,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_unidade_orc",
+        "title": "Unidade Or\u00e7ament\u00e1ria",
+        "path": "data/dm_unidade_orc.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_unidade_orc",
+              "title": "Unidade Or\u00e7ament\u00e1ria - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exerc\u00edcio",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_unidade_orc",
+              "title": "Unidade Or\u00e7ament\u00e1ria- C\u00f3digo",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "pattern": "\\d{4}"
+              }
+            },
+            {
+              "name": "id_grupo_administracao",
+              "title": "Grupo Administra\u00e7\u00e3o- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "grupo_administracao",
+              "title": "Grupo Administra\u00e7\u00e3o- Descri\u00e7\u00e3o",
+              "type": "string",
+              "format": "default",
+              "description": "Descri\u00e7\u00e3o da natureza jur\u00eddica no qual a unidade or\u00e7ament\u00e1ria est\u00e1 inclu\u00edda.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "id_administracao",
+              "title": "Administra\u00e7\u00e3o - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "administracao",
+              "title": "Administra\u00e7\u00e3o - Descri\u00e7\u00e3o",
+              "type": "string",
+              "format": "default",
+              "description": "Descri\u00e7\u00e3o da natureza jur\u00eddica no qual a unidade or\u00e7ament\u00e1ria est\u00e1 inclu\u00edda.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Unidade Or\u00e7ament\u00e1ria - Descri\u00e7\u00e3o",
+              "type": "string",
+              "format": "default",
+              "description": "Nome completo da Unidade Or\u00e7ament\u00e1ria.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_unidade_orc"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
+            "table": "dm_unidade_orc"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "ef22303aac85f6153277bc5d9c7843c6",
+          "bytes": 21308,
+          "fields": 8,
+          "rows": 2433
+        }
+      },
+      "time": 0.098,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

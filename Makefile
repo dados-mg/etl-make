@@ -5,10 +5,11 @@ include config.mk
 help: 
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
-all: parse extract ingest validate notify
-
 datapackage.json: scripts/python/build-datapackage.py datapackage.yaml schemas/* data/* logs/validate/* dialect.json README.md CHANGELOG.md CONTRIBUTING.md
 	python $<
+
+init: ## Create boilerplate files for the derivated datapackages
+	python scripts/python/build_dataset_documentation_folder.py
 
 parse: $(SQL_FILES)
 
@@ -37,22 +38,28 @@ notify:
 	python scripts/python/mail_sender.py
 
 build:
-	python scripts/python/templates.py
+	python scripts/python/build_datapackages.py 2> logs/build.txt
+
+create:
+	python scripts/python/datasets_create.py 2> logs/create.txt
+
+update:
+	python scripts/python/datasets_update.py 2> logs/update.txt 
 
 $(VALIDATION_FILES): logs/validate/%.json: scripts/python/validate.py data/%.csv.gz schemas/%.yaml
-	python $< $* > $@
-
-load: 
-	dpckan dataset update
-
-$(LOAD_FILES): logs/load/%.txt: scripts/python/load-resource.py logs/validate/%.json
 	python $< $* > $@
 
 vars: 
 	@echo 'DATA_FILES:' $(DATA_FILES)
 
 clean:
+	rm -rf logs/parse/*
 	rm -rf scripts/sql/*
+	rm -rf logs/extract/*
 	rm -rf data/raw/*
 	rm -rf data/staging/*
+	rm -f data/*.csv.gz
 	rm -rf logs/validate/*
+	rm -f logs/*.txt
+	rm -f datapackage.json
+	rm -rf build_datasets

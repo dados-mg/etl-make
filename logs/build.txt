@@ -1,0 +1,14 @@
+A sintaxe do comando está incorreta.
+A sintaxe do comando está incorreta.
+cp: target 'build_datasets/receita' is not a directory
+cp: cannot create regular file 'build_datasets/receita/data/ft_receita_v2018.csv.gz': No such file or directory
+cp: cannot create regular file 'build_datasets/receita/data/dm_unidade_orc.csv.gz': No such file or directory
+A sintaxe do comando está incorreta.
+A sintaxe do comando está incorreta.
+cp: target 'build_datasets/convenio_entrada' is not a directory
+cp: cannot create regular file 'build_datasets/convenio_entrada/data/dm_unidade_orc.csv.gz': No such file or directory
+cp: cannot create regular file 'build_datasets/convenio_entrada/data/ft_convenio_entrada.csv.gz': No such file or directory
+A sintaxe do comando está incorreta.
+A sintaxe do comando está incorreta.
+cp: target 'build_datasets/unidade' is not a directory
+cp: cannot create regular file 'build_datasets/unidade/data/dm_unidade_orc.csv.gz': No such file or directory

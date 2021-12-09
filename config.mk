@@ -1,6 +1,6 @@
-RESOURCES := $(shell Rscript -e 'cat(purrr::map_chr(yaml::read_yaml("datapackage.yaml")[["resources"]], "name"))')
+RESOURCES := $(shell Rscript -e "cat(purrr::map_chr(yaml::read_yaml('datapackage.yaml')[['resources']], 'name'))")
 
-DATA_FILES := $(shell Rscript -e 'cat(purrr::map_chr(yaml::read_yaml("datapackage.yaml")[["resources"]], "path"))')
+DATA_FILES := $(shell Rscript -e "cat(purrr::map_chr(yaml::read_yaml('datapackage.yaml')[['resources']], 'path'))")
 
 DATA_RAW_FILES := $(subst csv.gz,csv, $(subst data,data/raw, $(DATA_FILES)))
 

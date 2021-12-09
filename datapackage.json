@@ -56,6 +56,17 @@
             }
           },
           {
+            "name": "id_desdobramento_1",
+            "title": "Desdobramento 1 - Chave",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "unique": false
+            }
+          },
+          {
             "name": "id_desdobramento_2",
             "title": "Desdobramento 2 - Chave",
             "type": "integer",
@@ -274,14 +285,14 @@
       "hashing": "md5",
       "compression": "gz",
       "stats": {
-        "hash": "dd191040b4732e52b7f3c876e21d8c4c",
-        "bytes": 399688,
-        "fields": 14,
+        "hash": "d516ba01790c8d458bc0314723135dce",
+        "bytes": 406741,
+        "fields": 15,
         "rows": 28453
       },
       "validation": {
         "version": "4.22.3",
-        "time": 0.051,
+        "time": 1.197,
         "errors": [],
         "tasks": [
           {
@@ -328,6 +339,17 @@
                   {
                     "name": "id_especie",
                     "title": "Espécie - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "id_desdobramento_1",
+                    "title": "Desdobramento 1 - Chave",
                     "type": "integer",
                     "format": "default",
                     "bareNumber": true,
@@ -554,36 +576,46 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "dd191040b4732e52b7f3c876e21d8c4c",
-                "bytes": 399688,
-                "fields": 14,
-                "rows": 0
+                "hash": "d516ba01790c8d458bc0314723135dce",
+                "bytes": 406741,
+                "fields": 15,
+                "rows": 28453
               }
             },
-            "time": 0.051,
-            "scope": [],
-            "partial": false,
-            "errors": [
-              {
-                "code": "scheme-error",
-                "name": "Scheme Error",
-                "tags": [],
-                "note": "[Errno 2] No such file or directory: 'data/dm_unidade_orc.csv.gz'",
-                "message": "The data source could not be successfully loaded: [Errno 2] No such file or directory: 'data/dm_unidade_orc.csv.gz'",
-                "description": "Data reading error because of incorrect scheme."
-              }
+            "time": 1.197,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
             ],
+            "partial": false,
+            "errors": [],
             "stats": {
-              "errors": 1
+              "errors": 0
             },
-            "valid": false
+            "valid": true
           }
         ],
         "stats": {
-          "errors": 1,
+          "errors": 0,
           "tasks": 1
         },
-        "valid": false
+        "valid": true
       }
     },
     {

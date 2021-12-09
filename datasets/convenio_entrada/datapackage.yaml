@@ -1,7 +1,7 @@
 ckan_hosts:
   https://homologa.cge.mg.gov.br/:
-    datapackage.json: 96281ce8-0ceb-44d1-9ec5-8d5f2f972c60
-    dm_unidade_orc: 8ed97c9e-e047-4f1a-8b24-7a8ab69c8dd7
-    ft_convenio_entrada: 123cefb3-6ab7-42f4-9346-457962a483b9
+    datapackage.json: 05342b9b-d0bc-4ec7-8f3c-4e3be1e32044
+    dm_unidade_orc: a369ab76-22c2-41f8-988e-58da14f3517f
+    ft_convenio_entrada: 18e9cb47-39f7-46c5-aa4a-7e626a3247d9
 description: null
 keywords: null

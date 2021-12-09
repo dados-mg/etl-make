@@ -9,11 +9,6 @@ consultas:
     url: https://www.transparencia.mg.gov.br/convenios/convenio-entrada
     fact_tables:
       - ft_convenio_entrada
-  unidade:
-    title: Unidade de Teste
-    url: https://www.transparencia.mg.gov.br/convenios/convenio-entrada
-    fact_tables:
-      - dm_unidade_orc
 
 fact_tables:
   ft_receita_v2018:

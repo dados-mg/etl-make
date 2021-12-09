@@ -34,6 +34,11 @@ fields:
       unique: false
   - name: id_desdobramento_1
     title: Desdobramento 1 - Chave
+    description: |
+      Markdown rules
+
+      - item 1
+      - item 2
     type: integer
     format: default
     bareNumber: true

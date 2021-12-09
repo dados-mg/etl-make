@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "C:\Users\m752587\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\m752587\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\m752587\projects\etl-make\venv\Scripts\dpckan.exe\__main__.py", line 7, in <module>
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1128, in __call__
+    return self.main(*args, **kwargs)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1053, in main
+    rv = self.invoke(ctx)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1659, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1659, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1395, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 754, in invoke
+    return __callback(*args, **kwargs)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\dpckan\update_dataset.py", line 77, in update_cli
+    update(ckan_host, ckan_key, datapackage)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\dpckan\update_dataset.py", line 37, in update
+    dataset_update(ckan_instance, package)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\dpckan\functions.py", line 146, in dataset_update
+    datapackage_id = datapackage['ckan_hosts'][ckan_instance.address]['datapackage.json']
+TypeError: string indices must be integers
+Traceback (most recent call last):
+  File "C:\Users\m752587\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\m752587\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\m752587\projects\etl-make\venv\Scripts\dpckan.exe\__main__.py", line 7, in <module>
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1128, in __call__
+    return self.main(*args, **kwargs)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1053, in main
+    rv = self.invoke(ctx)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1659, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1659, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 1395, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\click\core.py", line 754, in invoke
+    return __callback(*args, **kwargs)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\dpckan\update_dataset.py", line 77, in update_cli
+    update(ckan_host, ckan_key, datapackage)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\dpckan\update_dataset.py", line 37, in update
+    dataset_update(ckan_instance, package)
+  File "c:\users\m752587\projects\etl-make\venv\lib\site-packages\dpckan\functions.py", line 146, in dataset_update
+    datapackage_id = datapackage['ckan_hosts'][ckan_instance.address]['datapackage.json']
+TypeError: string indices must be integers

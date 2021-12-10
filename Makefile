@@ -37,6 +37,9 @@ validate: $(VALIDATION_FILES)
 notify:
 	python scripts/python/mail_sender.py
 
+datasets-folder:
+	python scripts/python/build_dataset_documentation_folder.py
+
 build:
 	python scripts/python/build_datapackages.py 2> logs/build.txt
 

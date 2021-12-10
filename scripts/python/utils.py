@@ -48,14 +48,11 @@ def datasets_update():
   run_dpckan_dataset('update')
 
 def create_datasets_folder():
-  if not os.path.exists("datasets"):
-    os.system('mkdir datasets')
   from_to_file_path = 'age7.yaml'
   from_to_file = load_yaml_file(from_to_file_path)
   for dataset in from_to_file['consultas'].keys():
     if not os.path.exists(f'datasets/{dataset}'):
-      os.system(f'mkdir datasets/{dataset}')
-      os.system(f'cp -r templates/* datasets/{dataset}')
+      shutil.copytree('templates/', f'datasets/{dataset}/')
 
 def create_datasets_build_folder():  
   if os.path.exists('build_datasets/'):
@@ -136,11 +133,12 @@ def run_dpckan_dataset(action):
     # ipdb.set_trace(context=10)
     if action == 'create':
       os.system(f'dpckan dataset create -dp {datapackage_path}')
-      new_datapackage_ckan_hosts = Package(datapackage_path)["ckan_hosts"]
+      new_datapackage_ckan_hosts = Package(datapackage_path)["ckan_hosts"]    
     if action == 'update':
       os.system(f'dpckan dataset update -dp {datapackage_path}')
+      new_datapackage_ckan_hosts = Package(datapackage_path)["ckan_hosts"]
     datapackage_yaml_path = f'datasets/{folder_name}/datapackage.yaml'
     datapackage_yaml = load_yaml_file(datapackage_yaml_path)
-    with open(datapackage_yaml_path, 'w') as f:
+    with open(datapackage_yaml_path, 'w', encoding='utf-8') as f:
       datapackage_yaml['ckan_hosts'] = new_datapackage_ckan_hosts
       yaml.dump(datapackage_yaml, f)

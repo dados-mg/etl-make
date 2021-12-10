@@ -128,6 +128,7 @@ def find_target_resources(from_to_file, fact_tables):
   return target_resources
 
 def run_dpckan_dataset(action):
+  import ipdb; ipdb.set_trace(context=10)
   path = 'build_datasets'
   folder = os.fsencode(path)
   for sub_folder in os.listdir(folder):
@@ -140,7 +141,7 @@ def run_dpckan_dataset(action):
       os.system(f'dpckan dataset create -dp {datapackage_path}')
       new_datapackage_ckan_hosts = Package(datapackage_path)["ckan_hosts"]
     if action == 'update':
-      os.system(f'dpckan dataset update -H $CKAN_HOST -k $CKAN_KEY -dp {datapackage_path}')
+      os.system(f'dpckan dataset update -dp {datapackage_path}')
     datapackage_yaml_path = f'datasets/{folder_name}/datapackage.yaml'
     datapackage_yaml = load_yaml_file(datapackage_yaml_path)
     with open(datapackage_yaml_path, 'w') as f:

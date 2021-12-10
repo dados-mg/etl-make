@@ -1,4 +1,6 @@
-import csv, os
+import os
+import csv
+import shutil
 import hashlib
 import yaml
 from frictionless import Package
@@ -29,8 +31,7 @@ def extract_resource(resource_name):
         myFile.writeheader()
         myFile.writerows(rows)
 
-def update_resource_hash(resource_name):
-    
+def update_resource_hash(resource_name):    
     dp = Package('datapackage.json')
     resource = dp.get_resource(resource_name)
     md5_hash = hashlib.md5()
@@ -56,33 +57,30 @@ def create_datasets_folder():
       os.system(f'mkdir datasets/{dataset}')
       os.system(f'cp -r templates/* datasets/{dataset}')
 
-def create_datasets_build_folder():
-  os.system(f'rm -rf build_datasets/') # Facilitar os teste
-  if os.path.exists("build_datasets"):
-    print('Pasta datasets_build existente, confira se algum erro ocorreu durante último building.')
-  else:
-    os.system('mkdir build_datasets')
-    from_to_file_path = 'age7.yaml'
-    from_to_file = load_yaml_file(from_to_file_path)
-    for dataset in from_to_file['consultas'].keys():
-      os.makedirs(f'build_datasets/{dataset}/data')
-      os.system(f'cp datasets/{dataset}/*.md build_datasets/{dataset}')
-      # Lê o arquivo datapackage.json para, entre outros, extrair os recursos daquele conjunto
-      base_dp = Package('datapackage.json')
-      # Lê o arquivo datasets/conjunto/datapakcage.yaml para extrair os metadados personalizados do conjunto
-      target_dp = Package(f'datasets/{dataset}/datapackage.yaml')
-      # Inclui no base_dp os metadados extraídos do arquivo datapackage.yaml
-      for k in target_dp.keys():
-        base_dp[k] = target_dp[k]
-      base_dp['name'] = dataset
-      base_dp['title'] = from_to_file['consultas'][dataset]['title']
-      base_dp['homepage'] = from_to_file['consultas'][dataset]['url']
-      fact_tables = from_to_file['consultas'][dataset]['fact_tables']
-      target_resources = find_target_resources(from_to_file, fact_tables)
-      resources_diff = find_resource_diff(base_dp.resource_names, target_resources)
-      base_dp = remove_resources(base_dp, resources_diff)
-      base_dp = update_resource_properties(base_dp)
-      base_dp.to_json(f'build_datasets/{dataset}/datapackage.json')
+def create_datasets_build_folder():  
+  if os.path.exists('build_datasets/'):
+    shutil.rmtree('build_datasets/')
+  from_to_file_path = 'age7.yaml'
+  from_to_file = load_yaml_file(from_to_file_path)
+  for dataset in from_to_file['consultas'].keys():
+    os.makedirs(f'build_datasets/{dataset}/data')
+    os.system(f'cp datasets/{dataset}/*.md build_datasets/{dataset}')
+    # Lê o arquivo datapackage.json para, entre outros, extrair os recursos daquele conjunto
+    base_dp = Package('datapackage.json')
+    # Lê o arquivo datasets/conjunto/datapakcage.yaml para extrair os metadados personalizados do conjunto
+    target_dp = Package(f'datasets/{dataset}/datapackage.yaml')
+    # Inclui no base_dp os metadados extraídos do arquivo datapackage.yaml
+    for k in target_dp.keys():
+      base_dp[k] = target_dp[k]
+    base_dp['name'] = dataset
+    base_dp['title'] = from_to_file['consultas'][dataset]['title']
+    base_dp['homepage'] = from_to_file['consultas'][dataset]['url']
+    fact_tables = from_to_file['consultas'][dataset]['fact_tables']
+    target_resources = find_target_resources(from_to_file, fact_tables)
+    resources_diff = find_resource_diff(base_dp.resource_names, target_resources)
+    base_dp = remove_resources(base_dp, resources_diff)
+    base_dp = update_resource_properties(base_dp)
+    base_dp.to_json(f'build_datasets/{dataset}/datapackage.json')
 
 def find_resource_diff(original_resources, target_resources):
   resources_diff = [i for i in original_resources if not i in target_resources]

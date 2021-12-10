@@ -1,6 +1,6 @@
 {
-  "version": "4.22.3",
-  "time": 1.182,
+  "version": "4.16.6",
+  "time": 2.314,
   "errors": [],
   "tasks": [
     {
@@ -47,18 +47,6 @@
             {
               "name": "id_especie",
               "title": "Esp\u00e9cie - Chave",
-              "type": "integer",
-              "format": "default",
-              "bareNumber": true,
-              "constraints": {
-                "required": true,
-                "unique": false
-              }
-            },
-            {
-              "name": "id_desdobramento_1",
-              "title": "Desdobramento 1 - Chave",
-              "description": "Markdown rules\n\n- item 1\n- item 2\n",
               "type": "integer",
               "format": "default",
               "bareNumber": true,
@@ -285,13 +273,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "d516ba01790c8d458bc0314723135dce",
-          "bytes": 406741,
-          "fields": 15,
+          "hash": "dd191040b4732e52b7f3c876e21d8c4c",
+          "bytes": 399688,
+          "fields": 14,
           "rows": 28453
         }
       },
-      "time": 1.182,
+      "time": 2.314,
       "scope": [
         "hash-count-error",
         "byte-count-error",

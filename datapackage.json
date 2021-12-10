@@ -56,18 +56,6 @@
             }
           },
           {
-            "name": "id_desdobramento_1",
-            "title": "Desdobramento 1 - Chave",
-            "description": "Markdown rules\n\n- item 1\n- item 2\n",
-            "type": "integer",
-            "format": "default",
-            "bareNumber": true,
-            "constraints": {
-              "required": true,
-              "unique": false
-            }
-          },
-          {
             "name": "id_desdobramento_2",
             "title": "Desdobramento 2 - Chave",
             "type": "integer",
@@ -286,14 +274,14 @@
       "hashing": "md5",
       "compression": "gz",
       "stats": {
-        "hash": "d516ba01790c8d458bc0314723135dce",
-        "bytes": 406741,
-        "fields": 15,
+        "hash": "dd191040b4732e52b7f3c876e21d8c4c",
+        "bytes": 399688,
+        "fields": 14,
         "rows": 28453
       },
       "validation": {
-        "version": "4.22.3",
-        "time": 1.182,
+        "version": "4.16.6",
+        "time": 2.314,
         "errors": [],
         "tasks": [
           {
@@ -340,18 +328,6 @@
                   {
                     "name": "id_especie",
                     "title": "Espécie - Chave",
-                    "type": "integer",
-                    "format": "default",
-                    "bareNumber": true,
-                    "constraints": {
-                      "required": true,
-                      "unique": false
-                    }
-                  },
-                  {
-                    "name": "id_desdobramento_1",
-                    "title": "Desdobramento 1 - Chave",
-                    "description": "Markdown rules\n\n- item 1\n- item 2\n",
                     "type": "integer",
                     "format": "default",
                     "bareNumber": true,
@@ -578,13 +554,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d516ba01790c8d458bc0314723135dce",
-                "bytes": 406741,
-                "fields": 15,
+                "hash": "dd191040b4732e52b7f3c876e21d8c4c",
+                "bytes": 399688,
+                "fields": 14,
                 "rows": 28453
               }
             },
-            "time": 1.182,
+            "time": 2.314,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -735,8 +711,8 @@
       "hashing": "md5",
       "compression": "gz",
       "validation": {
-        "version": "4.22.3",
-        "time": 0.098,
+        "version": "4.16.6",
+        "time": 0.18,
         "errors": [],
         "tasks": [
           {
@@ -861,7 +837,7 @@
                 "rows": 2433
               }
             },
-            "time": 0.098,
+            "time": 0.18,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1053,8 +1029,8 @@
         "rows": 1640
       },
       "validation": {
-        "version": "4.22.3",
-        "time": 0.13,
+        "version": "4.16.6",
+        "time": 0.314,
         "errors": [],
         "tasks": [
           {
@@ -1206,7 +1182,7 @@
                 "rows": 1640
               }
             },
-            "time": 0.13,
+            "time": 0.314,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1243,5 +1219,5 @@
       }
     }
   ],
-  "description": "None\nDados Abertos sobre convÃªnios de entrada de recursos celebrados pelo Estado com o governo federal, municÃ­pios e organizaÃ§Ãµes da sociedade civil para execuÃ§Ã£o de polÃ­tica pÃºblica estadual.\n\nEsse conjunto de dados, documentado de acordo com o padrÃ£o de metadados [Frictionless](https://frictionlessdata.io/), corresponde ao [modelo dimensional](https://pt.wikipedia.org/wiki/Modelagem_dimensional) que alimenta a consulta [ConvÃªnio de entrada de recursos](https://www.transparencia.mg.gov.br/convenios/convenio-entrada) do Portal da TransparÃªncia do Estado de Minas Gerais.\n\nEle Ã© composto pelas seguintes [tabelas fato](https://pt.wikipedia.org/wiki/Tabela_de_fatos) (e tabelas dimensÃµes associadas):\n\n- `ft_convenio_entrada_dotacao`\n- `ft_convenio_entrada`\n- `ft_convenio_entrada_desp`\n- `ft_convenio_entrada_rec`\n- `fl_convenio_entrada_interv`\n- `fl_convenio_entrada_compras`\n- `fl_convenio_entrada_aditivo`\n\n## Como participar\n\nSaiba como contribuir com a documentaÃ§Ã£o deste conjunto de dados!\n\nA documentaÃ§Ã£o deste conjunto de dados estÃ¡ sendo feita de forma aberta e colaborativa no [Github](https://github.com/). Existem duas alternativas para enviar sua contribuiÃ§Ã£o:\n\n- [Issues](https://github.com/dados-mg/convenios-entrada/issues): Para iniciar uma discussÃ£o sobre melhorias na documentaÃ§Ã£o.\n- [Pull requests](https://github.com/dados-mg/convenios-entrada/pulls): Para sugerir uma alteraÃ§Ã£o concreta na documentaÃ§Ã£o.\n\nTodas as contribuiÃ§Ãµes sÃ£o bem vindas. Alguns exemplos sÃ£o:\n\n* IndicaÃ§Ã£o de expressÃµes imprecisas presentes na documentaÃ§Ã£o;\n* SugestÃµes para inclusÃ£o de descriÃ§Ãµes em campos especÃ­ficos;\n* SugestÃµes para clareza na organizaÃ§Ã£o das ideias;\n* CorreÃ§Ã£o de erros de ortografia e gramÃ¡tica.\n\nAlÃ©m disso, fique a vontade para utilizar os demais canais oficiais de atendimento do Poder Executivo Estadual:\n\n- [Fale Conosco](https://www.transparencia.mg.gov.br/faleconosco): DÃºvidas\n- [ManifestaÃ§Ãµes de Ouvidoria](http://www.ouvidoriageral.mg.gov.br/): DenÃºncia, ReclamaÃ§Ã£o, CrÃ­tica, Elogio ou SugestÃµes\n- [Pedido de Acesso Ã  InformaÃ§Ã£o](http://www.acessoainformacao.mg.gov.br/sistema/site/index.html): Acesso Ã s informaÃ§Ãµes dos Ã³rgÃ£os e entidades estaduais que nÃ£o estejam publicamente disponÃ­veis\n## Controle de alteraÃ§Ãµes\n\nDocumentaÃ§Ã£o das principais alteraÃ§Ãµes sofridas por este conjunto de dados.\n\n### [0.1.0] - 2021-07-22\n\n- VersÃ£o inicial"
+  "description": "None\nDados Abertos sobre convênios de entrada de recursos celebrados pelo Estado com o governo federal, municípios e organizações da sociedade civil para execução de política pública estadual.\n\nEsse conjunto de dados, documentado de acordo com o padrão de metadados [Frictionless](https://frictionlessdata.io/), corresponde ao [modelo dimensional](https://pt.wikipedia.org/wiki/Modelagem_dimensional) que alimenta a consulta [Convênio de entrada de recursos](https://www.transparencia.mg.gov.br/convenios/convenio-entrada) do Portal da Transparência do Estado de Minas Gerais.\n\nEle é composto pelas seguintes [tabelas fato](https://pt.wikipedia.org/wiki/Tabela_de_fatos) (e tabelas dimensões associadas):\n\n- `ft_convenio_entrada_dotacao`\n- `ft_convenio_entrada`\n- `ft_convenio_entrada_desp`\n- `ft_convenio_entrada_rec`\n- `fl_convenio_entrada_interv`\n- `fl_convenio_entrada_compras`\n- `fl_convenio_entrada_aditivo`\n\n## Como participar\n\nSaiba como contribuir com a documentação deste conjunto de dados!\n\nA documentação deste conjunto de dados está sendo feita de forma aberta e colaborativa no [Github](https://github.com/). Existem duas alternativas para enviar sua contribuição:\n\n- [Issues](https://github.com/dados-mg/convenios-entrada/issues): Para iniciar uma discussão sobre melhorias na documentação.\n- [Pull requests](https://github.com/dados-mg/convenios-entrada/pulls): Para sugerir uma alteração concreta na documentação.\n\nTodas as contribuições são bem vindas. Alguns exemplos são:\n\n* Indicação de expressões imprecisas presentes na documentação;\n* Sugestões para inclusão de descrições em campos específicos;\n* Sugestões para clareza na organização das ideias;\n* Correção de erros de ortografia e gramática.\n\nAlém disso, fique a vontade para utilizar os demais canais oficiais de atendimento do Poder Executivo Estadual:\n\n- [Fale Conosco](https://www.transparencia.mg.gov.br/faleconosco): Dúvidas\n- [Manifestações de Ouvidoria](http://www.ouvidoriageral.mg.gov.br/): Denúncia, Reclamação, Crítica, Elogio ou Sugestões\n- [Pedido de Acesso à Informação](http://www.acessoainformacao.mg.gov.br/sistema/site/index.html): Acesso às informações dos órgãos e entidades estaduais que não estejam publicamente disponíveis\n## Controle de alterações\n\nDocumentação das principais alterações sofridas por este conjunto de dados.\n\n### [0.1.0] - 2021-07-22\n\n- Versão inicial"
 }

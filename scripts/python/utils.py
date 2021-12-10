@@ -140,7 +140,7 @@ def run_dpckan_dataset(action):
       os.system(f'dpckan dataset create -dp {datapackage_path}')
       new_datapackage_ckan_hosts = Package(datapackage_path)["ckan_hosts"]
     if action == 'update':
-      os.system(f'dpckan dataset update -H $CKAN_HOST_PRODUCAO -k $CKAN_KEY_PRODUCAO -dp {datapackage_path}')
+      os.system(f'dpckan dataset update -H $CKAN_HOST -k $CKAN_KEY -dp {datapackage_path}')
     datapackage_yaml_path = f'datasets/{folder_name}/datapackage.yaml'
     datapackage_yaml = load_yaml_file(datapackage_yaml_path)
     with open(datapackage_yaml_path, 'w') as f:

@@ -128,7 +128,6 @@ def find_target_resources(from_to_file, fact_tables):
   return target_resources
 
 def run_dpckan_dataset(action):
-  import ipdb; ipdb.set_trace(context=10)
   path = 'build_datasets'
   folder = os.fsencode(path)
   for sub_folder in os.listdir(folder):

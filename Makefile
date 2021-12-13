@@ -16,8 +16,9 @@ parse: $(SQL_FILES)
 $(SQL_FILES): scripts/sql/%.sql: scripts/r/parse-sql.R schemas/%.yaml
 	Rscript --verbose $< $* 2> logs/parse/$*.Rout
 
-full-extract: 
-	python scripts/python/full-extract.py
+full-extract:
+	# python scripts/python/full-extract.py
+	dtamg-py etl-make full-extract
 
 extract: $(DATA_RAW_FILES) ## Extract raw files from external source into data/raw/
 

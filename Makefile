@@ -1,4 +1,4 @@
-.PHONY: help vars parse extract full-extract ingest validate notify load all
+.PHONY: help vars parse extract full-extract ingest validate notify load all clean
 
 include config.mk
 

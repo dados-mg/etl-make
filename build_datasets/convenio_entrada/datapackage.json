@@ -636,14 +636,14 @@
     }
   ],
   "description": null,
-  "keywords": null,
-  "title": "Convênios de entrada",
-  "homepage": "https://www.transparencia.mg.gov.br/convenios/convenio-entrada",
   "ckan_hosts": {
     "https://homologa.cge.mg.gov.br/": {
+      "datapackage.json": "689d9b56-4e24-4eeb-9428-d18a573ab493",
       "dm_unidade_orc": "8e784233-18f2-4535-b920-5e42d82aa0ce",
-      "ft_convenio_entrada": "2eba621a-a4e0-4797-92b2-ae74ddf9350a",
-      "datapackage.json": "689d9b56-4e24-4eeb-9428-d18a573ab493"
+      "ft_convenio_entrada": "2eba621a-a4e0-4797-92b2-ae74ddf9350a"
     }
-  }
+  },
+  "keywords": null,
+  "title": "Convênios de entrada",
+  "homepage": "https://www.transparencia.mg.gov.br/convenios/convenio-entrada"
 }

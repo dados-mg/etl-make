@@ -903,14 +903,14 @@
     }
   ],
   "description": null,
-  "keywords": null,
-  "title": "Receita pública",
-  "homepage": "http://www.transparencia.mg.gov.br/estado-receita",
   "ckan_hosts": {
     "https://homologa.cge.mg.gov.br/": {
-      "ft_receita_v2018": "ca41b6a7-e2b0-4632-a5de-acec2a61b399",
+      "datapackage.json": "3f673ffd-b99f-4332-a56f-1f8e5fff2e05",
       "dm_unidade_orc": "81de75d6-12e8-41b4-a860-30723161131a",
-      "datapackage.json": "3f673ffd-b99f-4332-a56f-1f8e5fff2e05"
+      "ft_receita_v2018": "ca41b6a7-e2b0-4632-a5de-acec2a61b399"
     }
-  }
+  },
+  "keywords": null,
+  "title": "Receita pública",
+  "homepage": "http://www.transparencia.mg.gov.br/estado-receita"
 }

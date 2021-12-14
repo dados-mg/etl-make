@@ -45,7 +45,7 @@ create:
 	dtamg-py etl-make dpckan-create 2> logs/create.txt
 
 update:
-	dtamg-py etl-make dpckan-update 2> logs/create.txt
+	dtamg-py etl-make dpckan-update 2> logs/update.txt
 
 $(VALIDATION_FILES): logs/validate/%.json: data/%.csv.gz
 	dtamg-py etl-make validate -r $* >$@

@@ -9,7 +9,7 @@ datapackage.json: datapackage.yaml schemas/* data/* logs/validate/* dialect.json
 	dtamg-py etl-make build-datapackage
 
 init: ## Create boilerplate files for the derivated datapackages
-	python scripts/python/build_dataset_documentation_folder.py
+	dtamg-py etl-make build-documentation-folder
 
 parse: $(SQL_FILES)
 

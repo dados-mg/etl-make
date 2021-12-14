@@ -6,7 +6,7 @@ help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
 datapackage.json: datapackage.yaml schemas/* data/* logs/validate/* dialect.json README.md CHANGELOG.md CONTRIBUTING.md
-	dtamg-py etl-make build-datapackage-json
+	dtamg-py etl-make build-datapackage
 
 init: ## Create boilerplate files for the derivated datapackages
 	python scripts/python/build_dataset_documentation_folder.py

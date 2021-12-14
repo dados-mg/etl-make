@@ -42,7 +42,7 @@ datasets-folder:
 	python scripts/python/build_dataset_documentation_folder.py
 
 build:
-	python scripts/python/build_datapackages.py 2> logs/build.txt
+	dtamg-py etl-make build-datapackages 2> logs/build.txt
 
 create:
 	python scripts/python/datasets_create.py 2> logs/create.txt

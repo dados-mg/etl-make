@@ -18,7 +18,7 @@ $(SQL_FILES): scripts/sql/%.sql: scripts/r/parse-sql.R schemas/%.yaml
 
 full-extract:
 	# python scripts/python/full-extract.py
-	dtamg-py etl-make full-extract
+	dtamg-py etl-make full-extract 2> logs/full_extract.txt
 
 extract: $(DATA_RAW_FILES) ## Extract raw files from external source into data/raw/
 

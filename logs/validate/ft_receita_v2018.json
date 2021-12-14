@@ -1,6 +1,6 @@
 {
-  "version": "4.16.6",
-  "time": 2.314,
+  "version": "4.22.3",
+  "time": 0.092,
   "errors": [],
   "tasks": [
     {
@@ -23,7 +23,7 @@
             },
             {
               "name": "id_unidade_orc",
-              "title": "Unidade Or\u00e7ament\u00e1ria - Chave",
+              "title": "Unidade Orçamentária - Chave",
               "type": "integer",
               "format": "default",
               "bareNumber": true,
@@ -35,7 +35,7 @@
             {
               "name": "id_origem",
               "title": "Origem - Chave",
-              "description": "Classifica\u00e7\u00e3o or\u00e7ament\u00e1ria",
+              "description": "Classificação orçamentária",
               "type": "integer",
               "format": "default",
               "bareNumber": true,
@@ -46,7 +46,19 @@
             },
             {
               "name": "id_especie",
-              "title": "Esp\u00e9cie - Chave",
+              "title": "Espécie - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_desdobramento_1",
+              "title": "Desdobramento 1 - Chave",
+              "description": "Markdown rules\n\n- item 1\n- item 2\n",
               "type": "integer",
               "format": "default",
               "bareNumber": true,
@@ -123,10 +135,10 @@
             },
             {
               "name": "cd_fonte",
-              "title": "Fonte de Recurso - C\u00f3digo",
+              "title": "Fonte de Recurso - Código",
               "type": "string",
               "format": "default",
-              "description": "C\u00f3digo da fonte de recurso origem da receita or\u00e7ament\u00e1ria.\n",
+              "description": "Código da fonte de recurso origem da receita orçamentária.\n",
               "constraints": {
                 "required": true,
                 "enum": [
@@ -204,14 +216,14 @@
               "name": "cd_classificacao_rec",
               "type": "string",
               "format": "default",
-              "C\u00f3digo completo da classifica\u00e7\u00e3o econ\u00f4mica da receita.Os n\u00fameros representam, da esquerda para a direita": [
-                "1\u00ba d\u00edgito - Categoria econ\u00f4mica;",
-                "2\u00ba d\u00edgito -Origem;",
-                "3\u00ba d\u00edgito -Esp\u00e9cie;",
-                "4\u00ba a 7\u00ba d\u00edgito -Desdobramentos para identifica\u00e7\u00e3o de peculiaridades da receita;",
-                "8\u00ba d\u00edgito - Tipo da receita;",
-                "9\u00ba e 10\u00ba d\u00edgito - Item da receita e",
-                "11\u00ba a 13\u00ba d\u00edgito - Subitem da receita."
+              "Código completo da classificação econômica da receita.Os números representam, da esquerda para a direita": [
+                "1º dígito - Categoria econômica;",
+                "2º dígito -Origem;",
+                "3º dígito -Espécie;",
+                "4º a 7º dígito -Desdobramentos para identificação de peculiaridades da receita;",
+                "8º dígito - Tipo da receita;",
+                "9º e 10º dígito - Item da receita e",
+                "11º a 13º dígito - Subitem da receita."
               ],
               "constraints": {
                 "required": true
@@ -219,7 +231,7 @@
             },
             {
               "name": "ano_particao",
-              "title": "Ano de Parti\u00e7\u00e3o",
+              "title": "Ano de Partição",
               "type": "year",
               "format": "default",
               "constraints": {
@@ -233,7 +245,7 @@
               "format": "default",
               "decimalChar": ",",
               "bareNumber": true,
-              "description": "Valor, em reais, da receita or\u00e7ament\u00e1ria efetivada ajustada.\n",
+              "description": "Valor, em reais, da receita orçamentária efetivada ajustada.\n",
               "constraints": {
                 "required": true
               }
@@ -258,7 +270,7 @@
         },
         "sources": [
           {
-            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transpar\u00eancia",
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
             "table": "ft_receita_v2018"
           }
         ],
@@ -273,44 +285,34 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "dd191040b4732e52b7f3c876e21d8c4c",
-          "bytes": 399688,
-          "fields": 14,
-          "rows": 28453
+          "hash": "d516ba01790c8d458bc0314723135dce",
+          "bytes": 406741,
+          "fields": 15,
+          "rows": 0
         }
       },
-      "time": 2.314,
-      "scope": [
-        "hash-count-error",
-        "byte-count-error",
-        "field-count-error",
-        "row-count-error",
-        "blank-header",
-        "extra-label",
-        "missing-label",
-        "blank-label",
-        "duplicate-label",
-        "incorrect-label",
-        "blank-row",
-        "primary-key-error",
-        "foreign-key-error",
-        "extra-cell",
-        "missing-cell",
-        "type-error",
-        "constraint-error",
-        "unique-error"
-      ],
+      "time": 0.092,
+      "scope": [],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "code": "scheme-error",
+          "name": "Scheme Error",
+          "tags": [],
+          "note": "[Errno 2] No such file or directory: 'data/dm_unidade_orc.csv.gz'",
+          "message": "The data source could not be successfully loaded: [Errno 2] No such file or directory: 'data/dm_unidade_orc.csv.gz'",
+          "description": "Data reading error because of incorrect scheme."
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 1
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 1,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }

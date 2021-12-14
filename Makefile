@@ -50,8 +50,8 @@ create:
 update:
 	python scripts/python/datasets_update.py 2> logs/update.txt 
 
-$(VALIDATION_FILES): logs/validate/%.json: scripts/python/validate.py data/%.csv.gz schemas/%.yaml
-	python $< $* > $@
+$(VALIDATION_FILES): logs/validate/%.json: data/%.csv.gz
+	dtamg-py etl-make validate -r $* >$@
 
 vars: 
 	@echo 'DATA_FILES:' $(DATA_FILES)

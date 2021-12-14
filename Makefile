@@ -45,7 +45,7 @@ build:
 	dtamg-py etl-make build-datapackages 2> logs/build.txt
 
 create:
-	python scripts/python/datasets_create.py 2> logs/create.txt
+	dtamg-py etl-make dpckan-create 2> logs/create.txt
 
 update:
 	python scripts/python/datasets_update.py 2> logs/update.txt 

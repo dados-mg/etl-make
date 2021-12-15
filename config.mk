@@ -18,3 +18,5 @@ SQL_FILES := $(subst csv.gz,sql, $(subst data,scripts/sql, $(DATA_FILES)))
 LOAD_FILES := $(subst csv.gz,txt, $(subst data,logs/load, $(DATA_FILES)))
 
 VALIDATION_FILES := $(subst csv.gz,json, $(subst data,logs/validate, $(DATA_FILES)))
+
+TEST_FILES := $(subst .R,.Rout, $(subst tests/testthat,logs/tests, $(shell ls tests/testthat/test_*)))

@@ -52,8 +52,8 @@ $(VALIDATION_FILES): logs/validate/%.json: data/%.csv.gz
 
 test: $(TEST_FILES)
 
-$(TEST_FILES): logs/tests/test_%.Rout: data/%.csv.gz tests/testthat/test_%.R
-	Rscript -e 'testthat::test_file("tests/testthat/test_$*.R", stop_on_failure=TRUE)' > $@
+$(TEST_FILES): logs/tests/test_%.Rout: tests/testthat/test_%.R data/%.csv.gz tests/testthat.R tests/testthat/setup.R renv.lock
+	Rscript -e 'testthat::test_file("$<", stop_on_failure=TRUE)' > $@
 
 vars: 
 	@echo 'DATA_FILES:' $(DATA_FILES)

@@ -20,3 +20,5 @@ LOAD_FILES := $(subst csv.gz,txt, $(subst data,logs/load, $(DATA_FILES)))
 VALIDATION_FILES := $(subst csv.gz,json, $(subst data,logs/validate, $(DATA_FILES)))
 
 TEST_FILES := $(subst .R,.Rout, $(subst tests/testthat,logs/tests, $(shell ls tests/testthat/test_*)))
+
+DATASETS_FILES := $(shell Rscript -e "consultas <- names(yaml::read_yaml('age7.yaml')[['consultas']]); cat(glue::glue('logs/update/{consultas}.txt'))")

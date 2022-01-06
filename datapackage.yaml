@@ -3,6 +3,18 @@ name: age7
 owner_org: controladoria-geral-do-estado-cge
 version: 0.0.0.9000
 resources:
+  - name: dm_unidade_orc_test
+    title: Unidade Orçamentária test
+    path: data/dm_unidade_orc_test.csv.gz
+    schema: schemas/dm_unidade_orc_test.yaml
+    sources:
+    - title: Tabela origem no schema AGE7 no banco de dados do Portal da Transparência
+      table: dm_unidade_orc_test
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.json
+    profile: tabular-data-resource
   - name: ft_receita_v2018
     title: Receita v2
     path: data/ft_receita_v2018.csv.gz
